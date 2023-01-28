@@ -27,6 +27,14 @@
 .App-link {
   color: #61dafb;
 }
+.errmsg{
+  color: red;
+}
+.app-check{
+  height: 20px;
+  width: 20px;
+  margin: 1%;
+}
 
 @keyframes App-logo-spin {
   from {
