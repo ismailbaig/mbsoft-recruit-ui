@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify';
+import axios from "axios";
 
 const Login = () => {
   const [username,usernameUpdate] = useState('');
@@ -25,12 +26,48 @@ const Login = () => {
     }
     return result;
   }
+
+  const handleLoginSubmit = (event) => {
+    event.preventDefault();
+    //let newfiles = this.state.newfiles;
+    
+    let formData = new FormData();
+    
+    // Adding files to the formdata
+    formData.append("uid", username);
+    formData.append("pd", password);
+
+    axios({
+  
+      // Endpoint to send files
+      url: "http://localhost:9600/login",
+      method: "POST",
+      // headers: {
+  
+      //   // Add any auth token here
+      //   authorization: "your token comes here",
+      // },
+  
+      // Attaching the form data
+      data: { 'uid': username, 'pd': password },
+    })
+  
+      // Handle the response from backend here
+      .then((res) => {
+        console.log(res);
+       })
+  
+      // Catch errors if any
+      .catch((err) => {console.log(err); });
+  }
+
+
   return (
    <>
 
    <div className="row">
     <div className="offset-lg-3 col-lg-5" style={{marginTop:'100px'}}>
-      <form className="container">
+      <form className="container" onSubmit={handleLoginSubmit}>
         <div className="card">
           <div className="card-header">
           <h2>User Login</h2>
