@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home } from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import { ToastContainer } from 'react-toastify';
@@ -10,6 +9,7 @@ import { Contact } from './Components/Contact';
 import { Footer } from './Components/Footer/Footer';
 import { AboutUS } from './Components/AboutUS/AboutUS';
 import { Samples } from './Components/Samples/Samples';
+import { Home } from './Components/HOME/Home';
 
 function App() {
   return (
