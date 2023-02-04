@@ -1,30 +1,107 @@
-import React from 'react'
+import React from 'react';
+import './AboutUS.css';
+import aboutUs from '../../images/aboutUs.jpg';
+import aboutTop from '../../images/about-us-top.jpg';
+
 
 export const AboutUS = () => {
   return (
     <div>
-      <div className="mb-5 mt-3">
-        <div lg="8">
-          <h1 className="display-4 mb-4">About us</h1>
-          <hr className="t_border my-4 ml-0 text-left" />
-        </div>
-        <h1>Short Story About Our Company</h1>
-        <hr className="t_border my-4 ml-0 text-left" />
-        <h5>A brand communications consultancy which has made its presence felt with revolutionary ideas and its modern take on online marketing
-        </h5>
-        <div>
-          <p>Without anybody to market products, the whole world would come to a metaphorical stand-still when we started, we wanted to be something different. In an attempt to make the unreal real, the collaboration of creative heads has finally produced a company that stands by every virtue; a company of finesse and excellent quality – M.B Technologies a brand communications consultancy has made its presence felt with revolutionary ideas and its modern take on online marketing. The services offered do not pertain only to promotion of brands. Rather, we work extensively in areas like web promotion. With the success of every product depending upon marketing, it is only fit that marketing and advertisement are also included. From Web designing to digital branding, all the areas for advertisement and marketing have been covered.
-            Despite the novelty of the company, it still has values instilled in it. Of all our values, we take pride in the integrity and responsibility that we portray. Once approached, the client becomes the responsibility of the company. All grievances of the clients will be looked into with an unbiased and just mindset. Achieving the highest level of excellence is what drives us to completing our tasks at the end of the day. Committed to these goals, we are all set to play the game fair, keeping the high standards expected by the world as the target
-          </p>
-        </div>
+      <div>
+        <img src={aboutTop} />
       </div>
-      <div className="card">
-        <div className="content">
-          <div className="front">
-            Front
+      <div className='container mb-5 mt-5  '>
+        <div className='row'>
+          <div className='col-lg-8' >
+            <div>
+              <h2>OUR MISSION</h2>
+              <svg width="200" height="20">
+                <line x1="0" y1="1" x2="200" y2="1" stroke="red" stroke-width="2" />
+              </svg>
+              <div className='content-font-family'>
+                Our mission is to always put our clients first in everything we do – we seek to create web and application designs which make our clients proud! Our websites are easy to find, stylish, visually appealing, quick loading, mobile responsive and very easy to use.
+                <br />
+
+                Our aim is to push boundaries of design with likeminded teams within the industry and BIM enhances this,
+                whether it’s old or new, large or small, we aim to make every project we work on as collaborative as possible and adopt BIM Stage 2 processes as a default.
+              </div>
+            </div>
           </div>
-          <div className="back">
-            Back!
+          <div className='col-lg-4' >
+            <div>
+              <div className='about-img-shdw'>
+                <img src={aboutUs} className="about-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className='container mb-5 mt-3' style={{ paddingBottom: '10%' }}>
+        <div className='row'>
+          <div className='col-lg-6' >
+            <div id="about-about-us">
+              <h2>ABOUT US</h2>
+              <svg width="200" height="20">
+                <line x1="0" y1="1" x2="200" y2="1" stroke="red" stroke-width="2" />
+              </svg>
+              <div className='content-font-family'>
+                We <strong>@ MBsoft Technologies pvt ltd</strong> provide variety of services which includes web design and development,
+                Android and iOS apps, desktop application, 2D & 3D Modeling and digital marketing.
+                Our team has a wide range of skills and expertise and we always put our client’s satisfaction first.
+                <br />
+
+                Our aim is to push boundaries of design with likeminded teams within the industry and BIM enhances this,
+                whether it’s old or new, large or small, we aim to make every project we work on as collaborative as possible and adopt BIM Stage 2 processes as a default.
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-6' >
+            <div id="about-why-us">
+              <h2>WHY US</h2>
+              <svg width="150" height="20">
+                <line x1="0" y1="1" x2="150" y2="1" stroke="red" stroke-width="2" />
+              </svg>
+              <div id="why-us-items" className='content-font-family'>
+                <div>
+                  <svg width="10" height="20">
+                    <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
+                  </svg>
+                  <span>Exceptional services</span>
+                </div>
+                <div>
+                  <svg width="10" height="20">
+                    <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
+                  </svg>
+                  <span>High quality development</span>
+                </div>
+                <div>
+                  <svg width="10" height="20">
+                    <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
+                  </svg>
+                  <span>Extensive experience</span>
+                </div>
+                <div>
+                  <svg width="10" height="20">
+                    <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
+                  </svg>
+                  <span>Good branding</span>
+                </div>
+                <div>
+                  <svg width="10" height="20">
+                    <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
+                  </svg>
+                  <span>Strategic process</span>
+                </div>
+                <div>
+                  <svg width="10" height="20">
+                    <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
+                  </svg>
+                  <span>On time delivery</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

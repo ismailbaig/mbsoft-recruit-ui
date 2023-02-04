@@ -3,7 +3,7 @@ import './Footer.css'
 
 export const Footer = () => {
     return (
-        <div className="footer fixed-bottom">
+        <div className="footer">
           <div>
           Kurnool - 518004 | Email: mbsoftknl@protonmail.com <br />
           Copyright © 2023 MBsoft SOLUTIONS
