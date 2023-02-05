@@ -5,9 +5,9 @@ import services from '../../images/services.jpg';
 export const Services = () => {
   return (
     <div>
-      <div className="container-fluid image mt-5">
+      <div className="gContainerFluid image mt-5">
         <img src={services} style={{ width: '100%' }} />
-        <div className="centered">
+        <div className="gCentered">
           <h2 style={{ fontSize: '5rem' }}>SERVICES</h2></div>
       </div>
       <div className='container mb-5 mt-5'>

@@ -1,22 +1,9 @@
-.container-fluid {
-    position: relative;
-    text-align: center;
-    color: whitesmoke;
+.homeCarouselItem {
+    height: 480px;
 }
 
-
-.centered {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-}
-.c-item{
-height: 480px;
-}
-.c-img{
-height: 100%;
-object-fit: cover;
-filter: brightness(0.6);
+.homeCarouselImage {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
