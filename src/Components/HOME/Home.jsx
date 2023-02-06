@@ -50,6 +50,50 @@ export const Home = () => {
         </div>
       </div>
 
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h1 className='display-3 fw-semibold'>SERVICES</h1>
+            <svg width="400" height="20">
+              <line x1="0" y1="1" x2="600" y2="1" stroke="red" stroke-width="2" />
+            </svg>
+          </div>
+          <div className="col-md-4">
+            <div className="card mt-3" >
+              <img src={ph2} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h5 className="card-title">WEB & APP DEVELOPMENT</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">More</a>
+                </div>
+            </div>
+
+          </div>
+          <div className="col-md-4">
+            <div className="card mt-3" >
+              <img src={ph1} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">More</a>
+                </div>
+            </div>
+
+          </div>
+          <div className="col-md-4">
+            <div className="card mt-3" >
+              <img src={ph3} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">More</a>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
 
 
     </div>

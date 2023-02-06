@@ -55,8 +55,3 @@
 
 /* Media queries */
 
-@media (max-width: 600px) {
-    div {
-      background-color: #87ceeb;
-    }
-  }
