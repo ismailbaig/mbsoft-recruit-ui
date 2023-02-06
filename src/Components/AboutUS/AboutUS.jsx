@@ -7,11 +7,14 @@ import aboutTop from '../../images/about-us-top.jpg';
 export const AboutUS = () => {
   return (
     <div>
-      <div>
-        <img src={aboutTop} />
-      </div>
-      <div className='container mb-5 mt-5  '>
-        <div className='row'>
+
+      <div className='container mb-5 mt-5 '>
+
+        <div className='gContainerFluid image'>
+          <img src={aboutTop} className='img-fluid' />
+        </div>
+
+        <div className='row mt-5'>
           <div className='col-lg-8' >
             <div>
               <h2>OUR MISSION</h2>
@@ -30,7 +33,7 @@ export const AboutUS = () => {
           <div className='col-lg-4' >
             <div>
               <div className='about-img-shdw'>
-                <img src={aboutUs} className="about-img" />
+                <img src={aboutUs} className="about-img img-fluid" />
               </div>
             </div>
           </div>

@@ -5,18 +5,19 @@ import services from '../../images/services.jpg';
 export const Services = () => {
   return (
     <div>
-      <div className="gContainerFluid image mt-5">
+      
+      <div className='container mb-5' style={{marginTop: '4rem'}}>
+      <div className="gContainerFluid image">
         <img src={services} style={{ width: '100%' }} />
         <div className="gCentered">
           <h2 style={{ fontSize: '5rem' }}>SERVICES</h2></div>
       </div>
-      <div className='container mb-5 mt-5'>
         <div className='row'>
           <div className='col-lg-12' >
             <div>
               <h2 style={{ fontSize: '2.9rem' }}>WEB AND APP DEVELOPMENT</h2>
-              <svg width="600" height="20">
-                <line x1="0" y1="1" x2="600" y2="1" stroke="red" stroke-width="2" />
+              <svg width="350" height="20">
+                <line x1="0" y1="1" x2="350" y2="1" stroke="red" stroke-width="2" />
               </svg>
               <div className='content-font-family'>
                 We design and develop custom application for Android and iOS platforms with complete planning and
@@ -29,7 +30,7 @@ export const Services = () => {
             </div>
           </div>
         </div>
-        <div className='row' style={{ paddingLeft: '10%' }}>
+        <div id='serviceFlashCards' className='row'>
           <div className='col-lg-6' style={{ border: '0px solid red' }} >
             <div className="flip-card" style={{ paddingLeft: '0%' }}>
               <div className="flip-card-inner">
@@ -71,15 +72,13 @@ export const Services = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* 2D & 3D MODELING */}
-      <div className='container mb-5 mt-5'>
+        {/* 2D & 3D MODELING */}
         <div className='row'>
           <div className='col-lg-12' >
             <div>
               <h2 style={{ fontSize: '2.9rem' }}>2D & 3D MODELING</h2>
-              <svg width="600" height="20">
-                <line x1="0" y1="1" x2="600" y2="1" stroke="red" stroke-width="2" />
+              <svg width="350" height="20">
+                <line x1="0" y1="1" x2="350" y2="1" stroke="red" stroke-width="2" />
               </svg>
               <div className='content-font-family'>
                 <div>
@@ -134,6 +133,7 @@ export const Services = () => {
           </div>
         </div>
       </div>
+      
     </div>
 
   )
