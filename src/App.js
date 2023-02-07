@@ -5,7 +5,7 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import { ToastContainer } from 'react-toastify';
 import Navbar from './Components/Navbar';
-import { Contact } from './Components/Contact';
+import { Contact } from './Components/Contact/Contact';
 import { Footer } from './Components/Footer/Footer';
 import { AboutUS } from './Components/AboutUS/AboutUS';
 import { Samples } from './Components/Samples/Samples';
