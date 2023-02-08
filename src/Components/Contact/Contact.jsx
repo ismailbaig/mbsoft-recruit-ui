@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import contact from '../../images/contact.jpg';
 import emailjs from '@emailjs/browser';
+import { SocialIcon } from 'react-social-icons';
+import './Contact.css';
 
 
 export const Contact = () => {
@@ -38,11 +40,14 @@ export const Contact = () => {
           <div className='col-md-6'>
             <h1>DROP AN ENQUIRY</h1><br />
             <form ref={form} onSubmit={sendEmail} className=''>
-              <input type="text" placeholder='Full Name' name='user_name' required />
-              <input type="email" placeholder='Email' name='user_email' required />
-              <input type="text" placeholder='Subject' name='subject' required />
-              <textarea name='message' cols='30' rows='10'></textarea>
-              <button type='submit' className='--btn --btn-primay' >Send Message</button>
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder='Full Name' name='user_name' required /><br />
+                <input type="email" class="form-control" placeholder='Email' name='user_email' required /><br />
+                <input type="text" class="form-control" placeholder='Subject' name='subject' required /><br />
+                <textarea name='message' class="form-control" placeholder='Message' cols='30' rows='10'></textarea><br />
+                <button type="submit" color="#fb2056" class="btn btn-primary">SEND MESSAGE</button>
+              </div>
             </form>
             {/* <Form onSubmit={this.sendEmail}>
               <Form.Control type="email" placeholder="Enter email" />
@@ -76,12 +81,12 @@ export const Contact = () => {
             </svg>
             <p>Coming Soon</p>
             <br />
-            <h5>Contact info</h5>
+            <h5>Office Hours</h5>
             <svg width="80%" height="20">
               <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
             </svg>
-            <p> Mon-Fri 9AM-6PM</p>
-
+            <p> 9:00 AM - 6:00 PM (Mon to Sat)</p>
+            <SocialIcon network='linkedin' url='https://www.linkedin.com/in/ismail-baig-m' target="_blank" />
           </div>
         </div>
       </div>
