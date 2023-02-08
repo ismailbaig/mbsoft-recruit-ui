@@ -68,38 +68,38 @@ export const AboutUS = () => {
               </svg>
               <div id="why-us-items" className='content-font-family'>
                 <div>
-                  <svg width="80%" height="20">
-                    <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+                  <svg width="10" height="20">
+                    <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
                   </svg>
                   <span>Exceptional services</span>
                 </div>
                 <div>
-                  <svg width="80%" height="20">
-                    <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+                  <svg width="10" height="20">
+                  <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
                   </svg>
                   <span>High quality development</span>
                 </div>
                 <div>
-                  <svg width="80%" height="20">
-                    <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+                  <svg width="10" height="20">
+                  <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
                   </svg>
                   <span>Extensive experience</span>
                 </div>
                 <div>
-                  <svg width="80%" height="20">
-                    <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+                  <svg width="10" height="20">
+                  <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
                   </svg>
                   <span>Good branding</span>
                 </div>
                 <div>
-                  <svg width="80%" height="20">
-                    <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+                  <svg width="10" height="20">
+                  <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
                   </svg>
                   <span>Strategic process</span>
                 </div>
                 <div>
-                  <svg width="80%" height="20">
-                    <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+                  <svg width="10" height="20">
+                  <line x1="0" y1="10" x2="10" y2="10" stroke="red" stroke-width="2" />
                   </svg>
                   <span>On time delivery</span>
                 </div>

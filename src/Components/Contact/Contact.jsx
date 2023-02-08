@@ -35,35 +35,21 @@ export const Contact = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container mb-5">
         <div className='row'>
           <div className='col-md-6'>
             <h1>DROP AN ENQUIRY</h1><br />
             <form ref={form} onSubmit={sendEmail} className=''>
-
               <div class="form-group">
                 <input type="text" class="form-control" placeholder='Full Name' name='user_name' required /><br />
                 <input type="email" class="form-control" placeholder='Email' name='user_email' required /><br />
                 <input type="text" class="form-control" placeholder='Subject' name='subject' required /><br />
                 <textarea name='message' class="form-control" placeholder='Message' cols='30' rows='10'></textarea><br />
-                <button type="submit" color="#fb2056" class="btn btn-primary">SEND MESSAGE</button>
+                <button type="submit" color="#fb2056" class="btn btn-primary" style={{float: 'right'}}>SEND MESSAGE</button>
               </div>
             </form>
-            {/* <Form onSubmit={this.sendEmail}>
-              <Form.Control type="email" placeholder="Enter email" />
-              <br />
-              <Form.Control type="text" placeholder="Subject" />
-              <br />
-              <Form.Control type="text" placeholder="Phone Number" />
-              <br />
-              <Form.Control as="textarea" placeholder="Message" rows="3" />
-              <br />
-              <Button className="Submit" variant="primary" type="submit">
-                SEND MESSAGE
-              </Button>
-            </Form> */}
           </div>
-          <div className='col-md-6'>
+          <div className='col-md-6 mt-5'>
             <h1>FIND US ON </h1><br />
             <h5>Address</h5>
             <svg width="80%" height="20">

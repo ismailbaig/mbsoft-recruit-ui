@@ -55,7 +55,7 @@ export const Home = () => {
           <div className="col-12">
             <h1 className='display-3 fw-semibold'>SERVICES</h1>
             <svg width="80%" height="20">
-              <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+              <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
             </svg>
           </div>
           <div className="col-md-4">
@@ -96,38 +96,38 @@ export const Home = () => {
       <div className="container mt-4">
         <h3 className='display-4 fw-semibold' style={{ padding: '18px' }}>OUR DEVELOPMENT METHODOLOGY</h3>
         <svg width="80%" height="20">
-          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
         </svg>
         <div className="row mb-5 mt-5" style={{ justifyContent: 'space-around' }}>
           <div className="col-md-2">
             <div >
-              <i class="fa-sharp fa-solid fa-laptop homeicons1"></i>
+              <i className="fa-sharp fa-solid fa-laptop homePlanAnalyicon"></i>
               <h4>Planning and Analysis</h4>
             </div>
           </div>
           <div className="col-md-2">
             <div >
-              <i class="fa-solid fa-object-ungroup homeicons2"></i>
+              <i className="fa-solid fa-object-ungroup homeDesignDevelopicon"></i>
               <h4>Design and Development</h4>
             </div>
           </div>
           <div className="col-md-2">
             <div>
-              <i class="fa-sharp fa-solid fa-comments homeicons3"></i>
+              <i className="fa-sharp fa-solid fa-comments homeTestModifyicon"></i>
               <h4>
                 Testing & Modification </h4>
             </div>
           </div>
           <div className="col-md-2">
             <div>
-              <i class="fa-brands fa-slack homeicons4"></i>
+              <i className="fa-brands fa-slack homeMaintainSupporticon"></i>
               <h4>Maintenance And Support</h4>
             </div>
           </div>
 
         </div>
-        <div className="row homeabout">
-          <div className="col-md-12">
+        <div className="row">
+          <div className="col-md-12 homeabout">
             <h4>ABOUT US</h4>
             <div className="fs-4">             
               We @ MBsoft SOLUTIONS provide variety of services which includes web design and development, Android and iOS apps, desktop application, 2D &  3D Modeling and digital marketing.
