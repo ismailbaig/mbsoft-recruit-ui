@@ -1,0 +1,15 @@
+.btn-primary {
+    background-color: #fb2056 !important;
+}
+
+::-moz-selection {
+    background: #fb2056;
+}
+
+::-webkit-selection {
+    background: #fb2056;
+}
+
+::selection {
+    background: #fb2056;
+}
