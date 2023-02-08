@@ -66,8 +66,8 @@ export const Contact = () => {
           <div className='col-md-6'>
             <h1>FIND US ON </h1><br />
             <h5>Address</h5>
-            <svg width="200" height="20">
-              <line x1="0" y1="1" x2="200" y2="1" stroke="red" strokeWidth="2" />
+            <svg width="80%" height="20">
+              <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
             </svg>
             <p> #41/454 SV Complex, 3rd floor,
               <br />
@@ -76,14 +76,14 @@ export const Contact = () => {
               Kurnool - 518004</p>
             <br />
             <h5>Online Support</h5>
-            <svg width="200" height="20">
-              <line x1="0" y1="1" x2="200" y2="1" stroke="red" strokeWidth="2" />
+            <svg width="80%" height="20">
+              <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
             </svg>
             <p>Coming Soon</p>
             <br />
             <h5>Office Hours</h5>
-            <svg width="200" height="20">
-              <line x1="0" y1="1" x2="200" y2="1" stroke="red" strokeWidth="2" />
+            <svg width="80%" height="20">
+              <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
             </svg>
             <p> 9:00 AM - 6:00 PM (Mon to Sat)</p>
             <SocialIcon network='linkedin' url='https://www.linkedin.com/in/ismail-baig-m' target="_blank" />

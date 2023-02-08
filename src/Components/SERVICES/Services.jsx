@@ -16,8 +16,8 @@ export const Services = () => {
           <div className='col-lg-12' >
             <div>
               <h2 style={{ fontSize: '2.9rem' }}>WEB AND APP DEVELOPMENT</h2>
-              <svg width="350" height="20">
-                <line x1="0" y1="1" x2="350" y2="1" stroke="red" stroke-width="2" />
+              <svg width="80%" height="20">
+                <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
               </svg>
               <div className='content-font-family'>
                 We design and develop custom application for Android and iOS platforms with complete planning and
@@ -77,8 +77,8 @@ export const Services = () => {
           <div className='col-lg-12' >
             <div>
               <h2 style={{ fontSize: '2.9rem' }}>2D & 3D MODELING</h2>
-              <svg width="350" height="20">
-                <line x1="0" y1="1" x2="350" y2="1" stroke="red" stroke-width="2" />
+              <svg width="80%" height="20">
+                <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
               </svg>
               <div className='content-font-family'>
                 <div>
