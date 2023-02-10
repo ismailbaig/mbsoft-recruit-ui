@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,300&display=swap');
 
-body{
+body {
   font-family: 'Poppins', sans-serif;
-  
+
 }
 
 .App {
@@ -34,10 +34,12 @@ body{
 .App-link {
   color: #61dafb;
 }
-.errmsg{
+
+.errmsg {
   color: red;
 }
-.app-check{
+
+.app-check {
   height: 20px;
   width: 20px;
   margin: 1%;
@@ -47,6 +49,7 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -61,6 +64,7 @@ body{
 }
 
 
+
 .gContainerFluid {
   position: relative;
   text-align: center;
@@ -68,7 +72,29 @@ body{
 }
 
 
-@media (max-width: 600px) {
+.gVideo video {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: .2s all;
+  filter: brightness(0.4);
+
+}
+
+.gVideo video:hover {
+  filter: brightness(0.5);
+}
+
+.gCenteredVideo {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+
+}
+
+@media (max-width: 767px) {
   .gCentered {
     position: absolute;
     top: 70%;
@@ -76,4 +102,15 @@ body{
     transform: translate(-50%, -50%);
     font-size: 4rem;
   }
+
+  .gCenteredVideo {
+    color: white;
+    background-color: grey;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(-0%, -0%);
+    font-size: 1.2rem;
+  }
+
 }

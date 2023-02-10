@@ -4,6 +4,7 @@ import homeTop from '../../images/homePage.jpg';
 import ph1 from '../../images/ph1.avif';
 import ph2 from '../../images/ph2c.avif';
 import ph3 from '../../images/ph3avif.avif';
+import videoHome from '../../video/videoHome.mp4';
 
 export const Home = () => {
   return (
@@ -93,6 +94,20 @@ export const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="gContainerFluid gVideo mt-5 mb-5">
+        <video src={videoHome} autoPlay muted playsinline loop />
+        {/* <div className="centered display-4">Recruitment made simple !!</div> */}
+        <div className="gCenteredVideo">
+          <p className='display-1 fw-bolder'>About us </p>
+          <p >
+            We @ MBsoft SOLUTIONS provide variety of services which
+            includes web design and development, Android and iOS apps, desktop application, 2D &  3D Modeling and digital marketing.
+            Our team has a wide range of skills and
+            expertise and we always put our client’s satisfaction first…..
+          </p>
+        </div>
+      </div>
       <div className="container mt-4">
         <h3 className='display-4 fw-semibold' style={{ padding: '18px' }}>OUR DEVELOPMENT METHODOLOGY</h3>
         <svg width="80%" height="20">
@@ -126,12 +141,16 @@ export const Home = () => {
           </div>
 
         </div>
-        <div className="row">
-          <div className="col-md-12 homeabout">
-            <h4>ABOUT US</h4>
-            <div className="fs-4">             
-              We @ MBsoft SOLUTIONS provide variety of services which includes web design and development, Android and iOS apps, desktop application, 2D &  3D Modeling and digital marketing.
-              Our team has a wide range of skills and expertise and we always put our client’s satisfaction first…..
+        <div className="row homevideobg ">
+          <div className=" homeabout">
+            <div>
+              <video src={videoHome} autoPlay muted playsinline loop />
+              <div></div>
+              <p className='display-1 fw-bolder'>ABOUT US </p>
+              <p >
+                We @ MBsoft SOLUTIONS provide variety of services which includes web design and development, Android and iOS apps, desktop application, 2D &  3D Modeling and digital marketing.
+                Our team has a wide range of skills and expertise and we always put our client’s satisfaction first…..
+              </p>
             </div>
           </div>
         </div>
@@ -141,6 +160,7 @@ export const Home = () => {
 
 
     </div>
+
 
 
   )
