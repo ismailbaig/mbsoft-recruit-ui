@@ -54,7 +54,34 @@ video {
     object-fit: cover;
 }
 
+.home1MaintainSupporticon {
+    font-size: 50px;
+    color: #d50c1a;
+    border-radius: 50%;
+    padding: 40px;
 
-@media (max-width: 767px){
-    
 }
+
+.home2MaintainSupporticon {
+    font-size: 50px;
+    color: #22ED93;
+    border-radius: 50%;
+    padding: 40px;
+
+}
+
+.home3MaintainSupporticon {
+    font-size: 50px;
+    color: #F67E09;
+    border-radius: 50%;
+    padding: 40px;
+
+}
+
+/* .homeenquiry {
+background-image: ;
+
+
+} */
+
+@media (max-width: 767px) {}
