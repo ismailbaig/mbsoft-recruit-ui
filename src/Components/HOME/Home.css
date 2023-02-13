@@ -77,6 +77,11 @@ video {
     padding: 40px;
 
 }
+label{
+    font-size: 21px;
+    font-weight: 500;
+    
+}
 
 /* .homeenquiry {
 background-image: ;
