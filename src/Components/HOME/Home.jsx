@@ -222,10 +222,59 @@ export const Home = () => {
 
       {/* ENQUIRY ends here */}
       <div className="row">
-    <div className="col-md-12 homeenquiry">
+        <div className="col-md-5 homeenquiry mx-3 img-fluid" style={{ background: 'url{homep5})' }}>
+          <h1 className='dispaly-4'>ENQUIRY</h1>
+          <svg width="80%" height="20">
+            <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+          </svg>
+        </div>
+      </div>
+      <div className="row mx-4" >
+        <div className="col-md-6">
+          <div className="row">
+            <form >
+              <div className="col-md-6 form-group mb-3 ">
+                <label for="name" style={{ float: 'left' }}>Name</label>
+                <input type="text" class="form-control" id="exampleInputName" />
+              </div>
+              <div className="col-md-6 form-group mb-3">
+                <label for="exampleInputName" style={{ float: 'left' }}>Last Name</label>
+                <input type="text" class="form-control" id="exampleInputName" />
+              </div>
 
-    </div>
-
+              <div class="form-group mb-3">
+                <label for="exampleInputEmail1" style={{ float: 'left' }}>Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" />
+              </div>
+              <div class="form-group mb-3">
+                <label for="exampleInputPhone" style={{ float: 'left' }}>Phone</label>
+                <input type="tel" class="form-control" id="exampleInputPhone" />
+              </div>
+              <div class="form-group mb-3">
+                <div>
+                  <label for="exampleInputPhone" style={{ float: 'left' }}>Services</label>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle"
+                    style={{ textAlign: 'left', width: '100%', border: '1px solid lightgray' }}
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Services
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-group mb-3 mt-3">
+                <label for="exampleFormControlTextarea1" style={{ float: 'left' }}>Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-5">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
 
 
