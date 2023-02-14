@@ -14,7 +14,7 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_dummy', 'template_dummy', form.current, 'dummy')
+    emailjs.sendForm('service_d5b0pc3', 'template_etl0567', form.current, 'pdwbAeCG1HvkYOFHB')
       .then((result) => {
         console.log(result.text);
       }, (error) => {

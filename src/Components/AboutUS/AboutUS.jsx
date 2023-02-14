@@ -50,7 +50,7 @@ export const AboutUS = () => {
                 <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
               </svg>
               <div className='content-font-family'>
-                We <strong>@ MBsoft Technologies pvt ltd</strong> provide variety of services which includes web design and development,
+                We <strong>@ MBsoft Technologies</strong> provide variety of services which includes web design and development,
                 Android and iOS apps, desktop application, 2D & 3D Modeling and digital marketing.
                 Our team has a wide range of skills and expertise and we always put our client’s satisfaction first.
                 <br />

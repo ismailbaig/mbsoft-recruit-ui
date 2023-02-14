@@ -20,11 +20,7 @@ export const Home = () => {
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
         <div className="gCentered ">
           <p className='display-1 fw-bolder'>MBsoft Technolgies </p>
-          <p className='diaplay-3 fw-semibold'>Pvt Ltd</p>
         </div>
-
-
-
       </div>
       <div className="container">
         <div className="row">
@@ -139,7 +135,7 @@ export const Home = () => {
         <div className="gCenteredVideo">
           <p className='display-1 fw-bolder'>About us </p>
           <p >
-            We @ MBsoft SOLUTIONS provide variety of services which
+            We @ MBsoft Technolgies provide variety of services which
             includes web design and development, Android and iOS apps, desktop application, 2D &  3D Modeling and digital marketing.
             Our team has a wide range of skills and
             expertise and we always put our client’s satisfaction first…..
@@ -232,46 +228,45 @@ export const Home = () => {
       <div className="row mx-4" >
         <div className="col-md-6">
           <div className="row">
-            <form >
+            <form>
               <div className="col-md-6 form-group mb-3 ">
                 <label for="name" style={{ float: 'left' }}>Name</label>
-                <input type="text" class="form-control" id="exampleInputName" />
+                <input type="text" className="form-control" id="exampleInputName" required/>
               </div>
               <div className="col-md-6 form-group mb-3">
                 <label for="exampleInputName" style={{ float: 'left' }}>Last Name</label>
-                <input type="text" class="form-control" id="exampleInputName" />
+                <input type="text" className="form-control" id="exampleInputName" />
               </div>
-
-              <div class="form-group mb-3">
-                <label for="exampleInputEmail1" style={{ float: 'left' }}>Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" />
+              <div className="form-group mb-3">
+                <label for="emailId" style={{ float: 'left' }}>Email address</label>
+                <input type="email" className="form-control" id="emailId" required />
               </div>
-              <div class="form-group mb-3">
+              <div className="form-group mb-3">
                 <label for="exampleInputPhone" style={{ float: 'left' }}>Phone</label>
-                <input type="tel" class="form-control" id="exampleInputPhone" />
+                <input type="tel" className="form-control" id="exampleInputPhone" />
               </div>
-              <div class="form-group mb-3">
+              <div className="form-group mb-3">
                 <div>
                   <label for="exampleInputPhone" style={{ float: 'left' }}>Services</label>
                 </div>
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle"
+                <div className="dropdown">
+                  <button className="btn dropdown-toggle"
                     style={{ textAlign: 'left', width: '100%', border: '1px solid lightgray' }}
                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Select Services
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <ul className="dropdown-menu">
+                    <li><a className="dropdown-item" href="#">Action</a></li>
+                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                    <li><a className="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="form-group mb-3 mt-3">
+              <div className="form-group mb-3 mt-3">
                 <label for="exampleFormControlTextarea1" style={{ float: 'left' }}>Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary mb-5">Submit</button>
+              <button type="submit" className="btn btn-primary mb-5">Submit</button>
             </form>
           </div>
         </div>
