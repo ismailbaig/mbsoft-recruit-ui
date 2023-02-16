@@ -19,7 +19,7 @@ export const Home = () => {
         <img src={homeTop} alt="Snow" style={{ width: '100%' }} />
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
         <div className="gCentered ">
-          <p className='display-1 fw-bolder'>MBsoft Technolgies </p>
+          <p className='display-1 fw-bolder'>MBsoft Technologies </p>
         </div>
       </div>
       <div className="container">
@@ -130,7 +130,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="gContainerFluid gVideo mt-5 mb-5">
-        <video src={videoHome} autoPlay muted playsinline loop />
+        <video src={videoHome} autoPlay muted playsInline loop />
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
         <div className="gCenteredVideo">
           <p className='display-1 fw-bolder'>About us </p>
@@ -195,7 +195,7 @@ export const Home = () => {
         <div className="col-md-4">
           <h1 className='dispaly-4'>PORTFOLIO</h1>
           <svg width="80%" height="20">
-            <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+            <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
           </svg>
           <p className='fs-4'>The following is a very small representative
             sample of our vast portfolio of our services with  900+ happy clients.
@@ -221,7 +221,7 @@ export const Home = () => {
         <div className="col-md-5 homeenquiry mx-3 img-fluid" style={{ background: 'url{homep5})' }}>
           <h1 className='dispaly-4'>ENQUIRY</h1>
           <svg width="80%" height="20">
-            <line x1="0" y1="1" x2="100%" y2="1" stroke="red" stroke-width="2" />
+            <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
           </svg>
         </div>
       </div>
@@ -230,24 +230,24 @@ export const Home = () => {
           <div className="row">
             <form>
               <div className="col-md-6 form-group mb-3 ">
-                <label for="name" style={{ float: 'left' }}>Name</label>
+                <label htmFor="name" style={{ float: 'left' }}>Name</label>
                 <input type="text" className="form-control" id="exampleInputName" required/>
               </div>
               <div className="col-md-6 form-group mb-3">
-                <label for="exampleInputName" style={{ float: 'left' }}>Last Name</label>
+                <label htmFor="exampleInputName" style={{ float: 'left' }}>Last Name</label>
                 <input type="text" className="form-control" id="exampleInputName" />
               </div>
               <div className="form-group mb-3">
-                <label for="emailId" style={{ float: 'left' }}>Email address</label>
+                <label htmFor="emailId" style={{ float: 'left' }}>Email address</label>
                 <input type="email" className="form-control" id="emailId" required />
               </div>
               <div className="form-group mb-3">
-                <label for="exampleInputPhone" style={{ float: 'left' }}>Phone</label>
+                <label htmFor="exampleInputPhone" style={{ float: 'left' }}>Phone</label>
                 <input type="tel" className="form-control" id="exampleInputPhone" />
               </div>
               <div className="form-group mb-3">
                 <div>
-                  <label for="exampleInputPhone" style={{ float: 'left' }}>Services</label>
+                  <label htmFor="exampleInputPhone" style={{ float: 'left' }}>Services</label>
                 </div>
                 <div className="dropdown">
                   <button className="btn dropdown-toggle"
@@ -263,7 +263,7 @@ export const Home = () => {
                 </div>
               </div>
               <div className="form-group mb-3 mt-3">
-                <label for="exampleFormControlTextarea1" style={{ float: 'left' }}>Message</label>
+                <label htmFor="exampleFormControlTextarea1" style={{ float: 'left' }}>Message</label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <button type="submit" className="btn btn-primary mb-5">Submit</button>
