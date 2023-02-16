@@ -2,6 +2,18 @@
     background-color: #fb2056 !important;
 }
 
+.success {
+    width: 70%;
+    color: green;
+    font-size: larger;
+    font: bold;
+}
+
+.errorMessage {
+    color: red;
+    text-align: left;
+}
+
 ::-moz-selection {
     background: #fb2056;
 }
