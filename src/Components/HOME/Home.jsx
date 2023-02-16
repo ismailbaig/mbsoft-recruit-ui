@@ -69,7 +69,7 @@ export const Home = () => {
         <img src={homeTop} alt="Snow" style={{ width: '100%' }} />
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
         <div className="gCentered ">
-          <p className='display-1 fw-bolder'>MBsoft Technolgies </p>
+          <p className='display-1 fw-bolder'>MBsoft Technologies </p>
         </div>
       </div>
       <div className="container">
@@ -280,21 +280,25 @@ export const Home = () => {
           <div className="row">
             <form onSubmit={handleSubmit}>
               <div className="col-md-6 form-group mb-3 ">
+
                 <label htmlFor="name" style={{ float: 'left' }}>Name</label>
                 <input name="firstName" type="text" className="form-control " id="exampleInputName" value={formValues.firstName} onChange={handleChange} />
               </div>
               <div className="errorMessage"><p>{formErrors.firstName}</p></div>
               <div className="col-md-6 form-group mb-3">
+
                 <label htmlFor="exampleInputName" style={{ float: 'left' }}>Last Name</label>
                 <input name="lastName" type="text" className="form-control " id="exampleInputName" value={formValues.lastName} onChange={handleChange} />
               </div>
 
               <div className="form-group mb-3">
+
                 <label htmlFor="emailId" style={{ float: 'left' }}>Email address</label>
                 <input name="emailId" className="form-control" id="emailId" value={formValues.emailId} onChange={handleChange} />
               </div>
               <div className="errorMessage"><p>{formErrors.emailId}</p></div>
               <div className="form-group mb-3">
+
                 <label htmlFor="exampleInputPhone" style={{ float: 'left' }}>Phone</label>
                 <input name="phoneNo" type="tel" className="form-control" id="exampleInputPhone" value={formValues.phoneNo} onChange={handleChange} />
               </div>

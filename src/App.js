@@ -11,6 +11,7 @@ import { AboutUS } from './Components/AboutUS/AboutUS';
 import { Samples } from './Components/Samples/Samples';
 import { Home } from './Components/HOME/Home';
 import { Services } from './Components/SERVICES/Services';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 function App() {
   return (
@@ -28,6 +29,15 @@ function App() {
         <Route path='/register' element={<Register />}></Route> */}
       </Routes>
       </BrowserRouter>
+      <FloatingWhatsApp phoneNumber="9700454879" chatMessage='Hi this from mbsoft'
+        accountName="MBsoft"
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+        
+        
+        />
       <Footer />
     </div>
   );

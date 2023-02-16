@@ -1,6 +1,14 @@
-import React from 'react'
+import React from 'react';
+import logoMBsoft from '../images/logoMBsoft.png';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
+    const imageClick = () => {
+        console.log('Click');
+      } 
+
     return (
         <div>
             <div className='container'>
@@ -8,7 +16,10 @@ const Navbar = () => {
                     <div className='col-lg-12'>
                         <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm bg-light fixed-top">
                             <div className="container">
-                                <a className="navbar-brand fw-bold fs-4" href="#">MBsoft</a>
+                                <img src={logoMBsoft} className="about-img img-fluid" 
+                                onClick={() => navigate('/')}
+                                style={{width: '50px', height: '50px'}}/>
+                                <a className="navbar-brand fw-bold fs-4" href="/">MBsoft</a>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
@@ -26,22 +37,10 @@ const Navbar = () => {
                                         <li className="nav-item">
                                             <a className="nav-link" href="services">Services</a>
                                         </li>
-                                        {/* <li className="nav-item">
-                                <a className="nav-link" href="samples">Samples</a>
-                            </li> */}
                                         <li className="nav-item">
                                             <a className="nav-link btn btn-primary" href="contact">ENQUIRY</a>
                                         </li>
                                     </ul>
-                                    {/* <div className="buttons">
-                            <a href="" className="btn btn-outline-dark">
-                                <i className="fa fa-sign-in me-1"></i>Login</a>
-                            <a href="" className="btn btn-outline-dark ms-2">
-                                <i className="fa fa-user-plus me-1"></i>Register</a>
-                            <a href="" className="btn btn-outline-dark ms-2">
-                                <i className="fa fa-shopping-cart me-1"></i>Cart (0)</a>
-                        </div> */}
-
                                 </div>
                             </div>
                         </nav>
