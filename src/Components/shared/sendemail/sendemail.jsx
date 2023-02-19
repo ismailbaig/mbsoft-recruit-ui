@@ -22,6 +22,8 @@ export const SendEmail = () => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
     console.log(setFormValues);
+    const errors = validate({ ...formValues, [name]: value });
+    setFormErrors({ ...formErrors, [name]: errors[name] });
   };
 
   const handleSubmit = (e) => {
@@ -92,8 +94,10 @@ export const SendEmail = () => {
     }
     if (!values.phoneNo) {
       errors.phoneNo = "Phone Number is required";
+    } else if (!/^\d+$/.test(values.phoneNo)) {
+      errors.phoneNo = "Phone Number must be a number";
     } else if (values.phoneNo.length < 8 || values.phoneNo.length > 13) {
-      errors.phoneNo = "Phone Number should be between 8 to 13 numbers!";
+      errors.phoneNo = "Phone Number cannot should be between 8 to 13 numbers!";
     }
     if (!values.subject) {
       errors.subject = "Subject is required!";
