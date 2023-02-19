@@ -141,7 +141,7 @@ export const Home = () => {
         <div className="gCenteredVideo">
           <p className='display-1 fw-bolder'>About us </p>
           <p >
-            We @ MBsoft Technolgies provide variety of services which
+            We @ MBsoft Technologies provide variety of services which
             includes web design and development, Android and iOS apps, desktop application, 2D &  3D Modeling and digital marketing.
             Our team has a wide range of skills and
             expertise and we always put our client’s satisfaction first…..

@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="footer">
           <div>
           Kurnool - 518004 | Email: mbsoftknl@protonmail.com <br />
-          Copyright © 2023 MBsoft Technolgies
+          Copyright © 2023 MBsoft Technologies
           </div>
 
         </div>

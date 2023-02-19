@@ -36,14 +36,19 @@ export const SendEmail = () => {
   useEffect(() => {
     if (shouldSendEmail) {
       emailjs
-        .sendForm("service_dummy", "template_dummy", form.current, "dummy")
+        .sendForm(
+          "service_d5b0pc3",
+          "template_etl0567",
+          form.current,
+          "pdwbAeCG1HvkYOFHB"
+        )
         .then(
           (result) => {
             console.log(result.text);
             // toastiy function
             toast.success("Email sent successfully ", {
               position: "bottom-center",
-              autoClose: 5000,
+              autoClose: 2000,
               hideProgressBar: false,
               closeOnClick: true,
               pauseOnHover: true,
@@ -54,17 +59,17 @@ export const SendEmail = () => {
           },
           (error) => {
             console.log(error.text);
-             // toastiy function
+            // toastiy function
             toast.error("Email not sent, Try Again ", {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-              });
+              position: "bottom-center",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+            });
           }
         )
         .finally(() => {
@@ -87,8 +92,8 @@ export const SendEmail = () => {
     }
     if (!values.phoneNo) {
       errors.phoneNo = "Phone Number is required";
-    } else if (values.phoneNo.length < 8 && values.phoneNo.length > 13) {
-      errors.phoneNo = "Phone Number cannot should be between 8 to 13 numbers!";
+    } else if (values.phoneNo.length < 8 || values.phoneNo.length > 13) {
+      errors.phoneNo = "Phone Number should be between 8 to 13 numbers!";
     }
     if (!values.subject) {
       errors.subject = "Subject is required!";
@@ -169,55 +174,12 @@ export const SendEmail = () => {
         </div>
 
         <div className="form-group mb-3">
-          <div>
-            <label htmlFor="exampleInputPhone" style={{ float: "left" }}>
-              Services
-            </label>
-          </div>
-          <div className="dropdown">
-            <button
-              className="btn dropdown-toggle"
-              style={{
-                textAlign: "left",
-                width: "100%",
-                border: "1px solid lightgray",
-              }}
-              name="services"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              value={formValues.services}
-              onChange={handleChange}
-            >
-              Select Services
-            </button>
-            <ul className="dropdown-menu">
-              <li>
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="form-group mb-3">
           <label htmlFor="subjectFor" style={{ float: "left" }}>
             Subject
           </label>
           <input
             name="subject"
-            type="tel"
+            type="text"
             className="form-control"
             id="subjectId"
             value={formValues.subject}
