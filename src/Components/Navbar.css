@@ -1,0 +1,11 @@
+#navbarSupportedContent ul {
+  width: 600px;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  #navbarSupportedContent ul {
+    width: 420px;
+    justify-content: space-between;
+  }
+}

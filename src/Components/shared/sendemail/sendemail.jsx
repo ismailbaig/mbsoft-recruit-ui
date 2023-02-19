@@ -39,10 +39,10 @@ export const SendEmail = () => {
     if (shouldSendEmail) {
       emailjs
         .sendForm(
-          "service_d5b0pc3",
-          "template_etl0567",
+          "sdummy",
+          "tdummy",
           form.current,
-          "pdwbAeCG1HvkYOFHB"
+          "dummy"
         )
         .then(
           (result) => {
