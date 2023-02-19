@@ -29,7 +29,7 @@ function App() {
         <Route path='/register' element={<Register />}></Route> */}
       </Routes>
       </BrowserRouter>
-      <FloatingWhatsApp phoneNumber="9700454879" chatMessage='Hi this from mbsoft'
+      <FloatingWhatsApp phoneNumber="+916281236588" chatMessage='Hi this from mbsoft'
         accountName="MBsoft"
         allowEsc
         allowClickAway
