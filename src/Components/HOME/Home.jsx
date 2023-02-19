@@ -6,10 +6,12 @@ import ph1 from '../../images/ph1.avif';
 import ph2 from '../../images/ph2c.avif';
 import ph3 from '../../images/ph3avif.avif';
 import videoHome from '../../video/videoHome.mp4';
-import homep1 from '../../images/photo1.png';
-import homep2 from '../../images/photo2.png';
-import homep3 from '../../images/photo3.png';
-import homep4 from '../../images/photo4.png';
+import homep1 from '../../images/photo1.png'
+import homep2 from '../../images/photo2.png'
+import homep3 from '../../images/photo3.png'
+import homep4 from '../../images/photo4.png'
+import homep5 from '../../images/Enquirybackgroundimage.jpg'
+
 
 export const Home = () => {
 
@@ -236,8 +238,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
-
     </div>
 
 
