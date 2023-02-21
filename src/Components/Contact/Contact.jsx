@@ -54,7 +54,7 @@ export const Contact = () => {
               <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
             </svg>
             <p> 9:00 AM - 6:00 PM (Mon to Sat)</p>
-            <SocialIcon network='linkedin' url='https://www.linkedin.com/in/ismail-baig-m' target="_blank" />
+            <SocialIcon network='linkedin' url='https://www.linkedin.com/in/' target="_blank" />
           </div>
         </div>
       </div>

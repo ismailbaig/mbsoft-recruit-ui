@@ -1,11 +1,13 @@
 #navbarSupportedContent ul {
   width: 600px;
   justify-content: space-between;
+
 }
 
 @media (max-width: 767px) {
   #navbarSupportedContent ul {
-    width: 420px;
+    width: 175px;
     justify-content: space-between;
+    margin: auto;
   }
 }
