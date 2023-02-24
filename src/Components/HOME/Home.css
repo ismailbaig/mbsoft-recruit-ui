@@ -101,4 +101,14 @@ background-image: ;
 
 } */
 
-@media (max-width: 767px) {}
+.rabasaClient {
+    height: 40%;
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .rabasaClient {
+        height: 100%;
+        width: 50%;
+    }
+}
