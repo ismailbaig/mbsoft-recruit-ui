@@ -25,3 +25,8 @@
 ::selection {
     background: #fb2056;
 }
+
+.gmaps {
+    border: 1px solid grey;
+    box-shadow: 8px 8px 0px 0px rgba(152, 147, 147, 0.75);
+}

@@ -1,0 +1,7 @@
+.login-page {
+    height: calc(100vh - 100px); /* Subtract 100px from the viewport height for a fixed header or footer */
+}
+
+label {
+    display: inline !important;
+}

@@ -13,37 +13,37 @@ const Register = () => {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="form-group">
-                                        <label>User Name <span className='errmsg'>*</span></label>
+                                        <label>User Name <span className='required-star'>*</span></label>
                                         <input className="form-control" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
-                                        <label>Full Name <span className='errmsg'>*</span></label>
+                                        <label>Full Name <span className='required-star'>*</span></label>
                                         <input className="form-control" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
-                                        <label>password <span className='errmsg'>*</span></label>
+                                        <label>password <span className='required-star'>*</span></label>
                                         <input type="password" className="form-control" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
-                                        <label>Email <span className='errmsg'>*</span></label>
+                                        <label>Email <span className='required-star'>*</span></label>
                                         <input className="form-control" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
-                                        <label>Mobile <span className='errmsg'>*</span></label>
+                                        <label>Mobile <span className='required-star'>*</span></label>
                                         <input className="form-control" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
-                                        <label>Country <span className='errmsg'>*</span></label>
+                                        <label>Country <span className='required-star'>*</span></label>
                                         <select className='form-control' >
                                             <option value="india">India</option>
                                             <option value="usa">USA</option>
@@ -53,7 +53,7 @@ const Register = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
-                                        <label>ROLES <span className='errmsg'>*</span></label>
+                                        <label>ROLES <span className='required-star'>*</span></label>
                                         <select className='form-control' >
                                             <option value="india">ADMIN</option>
                                             <option value="usa">CUSTOMER</option>

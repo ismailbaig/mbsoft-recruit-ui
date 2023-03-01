@@ -4,10 +4,12 @@
   padding-left: 30%;
 }
 
+
+/*
+commenting this as of now. need to see where an all it is going to effect
 span {
   padding-left: 5%;
-}
-
+} */
 
 .about-row-first {
     display: flex;

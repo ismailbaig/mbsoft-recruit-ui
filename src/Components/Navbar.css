@@ -4,10 +4,17 @@
 
 }
 
+.login-btn {
+  margin-top: 0px;
+}
+
 @media (max-width: 767px) {
   #navbarSupportedContent ul {
     width: 175px;
     justify-content: space-between;
     margin: auto;
+  }
+  .login-btn {
+    margin-top: 15px;
   }
 }

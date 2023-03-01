@@ -25,18 +25,16 @@ function App() {
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/services' element={<Services />}></Route>
         <Route path='/samples' element={<Samples />}></Route>
-        {/* <Route path='/login' element={<Login />}></Route>
-        <Route path='/register' element={<Register />}></Route> */}
+        <Route path='/login' element={<Login />}></Route>
+         {/*<Route path='/register' element={<Register />}></Route> */}
       </Routes>
       </BrowserRouter>
-      <FloatingWhatsApp phoneNumber="+916281236588" chatMessage='Hi this from mbsoft'
+      <FloatingWhatsApp phoneNumber="+916281236588" chatMessage='Hi from MBsoft'
         accountName="MBsoft"
         allowEsc
         allowClickAway
         notification
         notificationSound
-        
-        
         />
       <Footer />
     </div>

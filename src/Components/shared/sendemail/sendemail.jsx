@@ -58,6 +58,7 @@ export const SendEmail = () => {
               progress: undefined,
               theme: "colored",
             });
+            setFormValues(initialValues);
           },
           (error) => {
             console.log(error.text);
@@ -76,7 +77,6 @@ export const SendEmail = () => {
         )
         .finally(() => {
           setShouldSendEmail(false);
-          setFormValues(initialValues);
         });
     }
   }, [shouldSendEmail]);

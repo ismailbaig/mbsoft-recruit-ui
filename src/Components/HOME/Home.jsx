@@ -246,19 +246,19 @@ export const Home = () => {
         <div className="col-md-1">
           <div>
             <i className="fas fa-archway home1MaintainSupporticon"></i>
-            <h4>Maintenance And Support</h4>
+            <h4>Data Analytics</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
             <i className="fas fa-file-contract home2MaintainSupporticon"></i>
-            <h4>Maintenance And Support</h4>
+            <h4>Recruitment Support</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
             <i className="fas fa-cubes home3MaintainSupporticon"></i>
-            <h4>Maintenance And Support</h4>
+            <h4>Interview Support</h4>
           </div>
         </div>
       </div>
