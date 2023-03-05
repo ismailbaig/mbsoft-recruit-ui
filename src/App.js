@@ -35,6 +35,8 @@ function App() {
         allowClickAway
         notification
         notificationSound
+        placeholder = "Type your message here !!!"
+        avatar='logoMBsoft.png'
         />
       <Footer />
     </div>
