@@ -26,6 +26,7 @@ function App() {
         <Route path='/services' element={<Services />}></Route>
         <Route path='/samples' element={<Samples />}></Route>
         <Route path='/login' element={<Login />}></Route>
+        <Route path='/register' element={<Register />}></Route>
          {/*<Route path='/register' element={<Register />}></Route> */}
       </Routes>
       </BrowserRouter>
@@ -37,6 +38,7 @@ function App() {
         notificationSound
         placeholder = "Type your message here !!!"
         avatar='logoMBsoft.png'
+        darkMode='true'
         />
       <Footer />
     </div>

@@ -75,6 +75,14 @@ const Navbar = () => {
                         Login
                       </a>
                     </li>
+                    <li
+                      className="nav-item login-btn"
+                      onClick={() => navigate("/register")}
+                    >
+                      <a className="nav-link btn btn-primary" href="register">
+                        Register
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
