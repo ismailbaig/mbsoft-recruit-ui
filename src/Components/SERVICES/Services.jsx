@@ -1,6 +1,9 @@
 import React from 'react';
 import './Services.css';
 import services from '../../images/services.jpg';
+import PDFFile from '../shared/PDFFile/PDFFile';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import { Button } from 'react-bootstrap';
 
 export const Services = () => {
   return (
@@ -132,6 +135,11 @@ export const Services = () => {
             </div>
           </div>
         </div>
+        <div className="my-4">
+        <PDFDownloadLink document={<PDFFile/>}fileName="FORM">
+        {({loading}) => (loading?<button>Loading document </button>: <Button variant="primary">Download</Button>)}
+      </PDFDownloadLink>
+      </div>
       </div>
       
     </div>
