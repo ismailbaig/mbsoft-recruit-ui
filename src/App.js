@@ -12,6 +12,9 @@ import { Samples } from './Components/Samples/Samples';
 import { Home } from './Components/HOME/Home';
 import { Services } from './Components/SERVICES/Services';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import { ResetPassword } from './Components/ResetPassword/ResetPassword';
+import { ResetPasswordSuccess } from './Components/ResetPassword/ResetPasswordSuccess';
+import { ResetPasswordHome } from './Components/ResetPassword/ResetPasswordHome';
 
 function App() {
   return (
@@ -28,6 +31,10 @@ function App() {
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>
          {/*<Route path='/register' element={<Register />}></Route> */}
+         <Route path='/rp' element={<ResetPasswordHome />}>
+            <Route path='/rp/:id' element={<ResetPassword />}></Route>
+            <Route path='/rp/rps' element={<ResetPasswordSuccess />}></Route>
+         </Route>
       </Routes>
       </BrowserRouter>
       <FloatingWhatsApp phoneNumber="+916281236588" chatMessage='Hi from MBsoft'
