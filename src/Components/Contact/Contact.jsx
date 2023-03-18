@@ -6,7 +6,6 @@ import { SendEmail } from "../shared/sendemail/sendemail";
 import axios from "axios";
 
 export const Contact = () => {
-
   return (
     <div>
       <div className="container mb-5" style={{ marginTop: "4rem" }}>
@@ -47,11 +46,11 @@ export const Contact = () => {
             </svg>
             <p>
               {" "}
-              #41/454 SV Complex, 3rd floor,
+              Gottigere post, C K palya Road, Bannerghatta Main Rd,
               <br />
-              Opp Kalyana Mandapa, S.T.B.C Road,
+              Hommadevanahalli, Bengaluru,
               <br />
-              Kurnool - 518004
+              Karnataka - 560083
             </p>
             <br />
             <h5>Online Support</h5>
@@ -65,7 +64,7 @@ export const Contact = () => {
                 strokeWidth="2"
               />
             </svg>
-            <p>Coming Soon</p>
+            <p>WhatsApp @8050369047</p>
             <br />
             <h5>Office Hours</h5>
             <svg width="80%" height="20">
@@ -79,11 +78,30 @@ export const Contact = () => {
               />
             </svg>
             <p> 9:00 AM - 6:00 PM (Mon to Sat)</p>
-            <SocialIcon
-              network="linkedin"
-              url="https://www.linkedin.com/in/"
-              target="_blank"
-            />
+            <div style={{ display: "flex", justifyContent: 'space-evenly' }}>
+              <div>
+                <SocialIcon
+                  network="linkedin"
+                  url="https://www.linkedin.com/in/sanabil-english-high-school-20a1201b0/"
+                  target="_blank"
+                />
+              </div>
+              <div>
+                <SocialIcon
+                  network="youtube"
+                  url="https://www.youtube.com/@sanabilschool3578"
+                  target="_blank"
+                />
+              </div>
+              <div>
+                {" "}
+                <SocialIcon
+                  network="facebook"
+                  url="https://www.facebook.com/sanabilenglishschool"
+                  target="_blank"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -91,12 +109,14 @@ export const Contact = () => {
       <div className="row mb-5">
         <div className="col-md-12">
           <h1 className="dispaly-4">OUR LOCATION</h1>
-          <iframe className="gmaps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.439764343499!2d78.03726581477477!3d15.833467689026987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5e75c54c9676d%3A0xe09265605f8e2312!2sSV%20Complex%2C%20STBC%20College%20Rd%2C%20Prakash%20Nagar%2C%20Kurnool%2C%20Andhra%20Pradesh%20518004!5e0!3m2!1sen!2sin!4v1677689944685!5m2!1sen!2sin"
+          <iframe
+            className="gmaps"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6542.168243671487!2d77.60128834687734!3d12.843501559326818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6ae3361eb303%3A0x3bcbb0f4b38f0e0!2sSanabil%20English%20High%20School!5e0!3m2!1sen!2sin!4v1678604898185!5m2!1sen!2sin"
             width="600"
             height="450"
             allowFullScreen=""
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

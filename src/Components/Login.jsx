@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
+
 
 const Login = () => {
   const [username, usernameUpdate] = useState("");
   const [password, passwordUpdate] = useState("");
+
+  const navigate = useNavigate();
+
 
   const proceedLogin = (e) => {
     e.preventDefault();
@@ -40,8 +45,8 @@ const Login = () => {
 
     axios({
       // Endpoint to send files
-      //url: "http://localhost:9600/login",
-      url: "https://mbsoftapi.azurewebsites.net/login",
+      url: "http://localhost:9600/login",
+      // url: "https://mbsoftapi.azurewebsites.net/login",
       method: "POST",
       // headers: {
 
@@ -55,6 +60,7 @@ const Login = () => {
       // Handle the response from backend here
       .then((res) => {
         console.log(res);
+        navigate('/marks');
         // toastiy function
         toast.success("Login successfully ", {
           position: "bottom-center",

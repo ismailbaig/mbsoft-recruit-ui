@@ -87,7 +87,7 @@ const PDFFile = () => {
 
         <Text style={styles.subHeading}>ABOUT US</Text>
         <Text style={styles.text}>
-          We @ MBsoft Technologies provide variety of services which includes
+          We @ Sanabil English Medium School provide variety of services which includes
           web design and development, Android and iOS apps, desktop application,
           2D & 3D Modeling and digital marketing. Our team has a wide range of
           skills and expertise and we always put our client’s satisfaction
