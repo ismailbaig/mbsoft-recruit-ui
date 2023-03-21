@@ -9,15 +9,14 @@ import videoHome from "../../video/videoHome.mp4";
 import homep1 from "../../images/photo1.jpg";
 import IndustrialAutomation from "../../images/IndustrialAutomation.jpg";
 import rabasa from "../../images/rabasa.jpg";
-import homep5 from "../../images/Enquirybackgroundimage.jpg";
 
 export const Home = () => {
   return (
     <div>
       <div className="gContainerFluid">
-        <img src={homeTop} alt="Snow" style={{ width: "100%" }} />
+        <img src={homeTop} alt="Snow" style={{ width: "100%"}} />
         <div className="gCentered ">
-          <p className="display-1 fw-bolder">MBsoft Technologies </p>
+          <p className="display-1 fw-bolder">Sanabil English Medium School</p>
         </div>
       </div>
       <div className="container">
@@ -210,7 +209,7 @@ export const Home = () => {
         <div className="gCenteredVideo">
           <p className="display-1 fw-bolder">About us </p>
           <p>
-            We @ MBsoft Technologies provide variety of services which includes
+            We @ Sanabil English Medium School provide variety of services which includes
             web design and development, Android and iOS apps, desktop
             application, 2D & 3D Modeling and digital marketing. Our team has a
             wide range of skills and expertise and we always put our client’s

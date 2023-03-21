@@ -106,4 +106,8 @@ label {
         height: 100%;
         width: 50%;
     }
+
+    .gContainerFluid img {
+        height: 350px;
+    }
 }

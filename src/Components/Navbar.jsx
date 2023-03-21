@@ -13,15 +13,21 @@ const Navbar = () => {
           <div className="col-lg-12">
             <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm bg-light fixed-top">
               <div className="container">
-                <img
-                  src={logoMBsoft}
-                  className="about-img img-fluid"
-                  onClick={() => navigate("/")}
-                  style={{ width: "50px", height: "50px" }}
-                />
-                <a className="navbar-brand fw-bold fs-4" href="/">
-                  MBsoft
-                </a>
+                <div>
+                  <a>
+                    <img
+                      src={logoMBsoft}
+                      className="about-img img-fluid"
+                      onClick={() => navigate("/")}
+                      style={{ width: "50px", height: "50px" }}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a className="navbar-brand fw-bold" href="/">
+                    Sanabil English School
+                  </a>
+                </div>
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -75,14 +81,14 @@ const Navbar = () => {
                         Login
                       </a>
                     </li>
-                    <li
+                    {/* <li
                       className="nav-item login-btn"
                       onClick={() => navigate("/register")}
                     >
                       <a className="nav-link btn btn-primary" href="register">
                         Register
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

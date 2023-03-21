@@ -1,0 +1,21 @@
+{
+    "name" : "Usman Hussain",
+    "website" : "www.learnbestcoding.com",
+    "email" : "something@learnbestcoding.com",
+    "rollno": "rn_IX_56723",
+    "marksdetails": [
+        {"subject" : "Maths", "marks": 94,"result": "PASS"},
+        {"subject" : "Physics", "marks": 78,"result": "PASS"},
+        {"subject" : "Chemistry", "marks": 67,"result": "PASS"},
+        {"subject" : "Arabic", "marks": 96,"result": "PASS"},
+        {"subject" : "Social", "marks": 88,"result": "PASS"},
+        {"subject" : "Science", "marks": 77,"result": "PASS"},
+        {"subject" : "Biology", "marks": 30,"result": "FAIL"}
+    ],
+    "country" :[
+        {"id": "1", "name" : "USA"},
+        {"id": "2", "name" : "Canada"},
+        {"id": "3", "name" : "Japan"},
+        {"id": "4", "name" : "Australia"}
+    ]
+}
