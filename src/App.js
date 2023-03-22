@@ -36,7 +36,7 @@ function App() {
             <Route path="/rp/:id" element={<ResetPassword />}></Route>
             <Route path="/rp/rps" element={<ResetPasswordSuccess />}></Route>
           </Route>
-          <Route path="/marks" element={<Marks />}></Route>
+          <Route path="/marks/:rn" element={<Marks />}></Route>
         </Routes>
       </BrowserRouter>
       <FloatingWhatsApp

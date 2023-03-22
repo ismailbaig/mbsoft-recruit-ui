@@ -1,21 +1,34 @@
 {
-    "name" : "Usman Hussain",
-    "website" : "www.learnbestcoding.com",
-    "email" : "something@learnbestcoding.com",
-    "rollno": "rn_IX_56723",
-    "marksdetails": [
-        {"subject" : "Maths", "marks": 94,"result": "PASS"},
-        {"subject" : "Physics", "marks": 78,"result": "PASS"},
-        {"subject" : "Chemistry", "marks": 67,"result": "PASS"},
-        {"subject" : "Arabic", "marks": 96,"result": "PASS"},
-        {"subject" : "Social", "marks": 88,"result": "PASS"},
-        {"subject" : "Science", "marks": 77,"result": "PASS"},
-        {"subject" : "Biology", "marks": 30,"result": "FAIL"}
-    ],
-    "country" :[
-        {"id": "1", "name" : "USA"},
-        {"id": "2", "name" : "Canada"},
-        {"id": "3", "name" : "Japan"},
-        {"id": "4", "name" : "Australia"}
+  "data": [
+    {
+      "name": "Usman Hussain",
+      "email": "something@learnbestcoding.com",
+      "rollno": "rn_X_56723",
+      "class": "10",
+      "marksdetails": [
+        {"subject" : "Maths", "marks_got": 94, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Physics", "marks_got": 78, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Chemistry", "marks_got": 67, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Arabic", "marks_got": 96, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Social", "marks_got": 88, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Science", "marks_got": 77, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Biology", "marks_got": 30, "marks_total_per_subject": 100, "result": "FAIL"}
     ]
+    },
+    {
+      "name": "Mahboob ali",
+      "email": "mdali@gmail.com",
+      "rollno": "rn_X_123456",
+      "class": "10",
+      "marksdetails": [
+        {"subject" : "Maths", "marks_got": 90, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Physics", "marks_got": 70, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Chemistry", "marks_got": 60, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Arabic", "marks_got": 50, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Social", "marks_got": 20, "marks_total_per_subject": 100, "result": "FAIL"},
+        {"subject" : "Science", "marks_got": 70, "marks_total_per_subject": 100, "result": "PASS"},
+        {"subject" : "Biology", "marks_got": 30, "marks_total_per_subject": 100, "result": "FAIL"}
+    ]
+    }
+  ]
 }

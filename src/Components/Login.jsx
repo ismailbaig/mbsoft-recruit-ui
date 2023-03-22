@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 
+
 const Login = () => {
   const [username, usernameUpdate] = useState("");
   const [password, passwordUpdate] = useState("");
@@ -42,8 +43,9 @@ const Login = () => {
     // Adding files to the formdata
     formData.append("uid", username);
     formData.append("pd", password);
+    navigate(`/marks/${username}`);
 
-    axios({
+   /* axios({
       // Endpoint to send files
       url: "http://localhost:9600/login",
       // url: "https://mbsoftapi.azurewebsites.net/login",
@@ -88,7 +90,7 @@ const Login = () => {
           progress: undefined,
           theme: "colored",
         });
-      });
+      });*/
   };
 
   return (
