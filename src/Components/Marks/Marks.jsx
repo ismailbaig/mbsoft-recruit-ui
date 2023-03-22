@@ -1,8 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Marks.css";
 import data from "../../studentsdata/marksdata.json";
+import { useParams } from "react-router-dom";
 
 export const Marks = () => {
+  const { rn } = useParams();
+
+  const [totalMarksGot, setTotalMarksGot] = useState(0);
+  const [totalMarksFor, setTotalMarksFor] = useState(0);
+
+  const studentmarksdetails = data.data.find((item) => item.rollno === rn);
+
+
+  useEffect(() => {
+    if (studentmarksdetails) {
+      const marksGot = studentmarksdetails.marksdetails.reduce(
+        (acc, curr) => acc + curr.marks_got,
+        0
+      );
+      const marksFor = studentmarksdetails.marksdetails.reduce(
+        (acc, curr) => acc + curr.marks_total_per_subject,
+        0
+      );
+      setTotalMarksGot(marksGot);
+      setTotalMarksFor(marksFor);
+    }
+  }, [studentmarksdetails]);
+  
+
+ 
+
+  if (!studentmarksdetails) {
+    return (
+      <section>
+        <div
+          className="container"
+          style={{ marginTop: "7rem", marginBottom: "2rem" }}
+        >
+          <div className="row">
+            <div className="col-lg-12">
+              <div>
+                <div style={{ float: "left" }}>
+                  <span>
+                    <b>Students Details not found</b>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section>
       <div
@@ -16,18 +66,18 @@ export const Marks = () => {
                 <span>
                   <b>Name :</b>
                 </span>{" "}
-                {data.name}
+                {studentmarksdetails.name}
               </div>
               <br />
               <div style={{ float: "left" }}>
                 <span>
                   <b>Roll No :</b>
                 </span>{" "}
-                {data.rollno}
+                {studentmarksdetails.rollno}
               </div>
-              <div class="container table-responsive py-5">
-                <table class="table table-bordered table-hover">
-                  <thead class="thead-dark">
+              <div className="container table-responsive py-5">
+                <table className="table table-bordered table-hover">
+                  <thead className="thead-dark">
                     <tr>
                       <th scope="col">#</th>
                       <th scope="col">Subject</th>
@@ -36,40 +86,40 @@ export const Marks = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {data.marksdetails.map((marksdetail, index) => (
-                      <tr>
-                        <th scope="row">{index + 1}</th>
-                        <td>{marksdetail.subject}</td>
-                        <td>{marksdetail.marks} / 100</td>
-                        <td
-                          className={
-                            marksdetail.result == "PASS" ? "pass" : "fail"
-                          }
-                        >
-                          <b>{marksdetail.result}</b>
-                        </td>
-                      </tr>
-                    ))}
+                    {studentmarksdetails.marksdetails.map(
+                      (marksdetail, index) => (
+                        <tr key={marksdetail.subject}>
+                          <th scope="row">{index + 1}</th>
+                          <td>{marksdetail.subject}</td>
+                          <td>
+                            {marksdetail.marks_got} /{" "}
+                            {marksdetail.marks_total_per_subject}
+                          </td>
+                          <td
+                            className={
+                              marksdetail.result == "PASS" ? "pass" : "fail"
+                            }
+                          >
+                            <b>{marksdetail.result}</b>
+                          </td>
+                        </tr>
+                      )
+                    )}
+
+                    <tr>
+                      <th scope="row"></th>
+                      <td>
+                        <b>Total</b>
+                      </td>
+                      <td>
+                        <b>
+                          {totalMarksGot} / {totalMarksFor}
+                        </b>
+                      </td>
+                      <td></td>
+                    </tr>
                   </tbody>
                 </table>
-              </div>
-            </div>
-
-            <div style={{ display: "none" }}>
-              <div>Name : {data.name}</div>
-              <div>Email : {data.email}</div>
-              <div>Website : {data.website}</div>
-              <div>
-                <label>Country :</label>
-                <select>
-                  {data.country.map((country) => {
-                    return (
-                      <option key={country.id} value={country.id}>
-                        {country.name}
-                      </option>
-                    );
-                  })}
-                </select>
               </div>
             </div>
           </div>
