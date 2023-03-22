@@ -4,22 +4,24 @@ import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-
-
+import crds from "../studentsdata/cred.json";
 
 const Login = () => {
   const [username, usernameUpdate] = useState("");
-  const [password, passwordUpdate] = useState("");
+  const [pd, pdUpdate] = useState("");
 
   const navigate = useNavigate();
 
-
-  const proceedLogin = (e) => {
-    e.preventDefault();
-    if (validate()) {
-      console.log("proceeded");
+  function generateRandomWord() {
+    const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
+    let result = "";
+    const charactersLength = characters.length;
+    for (let i = 0; i < 10; i++) {
+      const randomIndex = Math.floor(Math.random() * charactersLength);
+      result += characters.charAt(randomIndex);
     }
-  };
+    return result;
+  }
 
   const validate = () => {
     let result = true;
@@ -27,7 +29,7 @@ const Login = () => {
       result = false;
       toast.warning("please enter username");
     }
-    if (password === "" || password === null) {
+    if (pd === "" || pd === null) {
       result = false;
       toast.warning("please enter password");
     }
@@ -36,16 +38,28 @@ const Login = () => {
 
   const handleLoginSubmit = (event) => {
     event.preventDefault();
-    //let newfiles = this.state.newfiles;
+    if (validate()) {
+      //let newfiles = this.state.newfiles;
 
-    let formData = new FormData();
+      let formData = new FormData();
 
-    // Adding files to the formdata
-    formData.append("uid", username);
-    formData.append("pd", password);
-    navigate(`/marks/${username}`);
+      // Adding files to the formdata
+      formData.append("uid", username);
+      formData.append("pd", pd);
 
-   /* axios({
+      const isur = crds.credsdata.find(
+        (item) => item.rollno === username && item.pd == pd
+      );
+
+      if (!isur) {
+        navigate(`/error`);
+      } else {
+        const randomWord = generateRandomWord();
+        const urlend = randomWord + username + randomWord;
+        navigate(`/marks/${urlend}`);
+      }
+
+      /* axios({
       // Endpoint to send files
       url: "http://localhost:9600/login",
       // url: "https://mbsoftapi.azurewebsites.net/login",
@@ -57,7 +71,7 @@ const Login = () => {
       // },
 
       // Attaching the form data
-      data: { uid: username, pd: password },
+      data: { uid: username, pd: pd },
     })
       // Handle the response from backend here
       .then((res) => {
@@ -91,6 +105,7 @@ const Login = () => {
           theme: "colored",
         });
       });*/
+    }
   };
 
   return (
@@ -118,9 +133,9 @@ const Login = () => {
                     Password <span className="required-star">*</span>
                   </label>
                   <input
-                    type='password'
-                    value={password}
-                    onChange={(e) => passwordUpdate(e.target.value)}
+                    type="password"
+                    value={pd}
+                    onChange={(e) => pdUpdate(e.target.value)}
                     className="form-control"
                   ></input>
                 </div>
@@ -130,9 +145,9 @@ const Login = () => {
                   Login
                 </button>
 
-                <Link className="btn btn-success" to={"/register"}>
+                {/* <Link className="btn btn-success" to={"/register"}>
                   New User
-                </Link>
+                </Link> */}
               </div>
             </div>
           </form>

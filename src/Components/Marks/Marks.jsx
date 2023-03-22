@@ -9,8 +9,9 @@ export const Marks = () => {
   const [totalMarksGot, setTotalMarksGot] = useState(0);
   const [totalMarksFor, setTotalMarksFor] = useState(0);
 
-  const studentmarksdetails = data.data.find((item) => item.rollno === rn);
-
+  const studentmarksdetails = data.data.find((item) =>
+    rn.includes(item.rollno)
+  );
 
   useEffect(() => {
     if (studentmarksdetails) {
@@ -26,17 +27,11 @@ export const Marks = () => {
       setTotalMarksFor(marksFor);
     }
   }, [studentmarksdetails]);
-  
-
- 
 
   if (!studentmarksdetails) {
     return (
       <section>
-        <div
-          className="container"
-          style={{ marginTop: "7rem", marginBottom: "2rem" }}
-        >
+        <div className="container markspage">
           <div className="row">
             <div className="col-lg-12">
               <div>
@@ -55,10 +50,7 @@ export const Marks = () => {
 
   return (
     <section>
-      <div
-        className="container"
-        style={{ marginTop: "7rem", marginBottom: "2rem" }}
-      >
+      <div className="container markspage">
         <div className="row">
           <div className="col-lg-12">
             <div>

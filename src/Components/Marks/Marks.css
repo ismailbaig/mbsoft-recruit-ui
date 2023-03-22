@@ -1,7 +1,12 @@
 .pass {
-    color: green;
+  color: green;
 }
 
 .fail {
- color: red;
+  color: red;
+}
+
+.markspage {
+  margin-top: 7rem;
+  margin-bottom: 9rem;
 }

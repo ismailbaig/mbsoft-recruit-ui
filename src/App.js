@@ -16,6 +16,7 @@ import { ResetPassword } from "./Components/ResetPassword/ResetPassword";
 import { ResetPasswordSuccess } from "./Components/ResetPassword/ResetPasswordSuccess";
 import { ResetPasswordHome } from "./Components/ResetPassword/ResetPasswordHome";
 import { Marks } from "./Components/Marks/Marks";
+import { Errors } from "./Components/Errors.jsx/Errors";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/rp/rps" element={<ResetPasswordSuccess />}></Route>
           </Route>
           <Route path="/marks/:rn" element={<Marks />}></Route>
+          <Route path="/error" element={<Errors />}></Route>
         </Routes>
       </BrowserRouter>
       <FloatingWhatsApp
