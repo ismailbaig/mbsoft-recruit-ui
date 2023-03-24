@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useEffect } from "react";
 import logoMBsoft from "../images/logoMBsoft.png";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <div>
@@ -14,19 +19,19 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm bg-light fixed-top">
               <div className="container">
                 <div>
-                  <a>
+                  <NavLink to="/" className="navbar-brand">
                     <img
                       src={logoMBsoft}
                       className="about-img img-fluid"
-                      onClick={() => navigate("/")}
                       style={{ width: "50px", height: "50px" }}
+                      alt="Logo"
                     />
-                  </a>
+                  </NavLink>
                 </div>
                 <div>
-                  <a className="navbar-brand fw-bold" href="/">
+                  <NavLink to="/" className="navbar-brand fw-bold">
                     Sanabil English School
-                  </a>
+                  </NavLink>
                 </div>
                 <button
                   className="navbar-toggler"
@@ -45,50 +50,61 @@ const Navbar = () => {
                 >
                   <ul className="navbar-nav  mb-2 mb-lg-0 ms-auto fw-bolder">
                     <li className="nav-item">
-                      <a
-                        className="nav-link active"
-                        aria-current="page"
-                        href="/"
+                      <NavLink
+                        exact
+                        to="/"
+                        className="nav-link"
+                        activeClassName="active"
                       >
                         Home
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/about">
+                      <NavLink
+                        to="/about"
+                        className="nav-link"
+                        activeClassName="active"
+                      >
                         About
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="contact">
+                      <NavLink
+                        to="/contact"
+                        className="nav-link"
+                        activeClassName="active"
+                      >
                         Contact
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="services">
+                      <NavLink
+                        to="/services"
+                        className="nav-link"
+                        activeClassName="active"
+                      >
                         Services
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link btn btn-primary" href="contact">
+                      <NavLink
+                        to="/contact"
+                        className="nav-link btn btn-primary"
+                        activeClassName="active"
+                      >
                         ENQUIRY
-                      </a>
+                      </NavLink>
                     </li>
-                    <li
-                      className="nav-item login-btn"
-                      onClick={() => navigate("/login")}
-                    >
-                      <a className="nav-link btn btn-primary" href="login">
+                    <li className="nav-item login-btn">
+                      <NavLink
+                        to="/login"
+                        className="nav-link btn btn-primary"
+                        activeClassName="active"
+                        onClick={() => navigate("/login")}
+                      >
                         Login
-                      </a>
+                      </NavLink>
                     </li>
-                    {/* <li
-                      className="nav-item login-btn"
-                      onClick={() => navigate("/register")}
-                    >
-                      <a className="nav-link btn btn-primary" href="register">
-                        Register
-                      </a>
-                    </li> */}
                   </ul>
                 </div>
               </div>

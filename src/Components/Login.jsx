@@ -12,11 +12,11 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  function generateRandomWord() {
+  function generateRandomWord(count) {
     const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
     let result = "";
     const charactersLength = characters.length;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < count; i++) {
       const randomIndex = Math.floor(Math.random() * charactersLength);
       result += characters.charAt(randomIndex);
     }
@@ -54,8 +54,9 @@ const Login = () => {
       if (!isur) {
         navigate(`/error`);
       } else {
-        const randomWord = generateRandomWord();
-        const urlend = randomWord + username + randomWord;
+        const randomTenWord = generateRandomWord(30);
+        const randomFifteenWord = generateRandomWord(40);
+        const urlend = randomTenWord + username + randomFifteenWord;
         navigate(`/marks/${urlend}`);
       }
 

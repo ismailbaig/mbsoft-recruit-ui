@@ -3,7 +3,7 @@
     {
       "name": "Usman Hussain",
       "email": "something@learnbestcoding.com",
-      "rollno": "rn_X_56723",
+      "rollno": "20034040",
       "class": "10",
       "marksdetails": [
         {"subject" : "Maths", "marks_got": 94, "marks_total_per_subject": 100, "result": "PASS"},
@@ -16,9 +16,9 @@
     ]
     },
     {
-      "name": "Mahboob ali",
+      "name": "Mahaboob ali",
       "email": "mdali@gmail.com",
-      "rollno": "rn_X_123456",
+      "rollno": "20034041",
       "class": "10",
       "marksdetails": [
         {"subject" : "Maths", "marks_got": 90, "marks_total_per_subject": 100, "result": "PASS"},
