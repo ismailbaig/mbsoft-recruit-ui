@@ -5,8 +5,17 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  //const currentPath = window.location.pathname;
   const location = useLocation();
   const [collapsed, setCollapsed] = useState(true);
+
+  // let navClass = '';
+
+  // if (currentPath === '/') {
+  //   navClass = 'home-page';
+  // } else if (currentPath === '/about') {
+  //   navClass = 'non-home-page';
+  // }
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,7 +29,7 @@ const Navbar = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm bg-light fixed-top">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm bg-light fixed-top" >
               <div className="container">
                 <div>
                   <NavLink to="/" className="navbar-brand">
@@ -33,10 +42,10 @@ const Navbar = () => {
                   </NavLink>
                 </div>
                 <div>
-                  <NavLink to="/" className="navbar-brand fw-bold">
-                    Sanabil English School
-                  </NavLink>
+                  <h3>SANABIL</h3>
+                  <div className="sub-info">English High School</div>
                 </div>
+
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -58,10 +67,10 @@ const Navbar = () => {
                   <ul className="navbar-nav  mb-2 mb-lg-0 ms-auto fw-bolder">
                     <li className="nav-item">
                       <NavLink
-                        exact
+                        exact="true"
                         to="/"
                         className="nav-link"
-                        activeClassName="active"
+                        activeclassname="active"
                         onClick={toggleNavbar}
                       >
                         Home
@@ -71,7 +80,7 @@ const Navbar = () => {
                       <NavLink
                         to="/about"
                         className="nav-link"
-                        activeClassName="active"
+                        activeclassname="active"
                         onClick={toggleNavbar}
                       >
                         About
@@ -81,7 +90,7 @@ const Navbar = () => {
                       <NavLink
                         to="/contact"
                         className="nav-link"
-                        activeClassName="active"
+                        activeclassname="active"
                         onClick={toggleNavbar}
                       >
                         Contact
@@ -91,7 +100,7 @@ const Navbar = () => {
                       <NavLink
                         to="/services"
                         className="nav-link"
-                        activeClassName="active"
+                        activeclassname="active"
                         onClick={toggleNavbar}
                       >
                         Services
@@ -101,7 +110,7 @@ const Navbar = () => {
                       <NavLink
                         to="/contact"
                         className="nav-link btn btn-primary"
-                        activeClassName="active"
+                        activeclassname="active"
                         onClick={toggleNavbar}
                       >
                         ENQUIRY
@@ -111,7 +120,7 @@ const Navbar = () => {
                       <NavLink
                         to="/login"
                         className="nav-link btn btn-primary"
-                        activeClassName="active"
+                        activeclassname="active"
                         onClick={() => {
                           toggleNavbar();
                           navigate("/login");
