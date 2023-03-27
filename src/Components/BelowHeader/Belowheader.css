@@ -1,0 +1,25 @@
+.bh-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  color: #4e5651;
+  font-weight: bold;
+}
+
+.bh-info-margin-top {
+  margin-top: 84px !important;
+}
+
+.bh-contact-font-size {
+  font-size: 20px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 700px) {
+  .bh-contact-font-size {
+    font-size: 12px;
+  }
+}

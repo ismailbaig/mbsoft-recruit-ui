@@ -1,11 +1,17 @@
 #navbarSupportedContent ul {
   width: 600px;
   justify-content: space-between;
-
 }
 
 .login-btn {
   margin-top: 0px;
+}
+
+.sub-info {
+  font-size: 12px;
+  color: #4e5651;
+  font-weight: bold;
+  margin-top: -1rem;
 }
 
 @media (max-width: 767px) {

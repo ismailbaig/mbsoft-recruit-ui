@@ -17,6 +17,7 @@ import { ResetPasswordSuccess } from "./Components/ResetPassword/ResetPasswordSu
 import { ResetPasswordHome } from "./Components/ResetPassword/ResetPasswordHome";
 import { Marks } from "./Components/Marks/Marks";
 import { Errors } from "./Components/Errors.jsx/Errors";
+import { Belowheader } from "./Components/BelowHeader/Belowheader";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <ToastContainer></ToastContainer>
       <BrowserRouter>
         <Navbar />
+        <Belowheader />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<AboutUS />}></Route>
