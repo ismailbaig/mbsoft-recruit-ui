@@ -14,7 +14,7 @@ export const Home = () => {
   return (
     <div>
       <div className="gContainerFluid">
-        <img src={homeTop} alt="Snow" style={{ width: "100%"}} />
+        <img src={homeTop} alt="Snow" style={{ width: "100%" }} />
         <div className="gCentered ">
           <p className="display-1 fw-bolder">Sanabil English Medium School</p>
         </div>
@@ -207,13 +207,12 @@ export const Home = () => {
         <video src={videoHome} autoPlay muted playsInline loop />
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
         <div className="gCenteredVideo">
-          <p className="display-1 fw-bolder">About us </p>
+          <p className="display-1 fw-bolder">MISSION</p>
           <p>
-            We @ Sanabil English Medium School provide variety of services which includes
-            web design and development, Android and iOS apps, desktop
-            application, 2D & 3D Modeling and digital marketing. Our team has a
-            wide range of skills and expertise and we always put our client’s
-            satisfaction first…..
+            We @ Sanabil English Medium School have mission, To promote
+            culture of education excellence from with in a caring and secure
+            islamic environment enriched with the value of discipline, mutual
+            care and respect which extend beyond the school into wider community
           </p>
         </div>
       </div>
@@ -299,11 +298,7 @@ export const Home = () => {
             alt=""
             style={{ width: "100%", height: "30%" }}
           /> */}
-          <img
-            className="img-responsive"
-            src={rabasa}
-            alt=""
-          />
+          <img className="img-responsive" src={rabasa} alt="" />
         </div>
       </div>
       {/* PORTFOLIO ends  here */}

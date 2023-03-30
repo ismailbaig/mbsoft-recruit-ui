@@ -44,6 +44,7 @@ const Navbar = () => {
                 <div>
                   <h3>SANABIL</h3>
                   <div className="sub-info">English High School</div>
+                  <div className="sub-sub-info sub-sub-info-mrgin">Learners Today, Leaders Tomorrow</div>
                 </div>
 
                 <button

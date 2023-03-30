@@ -14,6 +14,20 @@
   margin-top: -1rem;
 }
 
+.sub-sub-info {
+  font-size: 9px;
+  color: #476251;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.sub-sub-info-mrgin {
+  margin-left: 113px;
+}
+
+
+
+
 @media (max-width: 767px) {
   #navbarSupportedContent ul {
     width: 175px;
@@ -22,5 +36,9 @@
   }
   .login-btn {
     margin-top: 15px;
+  }
+
+  .sub-sub-info-mrgin {
+    margin-left: 45px;
   }
 }
