@@ -109,6 +109,16 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                       <NavLink
+                        to="/gallery"
+                        className="nav-link"
+                        activeclassname="active"
+                        onClick={toggleNavbar}
+                      >
+                        Gallery
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
                         to="/contact"
                         className="nav-link btn btn-primary"
                         activeclassname="active"

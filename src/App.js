@@ -18,8 +18,25 @@ import { ResetPasswordHome } from "./Components/ResetPassword/ResetPasswordHome"
 import { Marks } from "./Components/Marks/Marks";
 import { Errors } from "./Components/Errors.jsx/Errors";
 import { Belowheader } from "./Components/BelowHeader/Belowheader";
+import { ImageGallery } from "./Components/ImageGallery/ImageGallery";
+
+
 
 function App() {
+
+  const images = [];
+  const imageContext = require.context('./images/sanabilschoolphotos', false, /\.(png|jpg|jpeg|gif)$/);
+
+  imageContext.keys().forEach((imagePath) => {
+    images.push({
+      src: imageContext(imagePath),
+      alt: imagePath.slice(2, -4),
+      caption: 'Sanabil School Events'
+    });
+  });
+
+
+
   return (
     <div className="App">
       <ToastContainer></ToastContainer>
@@ -31,6 +48,7 @@ function App() {
           <Route path="/about" element={<AboutUS />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/services" element={<Services />}></Route>
+          <Route path="/gallery" element={<ImageGallery images={images} />}></Route>
           <Route path="/samples" element={<Samples />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
