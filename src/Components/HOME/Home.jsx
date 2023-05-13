@@ -1,6 +1,7 @@
 import React from "react";
 import { SendEmail } from "../shared/sendemail/sendemail";
 import { AboutUS } from "../AboutUS/AboutUS";
+import { Services } from "../SERVICES/Services";
 import "./Home.css";
 import homeTop from "../../images/homePage.jpg";
 import ph1 from "../../images/ph1.avif";
@@ -13,7 +14,7 @@ import rabasa from "../../images/rabasa.jpg";
 
 export const Home = () => {
   return (
-    <div>
+    <section>
       <div className="gContainerFluid">
         <img src={homeTop} alt="Snow" style={{ width: "100%" }} />
         <div className="gCentered ">
@@ -210,10 +211,10 @@ export const Home = () => {
         <div className="gCenteredVideo">
           <p className="display-1 fw-bolder">MISSION</p>
           <p>
-            We @ Sanabil English Medium School have mission, To promote
-            culture of education excellence from with in a caring and secure
-            islamic environment enriched with the value of discipline, mutual
-            care and respect which extend beyond the school into wider community
+            We @ Sanabil English Medium School have mission, To promote culture
+            of education excellence from with in a caring and secure islamic
+            environment enriched with the value of discipline, mutual care and
+            respect which extend beyond the school into wider community
           </p>
         </div>
       </div>
@@ -304,9 +305,25 @@ export const Home = () => {
       </div>
       {/* PORTFOLIO ends  here */}
 
+      <div id="about">
+        <h3 className="display-4 fw-semibold" style={{ padding: "18px" }}>
+          ABOUT US
+        </h3>
+        <svg width="80%" height="20">
+          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
+        </svg>
+        <AboutUS></AboutUS>
+      </div>
+      <div id="services">
+        <h3 className="display-4 fw-semibold" style={{ padding: "18px" }}>
+          SERVICES
+        </h3>
+        <svg width="80%" height="20">
+          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
+        </svg>
+        <Services></Services>
+      </div>
       {/* ENQUIRY starts here */}
-
-      {/* ENQUIRY ends here */}
       <div className="row">
         <div
           className="col-md-5 homeenquiry mx-3 img-fluid"
@@ -317,17 +334,15 @@ export const Home = () => {
             <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
           </svg>
         </div>
-      </div>
-      <div className="row mx-4">
-        <div className="col-md-6">
-          <div className="row">
-            <SendEmail></SendEmail>
+        <div className="row mx-4">
+          <div className="col-md-6">
+            <div className="row">
+              <SendEmail></SendEmail>
+            </div>
           </div>
         </div>
       </div>
-      <div id="about">
-          <AboutUS></AboutUS>
-      </div>
-    </div>
+      {/* ENQUIRY ends here */}
+    </section>
   );
 };
