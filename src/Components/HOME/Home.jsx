@@ -1,5 +1,6 @@
 import React from "react";
 import { SendEmail } from "../shared/sendemail/sendemail";
+import { AboutUS } from "../AboutUS/AboutUS";
 import "./Home.css";
 import homeTop from "../../images/homePage.jpg";
 import ph1 from "../../images/ph1.avif";
@@ -323,6 +324,9 @@ export const Home = () => {
             <SendEmail></SendEmail>
           </div>
         </div>
+      </div>
+      <div id="about">
+          <AboutUS></AboutUS>
       </div>
     </div>
   );

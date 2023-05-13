@@ -63,14 +63,14 @@ function App() {
       </BrowserRouter>
       <FloatingWhatsApp
         phoneNumber="+918050369047"
-        chatMessage="Hi, just type Hello and Send to continue on WhatsApp!!!"
+        chatMessage="Hi, type and continue on WhatsApp!!!"
         accountName="Sanabil English Medium School"
         allowEsc
         allowClickAway
         notification
         notificationSound
         placeholder="Type Hello and Send to continue on WhatsApp!!!"
-        avatar="logoMBsoft.png"
+        avatar="sanabilLogo.jpeg"
         darkMode="true"
       />
       <Footer />
