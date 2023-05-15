@@ -3,6 +3,7 @@ import "./Marks.css";
 import data from "../../studentsdata/marksdata.json";
 import { useParams } from "react-router-dom";
 import { PropagateLoader } from "react-spinners";
+import axios from "axios";
 
 export const Marks = () => {
   const { rn } = useParams();
@@ -10,12 +11,13 @@ export const Marks = () => {
   const [totalMarksGot, setTotalMarksGot] = useState(0);
   const [totalMarksFor, setTotalMarksFor] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [datas, setData] = useState(null);
 
   const studentmarksdetails = data.data.find((item) =>
     rn.includes(item.rollno)
   );
 
-  useEffect(() => {
+  useEffect(() => { // on load effect
     if (studentmarksdetails) {
       const marksGot = studentmarksdetails.marksdetails.reduce(
         (acc, curr) => acc + curr.marks_got,
@@ -25,6 +27,15 @@ export const Marks = () => {
         (acc, curr) => acc + curr.marks_total_per_subject,
         0
       );
+
+      
+      axios.get('https://localhost:44378/api/Marks?rollno=78854')
+      .then(
+        response => 
+          setData(response.data))
+      .catch(error => console.log(error));
+
+
       setTotalMarksGot(marksGot);
       setTotalMarksFor(marksFor);
       setTimeout(() => setIsLoading(false), 5000); // add 5 second delay before setting isLoading to false
