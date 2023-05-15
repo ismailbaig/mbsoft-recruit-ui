@@ -26,7 +26,7 @@ export const Services = () => {
                   x2="100%"
                   y2="1"
                   stroke="red"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
               </svg>
               <div className="content-font-family">
@@ -114,7 +114,7 @@ export const Services = () => {
                   x2="100%"
                   y2="1"
                   stroke="red"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
               </svg>
               <div className="content-font-family">

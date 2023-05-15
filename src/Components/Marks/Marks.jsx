@@ -11,53 +11,76 @@ export const Marks = () => {
   const [totalMarksGot, setTotalMarksGot] = useState(0);
   const [totalMarksFor, setTotalMarksFor] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const [datas, setData] = useState(null);
+  const [studentmarksdetails, setData] = useState(null);
 
-  const studentmarksdetails = data.data.find((item) =>
-    rn.includes(item.rollno)
-  );
+  // To filter the data from the JSON file, Now its not needed as the full 
+  // data is got from API
+  // const studentmarksdetails = data.data.find((item) =>
+  //   rn.includes(item.rollno)
+  // );
 
   useEffect(() => { // on load effect
-    if (studentmarksdetails) {
-      const marksGot = studentmarksdetails.marksdetails.reduce(
-        (acc, curr) => acc + curr.marks_got,
-        0
-      );
-      const marksFor = studentmarksdetails.marksdetails.reduce(
-        (acc, curr) => acc + curr.marks_total_per_subject,
-        0
-      );
+    setTimeout(() => setIsLoading(true));
 
-      
-      axios.get('https://localhost:44378/api/Marks?rollno=78854')
-      .then(
-        response => 
-          setData(response.data))
-      .catch(error => console.log(error));
-
-
-      setTotalMarksGot(marksGot);
-      setTotalMarksFor(marksFor);
-      setTimeout(() => setIsLoading(false), 5000); // add 5 second delay before setting isLoading to false
-    }
-  }, [studentmarksdetails]);
+    axios.get('https://localhost:44378/api/Marks?rollno=78854')
+    .then(
+      response => {
+        setData(response.data);
+        if (studentmarksdetails) {
+          const marksGot = studentmarksdetails.marksdetails.reduce(
+            (acc, curr) => acc + curr.marks_got,
+            0
+          );
+          const marksFor = studentmarksdetails.marksdetails.reduce(
+            (acc, curr) => acc + curr.marks_total_per_subject,
+            0
+          );
+    
+          setTotalMarksGot(marksGot);
+          setTotalMarksFor(marksFor);
+        }
+    })
+    .catch(error => console.log(error))
+    .finally(() => {
+      setTimeout(() => setIsLoading(false));
+    }) 
+    
+    
+  }, []);
 
   if (!studentmarksdetails) {
     return (
       <section>
         <div className="container markspage">
+        {isLoading ? (
           <div className="row">
             <div className="col-lg-12">
               <div>
-                <div style={{ float: "left" }}>
+                <div>
                   <span>
-                    <b>Students Details not found</b>
+                    <PropagateLoader color="#4e4e4e" />
                   </span>
+                </div>
+                <br />
+                <div>
+                  <b>Please wait while we get the data !</b>
                 </div>
               </div>
             </div>
           </div>
+        ) : (<div className="row">
+        <div className="col-lg-12">
+          <div>
+            <div style={{ float: "left" }}>
+              <span>
+                <b>Students Details not found</b>
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
+      )}
+      </div>     
       </section>
     );
   }
