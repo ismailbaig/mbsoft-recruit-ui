@@ -42,7 +42,7 @@ function App() {
       <ToastContainer></ToastContainer>
       <BrowserRouter>
         <Navbar />
-        <Belowheader />
+        {/* <Belowheader /> */}
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<AboutUS />}></Route>

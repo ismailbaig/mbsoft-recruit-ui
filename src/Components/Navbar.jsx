@@ -29,23 +29,30 @@ const Navbar = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm bg-light fixed-top" >
+            <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm bg-light fixed-top">
               <div className="container">
-                <div>
+                <div className="logonname">
                   <NavLink to="/" className="navbar-brand">
                     <img
                       src={sanabilLogo}
                       className="about-img img-fluid"
-                      style={{ width: "85px", height: "85px" }}
+                      style={{ width: "50px", height: "50px" }}
                       alt="Logo"
                     />
                   </NavLink>
+                  <div className="h-name">
+                    <h3>SANABIL</h3>
+                    <div className="sub-info">English High School</div>
+                    <div className="sub-sub-info sub-sub-info-mrgin">
+                      Learners Today, Leaders Tomorrow
+                    </div>
+                  </div>
                 </div>
-                <div>
+                {/* <div>
                   <h3>SANABIL</h3>
                   <div className="sub-info">English High School</div>
                   <div className="sub-sub-info sub-sub-info-mrgin">Learners Today, Leaders Tomorrow</div>
-                </div>
+                </div> */}
 
                 <button
                   className="navbar-toggler"

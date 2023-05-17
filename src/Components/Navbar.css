@@ -25,8 +25,13 @@
   margin-left: 113px;
 }
 
+.logonname {
+  display: flex;
+}
 
-
+.h-name {
+  margin-left: -80px
+}
 
 @media (max-width: 767px) {
   #navbarSupportedContent ul {
@@ -40,5 +45,9 @@
 
   .sub-sub-info-mrgin {
     margin-left: 45px;
+  }
+
+  .h-name {
+    margin-left: 20px
   }
 }

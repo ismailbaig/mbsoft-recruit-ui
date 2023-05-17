@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import { SocialIcon } from "react-social-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 export const Footer = () => {
   return (
@@ -35,7 +37,7 @@ export const Footer = () => {
           Hommadevanahalli, Bengaluru, Karnataka 560083
           <br />
           <br />
-          Email: info@sanabilenglishschool.com
+          <span id="emailId"> <FontAwesomeIcon icon={faEnvelope} /> Email:  <b>info@sanabilenglishschool.com</b></span> 
           <br />
           <br />
           Copyright © 2023 Sanabil English Medium School.
