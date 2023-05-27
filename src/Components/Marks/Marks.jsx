@@ -105,7 +105,7 @@ export const Marks = () => {
             </div>
           </div>
         ) : (
-          <div className="row">
+          <div className="row g-mrg-top">
             <div className="col-lg-12">
               <div>
                 <div style={{ float: "left" }}>

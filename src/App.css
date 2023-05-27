@@ -10,6 +10,10 @@ section {
   flex:1;
 }
 
+.g-mrg-top {
+  margin-top: 7rem!important;
+}
+
 .App {
   text-align: center;
 }
