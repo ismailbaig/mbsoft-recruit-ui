@@ -2,7 +2,7 @@ import React from "react";
 import "./Belowheader.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-
+import data from '../../data/newchaiminar.json'
 export const Belowheader = () => {
   return (
     <section>
@@ -14,7 +14,7 @@ export const Belowheader = () => {
           </div> */}
           <div className="col-lg-12 bh-contact bh-info-margin-top bh-contact-font-size">
               <span id="emailId"> <FontAwesomeIcon icon={faEnvelope} /> info@sanabilenglishschool.com</span> 
-              <span id="telId"> <FontAwesomeIcon icon={faPhone} /> (+91) 80503-69047</span>  
+              <span id="telId"> <FontAwesomeIcon icon={faPhone} /> {data.webdata.mobilenumber}</span>  
           </div>
         </div>
       </div>
