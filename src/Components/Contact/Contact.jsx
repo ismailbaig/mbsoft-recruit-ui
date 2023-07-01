@@ -106,7 +106,7 @@ export const Contact = () => {
         </div>
       </div>
       {/* Google maps for location */}
-      <div className="row mb-5">
+      <div className="row mb-5" style={{width: '100%', margin: '0 auto'}}>
         <div className="col-md-12">
           <h1 className="dispaly-4">OUR LOCATION</h1>
           <iframe
