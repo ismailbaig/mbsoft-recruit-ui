@@ -5,6 +5,7 @@ import Sanabil2 from "../../images/sanabilschoolphotos/SanabilPhoto4.jpeg";
 import Sanabil3 from "../../images/sanabilschoolphotos/SanabilPhoto5.jpeg";
 import Sanabil5 from "../../images/sanabilschoolphotos/SanabilPhoto7.jpeg";
 import Sanabil6 from "../../images/sanabilschoolphotos/SanabilPhoto8.jpeg";
+import Sanabil7 from "../../images/sanabilschoolphotos/SanabilPhoto11.jpeg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -17,6 +18,7 @@ export const ImageGallery = ({ images }) => {
         <svg width="80%" height="20">
           <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
         </svg>
+        <div className="carousel-container">
         <Carousel>
           <div>
             <img src={Sanabil1} alt="Image 1" />
@@ -33,12 +35,17 @@ export const ImageGallery = ({ images }) => {
           <div>
             <img src={Sanabil6} alt="Image 2" />
             <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
-          </div>
+      </div>
           <div>
             <img src={Sanabil5} alt="Image 3" />
             <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
+        </div>
+        <div>
+            <img src={Sanabil7} alt="Image 1" />
+            <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
           </div>
         </Carousel>
+        </div>
         <div className="video-gallery">
           <h1 className="display-3 fw-semibold">VIDEO GALLERY</h1>
           <div className="horizontal-line"></div>
