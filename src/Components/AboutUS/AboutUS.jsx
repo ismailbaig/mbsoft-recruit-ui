@@ -5,8 +5,8 @@ import aboutTop from "../../images/about-us-top.jpg";
 
 export const AboutUS = () => {
   return (
-    <div>
-      <div className="container mb-5 mt-5 ">
+    <section id="aboutus">
+      <div className="container mb-5">
         <div className="gContainerFluid image">
           <img src={aboutTop} className="img-fluid" />
         </div>
@@ -151,6 +151,6 @@ export const AboutUS = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

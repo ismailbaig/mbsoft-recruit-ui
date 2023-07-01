@@ -110,7 +110,7 @@ const Login = () => {
   };
 
   return (
-    <section>
+    <section id="login">
       <div className="row login-page">
         <div className="offset-lg-3 col-lg-5" style={{ marginTop: "100px" }}>
           <form className="container" onSubmit={handleLoginSubmit}>

@@ -86,7 +86,7 @@ const Register = () => {
   };
 
   return (
-    <section>
+    <section id="register">
       <div className="row login-page">
         <div className="offset-lg-3 col-lg-6" style={{ marginTop: "100px" }}>
           <form className="container" onSubmit={handleSubmit}>

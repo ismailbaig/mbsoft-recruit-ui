@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 export const ResetPasswordHome = () => {
   return (
-    <section>
+    <section id="resetpwd">
       <div className="container mt-5" >
         <div className="row" style={{ marginTop: "100px" }}>
           <div className="col-lg-12">Reset Your Password</div>

@@ -8,7 +8,7 @@ import axios from "axios";
 export const Contact = () => {
   return (
     <div>
-      <div className="container mb-5" style={{ marginTop: "4rem" }}>
+      <div className="container mb-5">
         <div className="gContainerFluid image">
           <img src={contact} style={{ width: "100%" }} />
           <div className="gCentered">

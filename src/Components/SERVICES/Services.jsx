@@ -7,8 +7,8 @@ import { Button } from "react-bootstrap";
 
 export const Services = () => {
   return (
-    <div>
-      <div className="container mb-5" style={{ marginTop: "4rem" }}>
+    <div id="services">
+      <div className="container mb-5">
         <div className="gContainerFluid image">
           <img src={services} style={{ width: "100%" }} />
           <div className="gCentered">
