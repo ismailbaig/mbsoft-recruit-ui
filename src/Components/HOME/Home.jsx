@@ -177,7 +177,7 @@ export const Home = () => {
         </svg>
         <div
           className="row mb-5 mt-5"
-          style={{ justifyContent: "space-around" }}
+          style={{ justifyContent: "space-around", width: "100%" }}
         >
           <div className="col-md-2">
             <div>
@@ -218,7 +218,7 @@ export const Home = () => {
           </p>
         </div>
       </div>
-      <div className="row mb-5 mt-5" style={{ justifyContent: "space-around" }}>
+      <div className="row mb-5 mt-5" style={{ justifyContent: "space-around", width: "100%" }}>
         <div className="col-md-1">
           <div>
             <i className="fas fa-file-alt homePlanAnalyicon"></i>
@@ -264,7 +264,7 @@ export const Home = () => {
       </div>
 
       {/* PORTFOLIO starts here */}
-      <div className="row">
+      <div id="h_portfolio" className="row" style={{width: '100%'}}>
         <div className="col-md-4">
           <h1 className="dispaly-4">PORTFOLIO</h1>
           <svg width="80%" height="20">
@@ -324,7 +324,7 @@ export const Home = () => {
         <Services></Services>
       </div>
       {/* ENQUIRY starts here */}
-      <div className="row">
+      <div id="h_enqiry" className="row" style={{width: '95%'}}>
         <div
           className="col-md-5 homeenquiry mx-3 img-fluid"
           style={{ background: "url{homep5})" }}

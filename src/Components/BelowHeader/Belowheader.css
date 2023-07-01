@@ -9,7 +9,7 @@
 }
 
 .bh-info-margin-top {
-  margin-top: 115px !important;
+  margin-top: 65px !important;
 }
 
 .bh-contact-font-size {
@@ -21,5 +21,8 @@
 @media screen and (max-width: 700px) {
   .bh-contact-font-size {
     font-size: 12px;
+  }
+  .bh-info-margin-top {
+    margin-top: 25px !important;
   }
 }
