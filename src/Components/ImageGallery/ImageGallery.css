@@ -94,4 +94,19 @@
   .video-container {
     width: 90%;
   }
+
+  .video-gallery {
+    height: auto; 
+  }
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.carousel-container .carousel .slide img {
+  max-width: 100%;
+  max-height: 300px;
 }
