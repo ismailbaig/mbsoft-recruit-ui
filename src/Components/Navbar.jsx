@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanabilLogo from "../images/sanabilLogo.jpeg";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
-
+import newchaiminardata from "../data/newchaiminar.json";
 const Navbar = () => {
   const navigate = useNavigate();
   //const currentPath = window.location.pathname;
@@ -41,10 +41,12 @@ const Navbar = () => {
                     />
                   </NavLink>
                   <div className="h-name">
-                    <h3>SANABIL</h3>
-                    <div className="sub-info">English High School</div>
+                    <h3>{newchaiminardata.navbar.header}</h3>
+                    <div className="sub-info">
+                      {newchaiminardata.navbar.subHeader}
+                    </div>
                     <div className="sub-sub-info sub-sub-info-mrgin">
-                      Learners Today, Leaders Tomorrow
+                      {newchaiminardata.navbar.belowHeader}
                     </div>
                   </div>
                 </div>

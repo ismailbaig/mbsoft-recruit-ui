@@ -13,14 +13,14 @@ export const Footer = () => {
           <div>
             <SocialIcon
               network="linkedin"
-              url="https://www.linkedin.com/in/sanabil-english-high-school-20a1201b0/"
+              url={newchaiminardata.contactUsLinks.LinkedIn}
               target="_blank"
             />
           </div>
           <div>
             <SocialIcon
               network="youtube"
-              url="https://www.youtube.com/@sanabilschool3578"
+              url={newchaiminardata.contactUsLinks.youtube}
               target="_blank"
             />
           </div>
@@ -28,31 +28,30 @@ export const Footer = () => {
             {" "}
             <SocialIcon
               network="facebook"
-              url="https://www.facebook.com/sanabilenglishschool"
+              url={newchaiminardata.contactUsLinks.facebook}
               target="_blank"
             />
           </div>
         </div>
         <div style={{ paddingTop: "15px" }}>
-          Gottigere post, C K palya Road, Bannerghatta Main Rd,
-          Hommadevanahalli, Bengaluru, Karnataka 560083
+          {newchaiminardata.contactusPage.AddressContent}
           <br />
           <br />
           <span id="emailId">
             {" "}
             <FontAwesomeIcon icon={faEnvelope} /> Email:{" "}
-            <b>info@newchaiminar.com</b>
+            <b>{newchaiminardata.webdata.emailid}</b>
           </span>
           <br />
           <br />
           <span id="telId">
             {" "}
-            <FontAwesomeIcon icon={faPhone} /> 
+            <FontAwesomeIcon icon={faPhone} />
             <b>{newchaiminardata.webdata.mobilenumber}</b>
           </span>
           <br />
           <br />
-          Copyright © 2023 New Chai Minar.
+          {newchaiminardata.footer.footerContent}
         </div>
       </div>
     </footer>
