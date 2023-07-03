@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutUS.css";
 import aboutUs from "../../images/aboutUs.jpg";
 import aboutTop from "../../images/about-us-top.jpg";
+import newchaiminardata from "../../data/newchaiminar.json";
 
 export const AboutUS = () => {
   return (
@@ -14,7 +15,7 @@ export const AboutUS = () => {
         <div className="row mt-5">
           <div className="col-lg-8">
             <div>
-              <h2>OUR MISSION</h2>
+              <h2>{newchaiminardata.aboutusPage.header}</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
@@ -26,11 +27,7 @@ export const AboutUS = () => {
                 />
               </svg>
               <div className="content-font-family">
-                We <strong>@ Sanabil English High School</strong> have a
-                mission, To promote culture of education excellence from with in
-                a caring and secure islamic environment enriched with the value
-                of discipline, mutual care and respect which extend beyond the
-                school into wider community
+                {newchaiminardata.aboutusPage.headerContent}
               </div>
             </div>
           </div>
@@ -48,7 +45,7 @@ export const AboutUS = () => {
         <div className="row">
           <div className="col-lg-6">
             <div id="about-about-us">
-              <h2>ABOUT US</h2>
+              <h2>{newchaiminardata.aboutusPage.belowHeader}</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
@@ -60,16 +57,13 @@ export const AboutUS = () => {
                 />
               </svg>
               <div className="content-font-family">
-                <strong>Sanabil English High School</strong> is the platform
-                that not only provides modern education, but take cares in
-                instil religious values and life skills. There is nothing better
-                you can give your Child than good education.
+                {newchaiminardata.aboutusPage.belowHeaderContent}
               </div>
             </div>
           </div>
           <div className="col-lg-6">
             <div id="about-why-us">
-              <h2>WHY CHOOSE SANABIL</h2>
+              <h2>{newchaiminardata.aboutusPage.sideHeader}</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
@@ -92,7 +86,9 @@ export const AboutUS = () => {
                       strokeWidth="2"
                     />
                   </svg>
-                  <span>Interactive Learning</span>
+                  <span>
+                    {newchaiminardata.aboutusPage.sideHeaderContent[0]}
+                  </span>
                 </div>
                 <div>
                   <svg width="10" height="20">
@@ -105,7 +101,9 @@ export const AboutUS = () => {
                       strokeWidth="2"
                     />
                   </svg>
-                  <span>Individual Development</span>
+                  <span>
+                    {newchaiminardata.aboutusPage.sideHeaderContent[1]}
+                  </span>
                 </div>
                 <div>
                   <svg width="10" height="20">
@@ -118,7 +116,9 @@ export const AboutUS = () => {
                       strokeWidth="2"
                     />
                   </svg>
-                  <span>Group Activities</span>
+                  <span>
+                    {newchaiminardata.aboutusPage.sideHeaderContent[2]}
+                  </span>
                 </div>
                 <div>
                   <svg width="10" height="20">
@@ -131,7 +131,9 @@ export const AboutUS = () => {
                       strokeWidth="2"
                     />
                   </svg>
-                  <span>Fun Learning Environment</span>
+                  <span>
+                    {newchaiminardata.aboutusPage.sideHeaderContent[3]}
+                  </span>
                 </div>
                 <div>
                   <svg width="10" height="20">
@@ -144,7 +146,9 @@ export const AboutUS = () => {
                       strokeWidth="2"
                     />
                   </svg>
-                  <span>Interactive and Emerging Activities</span>
+                  <span>
+                    {newchaiminardata.aboutusPage.sideHeaderContent[4]}
+                  </span>
                 </div>
               </div>
             </div>

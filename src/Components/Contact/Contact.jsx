@@ -4,6 +4,7 @@ import { SocialIcon } from "react-social-icons";
 import "./Contact.css";
 import { SendEmail } from "../shared/sendemail/sendemail";
 import axios from "axios";
+import newchaiminardata from "../../data/newchaiminar.json";
 
 export const Contact = () => {
   return (
@@ -23,7 +24,9 @@ export const Contact = () => {
             <h1>DROP AN ENQUIRY</h1>
           </div>
           <div className="col-md-6">
-            <h1 className="dispaly-4">FIND US ON </h1>
+            <h1 className="dispaly-4">
+              {newchaiminardata.contactusPage.header}{" "}
+            </h1>
           </div>
         </div>
         <div className="row mx-4">
@@ -45,15 +48,14 @@ export const Contact = () => {
               />
             </svg>
             <p>
-              {" "}
-              Gottigere post, C K palya Road, Bannerghatta Main Rd,
+              {newchaiminardata.contactusPage.AddressContent[0]}
               <br />
-              Hommadevanahalli, Bengaluru,
+              {newchaiminardata.contactusPage.AddressContent[1]}
               <br />
-              Karnataka - 560083
+              {newchaiminardata.contactusPage.AddressContent[2]}
             </p>
             <br />
-            <h5>Online Support</h5>
+            <h5>{newchaiminardata.contactusPage.OnlineSupport}</h5>
             <svg width="80%" height="20">
               <line
                 x1="0"
@@ -64,9 +66,9 @@ export const Contact = () => {
                 strokeWidth="2"
               />
             </svg>
-            <p>WhatsApp @8050369047</p>
+            <p>{newchaiminardata.contactusPage.OnlineSupportContent}</p>
             <br />
-            <h5>Office Hours</h5>
+            <h5>{newchaiminardata.contactusPage.OfficeHours}</h5>
             <svg width="80%" height="20">
               <line
                 x1="0"
@@ -77,19 +79,19 @@ export const Contact = () => {
                 strokeWidth="2"
               />
             </svg>
-            <p> 9:00 AM - 6:00 PM (Mon to Sat)</p>
-            <div style={{ display: "flex", justifyContent: 'space-evenly' }}>
+            <p> {newchaiminardata.contactusPage.OfficeHoursContent}</p>
+            <div style={{ display: "flex", justifyContent: "space-evenly" }}>
               <div>
                 <SocialIcon
                   network="linkedin"
-                  url="https://www.linkedin.com/in/sanabil-english-high-school-20a1201b0/"
+                  url={newchaiminardata.contactUsLinks.LinkedIn}
                   target="_blank"
                 />
               </div>
               <div>
                 <SocialIcon
                   network="youtube"
-                  url="https://www.youtube.com/@sanabilschool3578"
+                  url={newchaiminardata.contactUsLinks.youtube}
                   target="_blank"
                 />
               </div>
@@ -97,7 +99,7 @@ export const Contact = () => {
                 {" "}
                 <SocialIcon
                   network="facebook"
-                  url="https://www.facebook.com/sanabilenglishschool"
+                  url={newchaiminardata.contactUsLinks.facebook}
                   target="_blank"
                 />
               </div>
@@ -106,7 +108,7 @@ export const Contact = () => {
         </div>
       </div>
       {/* Google maps for location */}
-      <div className="row mb-5" style={{width: '100%', margin: '0 auto'} }>
+      <div className="row mb-5" style={{ width: "100%", margin: "0 auto" }}>
         <div className="col-md-12">
           <h1 className="dispaly-4">OUR LOCATION</h1>
           <iframe
