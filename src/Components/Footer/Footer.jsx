@@ -51,7 +51,8 @@ export const Footer = () => {
           </span>
           <br />
           <br />
-          {newchaiminardata.footer.footerContent}
+          {newchaiminardata.footer.footerContent} 
+          <span dangerouslySetInnerHTML={{ __html: newchaiminardata.footer.copyright }}></span>
         </div>
       </div>
     </footer>

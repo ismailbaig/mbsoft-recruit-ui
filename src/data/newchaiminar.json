@@ -2,7 +2,7 @@
     "navbar": {
         "header": "SANABIL",
         "subHeader": "English High School",
-        "belowHeader": "Learners Today, Leaders Tomorrow"
+        "belowHeader": "Learners Today, Leaders Tomorrow !"
     },
     "webdata": {
         "mobilenumber": "(+91) 33333-44444",
@@ -26,12 +26,10 @@
         "header": "FIND US ON",
         "Address": "Address",
         "AddressContent": [
-            "Gottigere post, C K palya Road, Bannerghatta Main Rd,",
-            "Hommadevanahalli, Bengaluru,",
-            "Karnataka - 560083"
+            "Plot No. 50, Sri Laxmi Nagar Colony, Manikonda Jagir, Telangana 500089"
         ],
         "OnlineSupport": "Online Support",
-        "OnlineSupportContent": "WhatsApp @8050369047",
+        "OnlineSupportContent": "WhatsApp @ (+91) 33333-44444",
         "OfficeHours": "Office Hours",
         "OfficeHoursContent": "9:00 AM - 6:00 PM (Mon to Sat)"
     },
@@ -41,6 +39,7 @@
         "facebook": "https://www.facebook.com/sanabilenglishschool"
     },
     "footer": {
-        "footerContent": "Copyright © 2023 New Chai Minar."
+        "footerContent": "Copyright © 2023 Millio ",
+        "copyright": "for similar website contact <b>baigece2007@gmail.com</b>"
     }
 }
