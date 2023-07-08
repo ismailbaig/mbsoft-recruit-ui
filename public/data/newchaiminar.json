@@ -1,8 +1,8 @@
 {
     "navbar": {
-        "header": "SANABIL",
-        "subHeader": "English High School",
-        "belowHeader": "Learners Today, Leaders Tomorrow !"
+        "header": "CHAI MINAR",
+        "subHeader": "Aromatic Tea Delights",
+        "belowHeader": "A cup of tea is a cup of peace !"
     },
     "webdata": {
         "mobilenumber": "(+91) 33333-44444",
@@ -10,19 +10,20 @@
     },
     "aboutusPage": {
         "header": "OUR MISSION",
-        "headerContent": "We @Sanabil English High School have a mission, To promote culture of education excellence from with in a caring and secure islamic environment enriched with the value of discipline, mutual care and respect which extend beyond the school into wider community",
+        "headerContent": "Our mission at CHAI MINAR is simple: to serve you the perfect cup of tea. We are dedicated to sourcing the finest tea leaves and creating a serene environment where you can unwind and enjoy the rich flavors and aromas of our carefully curated tea selection. Experience the essence of tranquility with every sip at Chaiminar.",
         "belowHeader": "ABOUT US",
-        "belowHeaderContent": "Sanabil English High School is the platform that not only provides modern education, but take cares in instil religious values and life skills. There is nothing better you can give your Child than good education.",
-        "sideHeader": "WHY CHOOSE SANABIL",
+        "belowHeaderContent": "At Chaiminar, we are on a mission to redefine the tea experience. With a passion for quality and a dedication to excellence, we strive to provide you with the finest teas from around the world. Join us as we create a sanctuary of flavors, where you can indulge in the art of tea and find tranquility in every sip.",
+        "sideHeader": "WHY CHOOSE CHAI MINAR",
         "sideHeaderContent": [
-            "Interactive Learning",
-            "Individual Development",
-            "Group Activities",
-            "Fun Learning Environment",
-            "Interactive and Emerging Activities"
+            " Exquisite Flavors",
+            " Unparalleled Quality",
+            " Tranquil Ambiance",
+            " Personalized Service",
+            " Tea Mastery"
         ]
     },
     "contactusPage": {
+        "franchise": "Get your Franchise",
         "header": "FIND US ON",
         "Address": "Address",
         "AddressContent": [
@@ -30,8 +31,8 @@
         ],
         "OnlineSupport": "Online Support",
         "OnlineSupportContent": "WhatsApp @ (+91) 33333-44444",
-        "OfficeHours": "Office Hours",
-        "OfficeHoursContent": "9:00 AM - 6:00 PM (Mon to Sat)"
+        "OfficeHours": "Hotel Hours",
+        "OfficeHoursContent": "9:00 AM - 10:00 PM (Mon to Sun)"
     },
     "contactUsLinks": {
         "LinkedIn": "https://www.linkedin.com/in/sanabil-english-high-school-20a1201b0/",
