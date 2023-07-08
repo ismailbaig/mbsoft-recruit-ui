@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Belowheader.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import newchaiminardata from "../../data/newchaiminar.json";
 
 export const Belowheader = () => {
+  const [newchaiminardata, setData] = useState();
+
+  const fetchJson = () => {
+    fetch("data/newchaiminar.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+      })
+      .catch((e) => {
+        console.log(e.message);
+      });
+  };
+
+  useEffect(() => {
+    fetchJson();
+  }, []);
+
   return (
     <section>
       <div className="container">
@@ -17,12 +35,12 @@ export const Belowheader = () => {
             <span id="emailId">
               {" "}
               <FontAwesomeIcon icon={faEnvelope} />
-              {newchaiminardata.webdata.emailid}
+              {newchaiminardata?.webdata?.emailid}
             </span>
             <span id="telId">
               {" "}
               <FontAwesomeIcon icon={faPhone} />{" "}
-              {newchaiminardata.webdata.mobilenumber}{" "}
+              {newchaiminardata?.webdata?.mobilenumber}{" "}
             </span>
           </div>
         </div>
