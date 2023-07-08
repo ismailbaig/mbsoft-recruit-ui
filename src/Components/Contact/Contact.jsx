@@ -1,12 +1,29 @@
-import { React } from "react";
+import React, { useState, useEffect } from "react";
 import contact from "../../images/contact.jpg";
 import { SocialIcon } from "react-social-icons";
 import "./Contact.css";
 import { SendEmail } from "../shared/sendemail/sendemail";
-import axios from "axios";
-import newchaiminardata from "../../data/newchaiminar.json";
 
 export const Contact = () => {
+  const [newchaiminardata, setData] = useState();
+
+  const fetchJson = () => {
+    fetch("data/newchaiminar.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+      })
+      .catch((e) => {
+        console.log(e.message);
+      });
+  };
+
+  useEffect(() => {
+    fetchJson();
+  }, []);
+
   return (
     <div>
       <div className="container mb-5">
@@ -25,7 +42,7 @@ export const Contact = () => {
           </div>
           <div className="col-md-6">
             <h1 className="dispaly-4">
-              {newchaiminardata.contactusPage.header}{" "}
+              {newchaiminardata?.contactusPage?.header}{" "}
             </h1>
           </div>
         </div>
@@ -48,14 +65,14 @@ export const Contact = () => {
               />
             </svg>
             <p>
-              {newchaiminardata.contactusPage.AddressContent[0]}
+              {newchaiminardata?.contactusPage?.AddressContent[0]}
               <br />
-              {newchaiminardata.contactusPage.AddressContent[1]}
+              {newchaiminardata?.contactusPage?.AddressContent[1]}
               <br />
-              {newchaiminardata.contactusPage.AddressContent[2]}
+              {newchaiminardata?.contactusPage?.AddressContent[2]}
             </p>
             <br />
-            <h5>{newchaiminardata.contactusPage.OnlineSupport}</h5>
+            <h5>{newchaiminardata?.contactusPage?.OnlineSupport}</h5>
             <svg width="80%" height="20">
               <line
                 x1="0"
@@ -66,9 +83,9 @@ export const Contact = () => {
                 strokeWidth="2"
               />
             </svg>
-            <p>{newchaiminardata.contactusPage.OnlineSupportContent}</p>
+            <p>{newchaiminardata?.contactusPage?.OnlineSupportContent}</p>
             <br />
-            <h5>{newchaiminardata.contactusPage.OfficeHours}</h5>
+            <h5>{newchaiminardata?.contactusPage?.OfficeHours}</h5>
             <svg width="80%" height="20">
               <line
                 x1="0"
@@ -79,7 +96,7 @@ export const Contact = () => {
                 strokeWidth="2"
               />
             </svg>
-            <p> {newchaiminardata.contactusPage.OfficeHoursContent}</p>
+            <p> {newchaiminardata?.contactusPage?.OfficeHoursContent}</p>
             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
               <div>
                 <SocialIcon

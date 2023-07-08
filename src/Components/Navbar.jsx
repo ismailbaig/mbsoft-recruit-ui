@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanabilLogo from "../images/sanabilLogo.jpeg";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import newchaiminardata from "../data/newchaiminar.json";
+
 const Navbar = () => {
   const navigate = useNavigate();
   //const currentPath = window.location.pathname;
@@ -17,7 +17,23 @@ const Navbar = () => {
   //   navClass = 'non-home-page';
   // }
 
+  const [newchaiminardata, setData] = useState();
+
+  const fetchJson = () => {
+    fetch("data/newchaiminar.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+      })
+      .catch((e) => {
+        console.log(e.message);
+      });
+  };
+
   useEffect(() => {
+    fetchJson();
     window.scrollTo(0, 0);
   }, [location]);
 
@@ -41,12 +57,12 @@ const Navbar = () => {
                     />
                   </NavLink>
                   <div className="h-name">
-                    <h3>{newchaiminardata.navbar.header}</h3>
+                    <h3>{newchaiminardata?.navbar?.header}</h3>
                     <div className="sub-info">
-                      {newchaiminardata.navbar.subHeader}
+                      {newchaiminardata?.navbar?.subHeader}
                     </div>
                     <div className="sub-sub-info sub-sub-info-mrgin">
-                      {newchaiminardata.navbar.belowHeader}
+                      {newchaiminardata?.navbar?.belowHeader}
                     </div>
                   </div>
                 </div>
