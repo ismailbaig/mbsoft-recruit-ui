@@ -1,0 +1,45 @@
+{
+    "navbar": {
+        "header": "SANABIL",
+        "subHeader": "English High School",
+        "belowHeader": "Learners Today, Leaders Tomorrow !"
+    },
+    "webdata": {
+        "mobilenumber": "(+91) 33333-44444",
+        "emailid": " info@newchaiminar.com"
+    },
+    "aboutusPage": {
+        "header": "OUR MISSION",
+        "headerContent": "We @Sanabil English High School have a mission, To promote culture of education excellence from with in a caring and secure islamic environment enriched with the value of discipline, mutual care and respect which extend beyond the school into wider community",
+        "belowHeader": "ABOUT US",
+        "belowHeaderContent": "Sanabil English High School is the platform that not only provides modern education, but take cares in instil religious values and life skills. There is nothing better you can give your Child than good education.",
+        "sideHeader": "WHY CHOOSE SANABIL",
+        "sideHeaderContent": [
+            "Interactive Learning",
+            "Individual Development",
+            "Group Activities",
+            "Fun Learning Environment",
+            "Interactive and Emerging Activities"
+        ]
+    },
+    "contactusPage": {
+        "header": "FIND US ON",
+        "Address": "Address",
+        "AddressContent": [
+            "Plot No. 50, Sri Laxmi Nagar Colony, Manikonda Jagir, Telangana 500089"
+        ],
+        "OnlineSupport": "Online Support",
+        "OnlineSupportContent": "WhatsApp @ (+91) 33333-44444",
+        "OfficeHours": "Office Hours",
+        "OfficeHoursContent": "9:00 AM - 6:00 PM (Mon to Sat)"
+    },
+    "contactUsLinks": {
+        "LinkedIn": "https://www.linkedin.com/in/sanabil-english-high-school-20a1201b0/",
+        "youtube": "https://www.youtube.com/@sanabilschool3578",
+        "facebook": "https://www.facebook.com/sanabilenglishschool"
+    },
+    "footer": {
+        "footerContent": "Copyright © 2023 Millio ",
+        "copyright": "for similar website contact <b> baigece2007@gmail.com </b>"
+    }
+}

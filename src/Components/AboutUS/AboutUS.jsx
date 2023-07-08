@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./AboutUS.css";
 import aboutUs from "../../images/aboutUs.jpg";
 import aboutTop from "../../images/about-us-top.jpg";
-import newchaiminardata from "../../data/newchaiminar.json";
 
 export const AboutUS = () => {
+
+  const [newchaiminardata, setData] = useState();
+
+  const fetchJson = () => {
+    fetch('data/newchaiminar.json')
+    .then(response => {
+      return response.json();
+    }).then(data => {
+      setData(data);
+    }).catch((e) => {
+      console.log(e.message);
+    });
+  }
+
+  useEffect(() => {
+    fetchJson()
+  }, []);
+
+
   return (
     <section id="aboutus">
       <div className="container mb-5">
@@ -15,7 +33,7 @@ export const AboutUS = () => {
         <div className="row mt-5">
           <div className="col-lg-8">
             <div>
-              <h2>{newchaiminardata.aboutusPage.header}</h2>
+              <h2>{newchaiminardata?.aboutusPage?.header}</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
@@ -27,7 +45,7 @@ export const AboutUS = () => {
                 />
               </svg>
               <div className="content-font-family">
-                {newchaiminardata.aboutusPage.headerContent}
+                {newchaiminardata?.aboutusPage?.headerContent}
               </div>
             </div>
           </div>
@@ -45,7 +63,7 @@ export const AboutUS = () => {
         <div className="row">
           <div className="col-lg-6">
             <div id="about-about-us">
-              <h2>{newchaiminardata.aboutusPage.belowHeader}</h2>
+              <h2>{newchaiminardata?.aboutusPage?.belowHeader}</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
@@ -57,13 +75,13 @@ export const AboutUS = () => {
                 />
               </svg>
               <div className="content-font-family">
-                {newchaiminardata.aboutusPage.belowHeaderContent}
+                {newchaiminardata?.aboutusPage?.belowHeaderContent}
               </div>
             </div>
           </div>
           <div className="col-lg-6">
             <div id="about-why-us">
-              <h2>{newchaiminardata.aboutusPage.sideHeader}</h2>
+              <h2>{newchaiminardata?.aboutusPage?.sideHeader}</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
@@ -87,7 +105,7 @@ export const AboutUS = () => {
                     />
                   </svg>
                   <span>
-                    {newchaiminardata.aboutusPage.sideHeaderContent[0]}
+                    {newchaiminardata?.aboutusPage?.sideHeaderContent[0]}
                   </span>
                 </div>
                 <div>
@@ -102,7 +120,7 @@ export const AboutUS = () => {
                     />
                   </svg>
                   <span>
-                    {newchaiminardata.aboutusPage.sideHeaderContent[1]}
+                    {newchaiminardata?.aboutusPage?.sideHeaderContent[1]}
                   </span>
                 </div>
                 <div>
@@ -117,7 +135,7 @@ export const AboutUS = () => {
                     />
                   </svg>
                   <span>
-                    {newchaiminardata.aboutusPage.sideHeaderContent[2]}
+                    {newchaiminardata?.aboutusPage?.sideHeaderContent[2]}
                   </span>
                 </div>
                 <div>
@@ -132,7 +150,7 @@ export const AboutUS = () => {
                     />
                   </svg>
                   <span>
-                    {newchaiminardata.aboutusPage.sideHeaderContent[3]}
+                    {newchaiminardata?.aboutusPage?.sideHeaderContent[3]}
                   </span>
                 </div>
                 <div>
@@ -147,7 +165,7 @@ export const AboutUS = () => {
                     />
                   </svg>
                   <span>
-                    {newchaiminardata.aboutusPage.sideHeaderContent[4]}
+                    {newchaiminardata?.aboutusPage?.sideHeaderContent[4]}
                   </span>
                 </div>
               </div>
