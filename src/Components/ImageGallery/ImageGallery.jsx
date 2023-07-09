@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./ImageGallery.css";
-import Sanabil1 from "../../images/sanabilschoolphotos/SanabilPhoto3.jpeg";
-import Sanabil2 from "../../images/sanabilschoolphotos/SanabilPhoto4.jpeg";
-import Sanabil3 from "../../images/sanabilschoolphotos/SanabilPhoto5.jpeg";
-import Sanabil5 from "../../images/sanabilschoolphotos/SanabilPhoto7.jpeg";
-import Sanabil6 from "../../images/sanabilschoolphotos/SanabilPhoto8.jpeg";
-import Sanabil7 from "../../images/sanabilschoolphotos/SanabilPhoto11.jpeg";
+import ChaiMinar1 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto3.jpeg";
+import ChaiMinar2 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto4.jpeg";
+import ChaiMinar3 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto5.jpeg";
+import ChaiMinar5 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto7.jpeg";
+import ChaiMinar6 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto8.jpeg";
+import ChaiMinar7 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto11.jpeg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -21,28 +21,28 @@ export const ImageGallery = ({ images }) => {
         <div className="carousel-container">
         <Carousel>
           <div>
-            <img src={Sanabil1} alt="Image 1" />
-            <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
+            <img src={ChaiMinar1} alt="Image 1" />
+            <p className="legend">CHAI MINAR TEA HOTEL</p>
           </div>
           <div>
-            <img src={Sanabil2} alt="Image 2" />
-            <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
+            <img src={ChaiMinar2} alt="Image 2" />
+            <p className="legend">CHAI MINAR TEA HOTEL</p>
           </div>
           <div>
-            <img src={Sanabil3} alt="Image 3" />
-            <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
+            <img src={ChaiMinar3} alt="Image 3" />
+            <p className="legend">CHAI MINAR TEA HOTEL</p>
           </div>
           <div>
-            <img src={Sanabil6} alt="Image 2" />
-            <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
+            <img src={ChaiMinar6} alt="Image 2" />
+            <p className="legend">CHAI MINAR TEA HOTEL</p>
       </div>
           <div>
-            <img src={Sanabil5} alt="Image 3" />
-            <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
+            <img src={ChaiMinar5} alt="Image 3" />
+            <p className="legend">CHAI MINAR TEA HOTEL</p>
         </div>
         <div>
-            <img src={Sanabil7} alt="Image 1" />
-            <p className="legend">SANABIL ENGLISH HIGH SCHOOL</p>
+            <img src={ChaiMinar7} alt="Image 1" />
+            <p className="legend">CHAI MINAR TEA HOTEL</p>
           </div>
         </Carousel>
         </div>
