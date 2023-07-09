@@ -38,7 +38,7 @@ export const Contact = () => {
       <div className="container mb-5">
         <div className="row">
           <div className="col-md-6">
-            <h1>DROP AN ENQUIRY</h1>
+            <h1>{newchaiminardata?.contactusPage?.franchise}</h1>
           </div>
           <div className="col-md-6">
             <h1 className="dispaly-4">
@@ -101,14 +101,14 @@ export const Contact = () => {
               <div>
                 <SocialIcon
                   network="linkedin"
-                  url={newchaiminardata.contactUsLinks.LinkedIn}
+                  url={newchaiminardata?.contactUsLinks?.LinkedIn}
                   target="_blank"
                 />
               </div>
               <div>
                 <SocialIcon
                   network="youtube"
-                  url={newchaiminardata.contactUsLinks.youtube}
+                  url={newchaiminardata?.contactUsLinks?.youtube}
                   target="_blank"
                 />
               </div>
@@ -116,7 +116,7 @@ export const Contact = () => {
                 {" "}
                 <SocialIcon
                   network="facebook"
-                  url={newchaiminardata.contactUsLinks.facebook}
+                  url={newchaiminardata?.contactUsLinks?.facebook}
                   target="_blank"
                 />
               </div>
