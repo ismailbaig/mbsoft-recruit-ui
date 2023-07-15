@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./ImageGallery.css";
-import ChaiMinar1 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto3.jpeg";
-import ChaiMinar2 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto4.jpeg";
-import ChaiMinar3 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto5.jpeg";
-import ChaiMinar5 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto7.jpeg";
-import ChaiMinar6 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto8.jpeg";
-import ChaiMinar7 from "../../images/ChaiMinarschoolphotos/ChaiMinarPhoto11.jpeg";
+import ChaiMinar1 from "../../images/ChaiMinarHotelphotos/ChaiMinarPhoto3.jpeg";
+import ChaiMinar2 from "../../images/ChaiMinarHotelphotos/ChaiMinarPhoto4.jpeg";
+import ChaiMinar3 from "../../images/ChaiMinarHotelphotos/ChaiMinarPhoto5.jpeg";
+import ChaiMinar5 from "../../images/ChaiMinarHotelphotos/ChaiMinarPhoto7.jpeg";
+import ChaiMinar6 from "../../images/ChaiMinarHotelphotos/ChaiMinarPhoto8.jpeg";
+import ChaiMinar7 from "../../images/ChaiMinarHotelphotos/ChaiMinarPhoto11.jpeg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
