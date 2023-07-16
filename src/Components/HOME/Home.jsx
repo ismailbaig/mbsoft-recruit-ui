@@ -14,8 +14,7 @@ import videoHome1 from "../../video/videoHome1.mp4";
 import homep1 from "../../images/Portfolio2.jpg";
 import IndustrialAutomation from "../../images/Portfolio1.jpg";
 // import rabasa from "../../images/rabasa.jpg";
-import CountUp from 'react-countup';
-
+import CountUp from "react-countup";
 
 export const Home = () => {
   const [newchaiminardata, setData] = useState();
@@ -38,12 +37,132 @@ export const Home = () => {
   }, []);
   return (
     <section>
-      <div className="gContainerFluid">
+      <div className="gContainerFluid image">
         <img src={homeTop} alt="Snow" style={{ width: "100%" }} />
-        <div className="gCentered ">
-          <p className="display-1 fw-bolder">CHAI MINAR TEA HOTEL</p>
+        <div className="homeTopCentered">
+          <p className="fw-bolder">CHAI MINAR TEA HOTEL</p>
+
+          <div id="nonMobileViewCounts" className="container mt-4">
+            <svg width="80%" height="20">
+              <line
+                x1="0"
+                y1="1"
+                x2="100%"
+                y2="1"
+                stroke="red"
+                strokeWidth="2"
+              />
+            </svg>
+            <div
+              className="row mb-5 mt-5"
+              style={{ justifyContent: "space-around", width: "100%" }}
+            >
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
+                  <h4>
+                    <CountUp start={0} end={10} suffix="+" duration={2.5} />
+                  </h4>
+                  <h4>Outlets</h4>
+                </div>
+              </div>
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
+                  <h4>
+                    <CountUp start={0} end={1000} suffix="+" duration={8.5} />
+                  </h4>
+                  <h4>Tea cups/ Day</h4>
+                </div>
+              </div>
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
+                  <h4>
+                    <CountUp
+                      start={0}
+                      end={200}
+                      suffix="+ litres"
+                      duration={8.5}
+                    />
+                  </h4>
+                  <h4>Milk used / Day</h4>
+                </div>
+              </div>
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-solid fa-city homeMaintainSupporticon"></i>
+                  <h4>
+                    <CountUp start={0} end={2} suffix="+" duration={1.5} />
+                  </h4>
+                  <h4>Cities</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <div id="mobileViewCounts" className="container mt-4">
+            <svg width="80%" height="20">
+              <line
+                x1="0"
+                y1="1"
+                x2="100%"
+                y2="1"
+                stroke="red"
+                strokeWidth="2"
+              />
+            </svg>
+            <div
+              className="row mb-5 mt-5"
+              style={{ justifyContent: "space-around", width: "100%" }}
+            >
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
+                  <h4>
+                    <CountUp start={0} end={10} suffix="+" duration={2.5} />
+                  </h4>
+                  <h4>Outlets</h4>
+                </div>
+              </div>
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
+                  <h4>
+                    <CountUp start={0} end={1000} suffix="+" duration={8.5} />
+                  </h4>
+                  <h4>Tea cups/ Day</h4>
+                </div>
+              </div>
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
+                  <h4>
+                    <CountUp
+                      start={0}
+                      end={200}
+                      suffix="+ litres"
+                      duration={8.5}
+                    />
+                  </h4>
+                  <h4>Milk used / Day</h4>
+                </div>
+              </div>
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-solid fa-city homeMaintainSupporticon"></i>
+                  <h4>
+                    <CountUp start={0} end={2} suffix="+" duration={1.5} />
+                  </h4>
+                  <h4>Cities</h4>
+                </div>
+              </div>
+            </div>
+      </div>
+
       <div className="container">
         <div className="row">
           <div
@@ -204,47 +323,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-4">
-        <h3 className="display-4 fw-semibold" style={{ padding: "18px" }}>
-          OUR DEVELOPMENT METHODOLOGY
-        </h3>
-        <svg width="80%" height="20">
-          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
-        </svg>
-        <div
-          className="row mb-5 mt-5"
-          style={{ justifyContent: "space-around", width: "100%" }}
-        >
-          <div className="col-md-2">
-            <div>
-              <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-               <h4><CountUp start={0} end={10} suffix='+' duration={2.5} /></h4>
-               <h4>Outlets</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-               <h4><CountUp start={0} end={1000} suffix='+' duration={8.5} /></h4>
-              <h4>Tea cups/ Day</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-               <h4><CountUp start={0} end={200} suffix=' litres +' duration={8.5} /></h4>
-              <h4>Milk used /  Day</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-               <h4><CountUp start={0} end={2} suffix='+' duration={1.5} /></h4>
-              <h4>Cities</h4>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="gContainerFluid gVideo mt-5 mb-5">
         <video src={videoHome1} autoPlay muted playsInline loop />
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
@@ -257,45 +335,44 @@ export const Home = () => {
         className="row mb-5 mt-5"
         style={{ justifyContent: "space-around", width: "100%" }}
       >
-       <div className="col-md-1">
-            <div>
-              <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-               <h4>Outlets of our Franchise</h4>
-            </div>
+        <div className="col-md-1">
+          <div>
+            <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
+            <h4>Outlets of our Franchise</h4>
           </div>
-          <div className="col-md-1">
-            <div>
-              <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-              <h4>2k+ Tea cups sold per Day</h4>
-            </div>
+        </div>
+        <div className="col-md-1">
+          <div>
+            <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
+            <h4>1k+ Tea cups sold per Day</h4>
           </div>
-          <div className="col-md-1">
-            <div>
-              <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-              <h4>200 litres of Milk used per day</h4>
-            </div>
+        </div>
+        <div className="col-md-1">
+          <div>
+            <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
+            <h4>200 litres of Milk used per day</h4>
           </div>
-          <div className="col-md-1">
-            <div>
-              <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-              <h4>We have outlets in two Cities</h4>
-            </div>
+        </div>
+        <div className="col-md-1">
+          <div>
+            <i className="fa-solid fa-city homeMaintainSupporticon"></i>
+            <h4>We have outlets in two Cities</h4>
           </div>
+        </div>
 
-          <div className="col-md-1">
-            <div>
-              <i className="fa-sharp fa-solid fa-rocket homeTestModifyicon"></i>
-              <h4>Chai Minar's Soaring Success</h4>
-            </div>
+        <div className="col-md-1">
+          <div>
+            <i className="fa-sharp fa-solid fa-rocket homeTestModifyicon"></i>
+            <h4>Chai Minar's Soaring Success</h4>
           </div>
-          <div className="col-md-1">
-            <div>
-              <i className="fa-solid fa-bar-chart homeMaintainSupporticon"></i>
-              <h4>Sales trends and estimates</h4>
-            </div>
+        </div>
+        <div className="col-md-1">
+          <div>
+            <i className="fa-solid fa-bar-chart homeMaintainSupporticon"></i>
+            <h4>Sales trends and estimates</h4>
           </div>
-
-          </div>
+        </div>
+      </div>
 
       {/* PORTFOLIO starts here */}
       <div id="h_portfolio" className="row" style={{ width: "100%" }}>
@@ -305,7 +382,8 @@ export const Home = () => {
             <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
           </svg>
           <p className="fs-4">
-          "Discover the essence of tea hospitality at our exquisite tea hotel !!"
+            "Discover the essence of tea hospitality at our exquisite tea hotel
+            !!"
           </p>
         </div>
         <div className="col-md-4">
@@ -327,13 +405,13 @@ export const Home = () => {
           </div>
         </div>
         {/* <div className="col-md-4 rabasaClient"> */}
-          {/* <img
+        {/* <img
             className="img-responsive"
             src={homep4}
             alt=""
             style={{ width: "100%", height: "30%" }}
           /> */}
-          {/* <img className="img-responsive" src={rabasa} alt="" />
+        {/* <img className="img-responsive" src={rabasa} alt="" />
         </div> */}
       </div>
       {/* PORTFOLIO ends  here */}

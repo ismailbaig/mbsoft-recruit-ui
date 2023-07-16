@@ -2,6 +2,14 @@
     height: 480px;
 }
 
+.homeTopCentered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+  }
+
 .homeCarouselImage {
     height: 100%;
     object-fit: cover;
@@ -101,7 +109,20 @@ label {
     width: 50%;
 }
 
+#nonMobileViewCounts {
+    display: block;
+}
+#mobileViewCounts {
+    display: none;
+}
+
 @media (max-width: 767px) {
+    #nonMobileViewCounts {
+        display: none;
+    }
+    #mobileViewCounts {
+        display: block;
+    }
     .rabasaClient {
         height: 100%;
         width: 50%;

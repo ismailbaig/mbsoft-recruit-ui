@@ -3,17 +3,21 @@ import contact from "../../images/contact.jpg";
 import { SocialIcon } from "react-social-icons";
 import "./Contact.css";
 import { SendEmail } from "../shared/sendemail/sendemail";
+import { TeaLoading } from "../shared/TeaLoading/TeaLoading";
 
 export const Contact = () => {
   const [newchaiminardata, setData] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchJson = () => {
+    setTimeout(() => setIsLoading(true));
     fetch("data/newchaiminar.json")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         setData(data);
+        setTimeout(() => setIsLoading(false), 1000);
       })
       .catch((e) => {
         console.log(e.message);
@@ -25,7 +29,11 @@ export const Contact = () => {
   }, []);
 
   return (
-    <div>
+    <section id="contact">
+        {isLoading ? (
+        <TeaLoading></TeaLoading>
+      ) : (
+        <div>
       <div className="container mb-5">
         <div className="gContainerFluid image">
           <img src={contact} style={{ width: "100%" }} />
@@ -139,6 +147,10 @@ export const Contact = () => {
           ></iframe>
         </div>
       </div>
-    </div>
+      </div>
+      )}
+      
+      
+    </section>
   );
 };
