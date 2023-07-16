@@ -59,20 +59,20 @@ export const Home = () => {
             >
               <div className="col-md-2">
                 <div>
-                  <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-                  <h4>
-                    <CountUp start={0} end={10} suffix="+" duration={2.5} />
-                  </h4>
-                  <h4>Outlets</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
                   <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
                   <h4>
                     <CountUp start={0} end={1000} suffix="+" duration={8.5} />
                   </h4>
                   <h4>Tea cups/ Day</h4>
+                </div>
+              </div>
+              <div className="col-md-2">
+                <div>
+                  <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
+                  <h4>
+                    <CountUp start={0} end={10} suffix="+" duration={2.5} />
+                  </h4>
+                  <h4>Outlets</h4>
                 </div>
               </div>
               <div className="col-md-2">
@@ -100,67 +100,51 @@ export const Home = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
-      <div id="mobileViewCounts" className="container mt-4">
-            <svg width="80%" height="20">
-              <line
-                x1="0"
-                y1="1"
-                x2="100%"
-                y2="1"
-                stroke="red"
-                strokeWidth="2"
-              />
-            </svg>
-            <div
-              className="row mb-5 mt-5"
-              style={{ justifyContent: "space-around", width: "100%" }}
-            >
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-                  <h4>
-                    <CountUp start={0} end={10} suffix="+" duration={2.5} />
-                  </h4>
-                  <h4>Outlets</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-                  <h4>
-                    <CountUp start={0} end={1000} suffix="+" duration={8.5} />
-                  </h4>
-                  <h4>Tea cups/ Day</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-                  <h4>
-                    <CountUp
-                      start={0}
-                      end={200}
-                      suffix="+ litres"
-                      duration={8.5}
-                    />
-                  </h4>
-                  <h4>Milk used / Day</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-                  <h4>
-                    <CountUp start={0} end={2} suffix="+" duration={1.5} />
-                  </h4>
-                  <h4>Cities</h4>
-                </div>
-              </div>
+      <div id="mobileViewCounts" className="container">
+        <div
+          className="row"
+          style={{ justifyContent: "space-around", width: "100%" }}
+        >
+          <div className="col-md-2">
+            <div>
+              <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
+              <h4>
+                <CountUp start={0} end={1000} suffix="+" duration={8.5} />
+              </h4>
+              <h4>Tea cups/ Day</h4>
             </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
+              <h4>
+                <CountUp start={0} end={10} suffix="+" duration={2.5} />
+              </h4>
+              <h4>Outlets</h4>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
+              <h4>
+                <CountUp start={0} end={200} suffix="+ litres" duration={8.5} />
+              </h4>
+              <h4>Milk used / Day</h4>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-solid fa-city homeMaintainSupporticon"></i>
+              <h4>
+                <CountUp start={0} end={2} suffix="+" duration={1.5} />
+              </h4>
+              <h4>Cities</h4>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="container">
