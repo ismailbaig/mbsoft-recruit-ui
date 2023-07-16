@@ -25,7 +25,7 @@ import { ImageGallery } from "./Components/ImageGallery/ImageGallery";
 function App() {
 
   const images = [];
-  const imageContext = require.context('./images/sanabilschoolphotos', false, /\.(png|jpg|jpeg|gif)$/);
+  const imageContext = require.context('./images/ChaiMinarHotelphotos', false, /\.(png|jpg|jpeg|gif)$/);
 
   imageContext.keys().forEach((imagePath) => {
     images.push({
@@ -64,7 +64,7 @@ function App() {
       <FloatingWhatsApp
         phoneNumber="+918050369047"
         chatMessage="Hi, type and continue on WhatsApp!!!"
-        accountName="Sanabil English Medium School"
+        accountName="CHAI MINAR TEA HOTEL"
         allowEsc
         allowClickAway
         notification

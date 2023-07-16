@@ -4,6 +4,9 @@ import services from "../../images/services.jpg";
 import PDFFile from "../shared/PDFFile/PDFFile";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import { Button } from "react-bootstrap";
+import ChaiMinar from "../../images/pexels-olia-danilevich-5760206.jpg";
+import ChaiMinar1 from "../../images/pexels-cottonbro-studio-6150658.jpg";
+import ChaiMinar2 from "../../images/pexels-johnmark-smith-41135.jpg";
 
 export const Services = () => {
   return (
@@ -18,7 +21,7 @@ export const Services = () => {
         <div className="row">
           <div className="col-lg-12">
             <div>
-              <h2 style={{ fontSize: "2.9rem" }}>WEB AND APP DEVELOPMENT</h2>
+              <h2 style={{ fontSize: "2.9rem" }}>TEA TASTINGS AT CHAI MINAR</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
@@ -30,16 +33,16 @@ export const Services = () => {
                 />
               </svg>
               <div className="content-font-family">
-                We design and develop custom application for Android and iOS
-                platforms with complete planning and research for domains such
-                as education, health care, transportation, travel, finance,
-                logistics, wellness and fitness, retail, events, etc.
+                We believe in sharing our passion for tea and empowering tea
+                enthusiasts with knowledge. Join our tea workshops and
+                educational sessions led by our tea experts. Learn about the
+                origins and processing methods of different teas, the art of tea
+                blending, and the proper brewing techniques.
                 <br />
-                With the use of latest tools we provide unique and creative web
-                applications made from scratch, compatible with all platforms
-                satisfying the needs of our customers. We also provide several
-                customised applications for promoting small scale companies in
-                online platform.
+                Discover how to create your own unique tea blends and explore
+                the health benefits associated with various teas. Our
+                interactive workshops are designed to deepen your understanding
+                of tea and foster a community of tea lovers.
               </div>
             </div>
           </div>
@@ -49,8 +52,16 @@ export const Services = () => {
             <div className="flip-card" style={{ paddingLeft: "0%" }}>
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <div style={{ marginTop: "50%" }}>
-                    <h5>APPLICATION DEVELOPMENT</h5>
+                  <div
+                    className="ImageFlip"
+                    style={{
+                      backgroundImage: `url(${ChaiMinar})`,
+                    }}
+                  ></div>
+                  <div className="gCentered">
+                    <h2 style={{ fontSize: "2rem", color: "white" }}>
+                      Flip to see the details
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -62,12 +73,11 @@ export const Services = () => {
                   }}
                 >
                   <div>
-                    <div>Desktop Software Development</div>
-                    <div>Mobile App Development (Android & iOS)</div>
-                    <div>Web and Enterprise portals</div>
-                    <div>CMS Development</div>
-                    <div>Upgrade and Maintenance</div>
-                    <div>Testing</div>
+                    <div>Private Events and Catering</div>
+                    <div>Unparalleled Quality</div>
+                    <div>Tea Retail Shop</div>
+                    <div>Tea Consultations</div>
+                    <div>Tea Mastery</div>
                   </div>
                 </div>
               </div>
@@ -77,8 +87,16 @@ export const Services = () => {
             <div className="flip-card" style={{ paddingLeft: "0%" }}>
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <div style={{ marginTop: "50%" }}>
-                    <h5>WEB DESIGN & DEVELOPMENT</h5>
+                  <div
+                    className="ImageFlip"
+                    style={{
+                      backgroundImage: `url(${ChaiMinar2})`,
+                    }}
+                  ></div>
+                  <div className="gCentered">
+                    <h2 style={{ fontSize: "2rem", color: "white" }}>
+                      Flip to see the details
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -90,12 +108,11 @@ export const Services = () => {
                   }}
                 >
                   <div>
-                    <div>Website Design</div>
-                    <div>Web Development</div>
-                    <div>E Commerce</div>
-                    <div>CMS Development</div>
-                    <div>Word Press Development</div>
-                    <div>Testing</div>
+                    <div>Private Events and Catering</div>
+                    <div>Unparalleled Quality</div>
+                    <div>Tea Retail Shop</div>
+                    <div>Tea Consultations</div>
+                    <div>Tea Mastery</div>
                   </div>
                 </div>
               </div>
@@ -106,7 +123,7 @@ export const Services = () => {
         <div className="row">
           <div className="col-lg-12">
             <div>
-              <h2 style={{ fontSize: "2.9rem" }}>2D & 3D MODELING</h2>
+              <h2 style={{ fontSize: "2.9rem" }}>CHAI MINAR SERVICES</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
@@ -119,38 +136,56 @@ export const Services = () => {
               </svg>
               <div className="content-font-family">
                 <div>
-                  <strong>BIM</strong> is a process of converting laser scan
-                  survey data into a Building Information Model (BIM) ready
-                  model. Laser-Scan to BIM creates the 3D model of the building,
-                  showing its detailed geometry.
+                  <h2>Tea Retail Shop</h2>
+                  Explore our tea retail shop and bring the flavors of our tea
+                  hotel home with you. Browse through our carefully curated
+                  selection of premium loose-leaf teas, tea accessories, and
+                  tea-related gifts. From rare and exotic teas to popular
+                  blends, we have something to suit every taste and preference.
+                  Elevate your tea-drinking experience by purchasing our
+                  high-quality teas and accessories, and enjoy the convenience
+                  of preparing exceptional tea in the comfort of your own home.
                 </div>
                 <br />
                 <div>
-                  <strong>Scan2CAD</strong> achieves accurate raster-to-vector
-                  conversions using a wide range of technologies. Most notably
-                  these are object recognition (Scan2CAD recognizes elements in
-                  your original image and converts them to the correct objects.
-                  Dash-lines become CAD dash-line objects, arcs become CAD arc
-                  objects, and so-on) and OCR (Scan2CAD recognizes text in your
-                  original image and converts the text to fully editable CAD
-                  text strings).
+                  <h2>Private Events and Catering</h2>
+                  Host your private events and celebrations in the serene
+                  ambiance of our tea hotel. Whether it's a bridal shower,
+                  birthday party, or corporate gathering, our dedicated team
+                  will work closely with you to create a memorable and
+                  personalized experience. From elegant tea parties to
+                  customized catering menus, we ensure that every detail is
+                  taken care of. Immerse yourself in the world of tea while
+                  enjoying exceptional service and delectable food in a setting
+                  that exudes sophistication and charm.
                 </div>
                 <br />
                 <div>
-                  <strong>Scan2BIM</strong> is the process of 3D Laser Scanning
-                  a physical space, site or a construction in order to create a
-                  highly accurate digital representation. The digital model is
-                  including all the information of the surfaces, the
-                  constructions, the materials and the colors. The
-                  representation can be used for designing, assessing progress
-                  or evaluating options.
+                  <h2>Tea Consultations</h2>
+                  Experience personalized tea consultations with our tea experts
+                  to discover the perfect teas for your taste and preferences.
+                  Whether you're looking for teas to support your well-being,
+                  enhance relaxation, or simply indulge in delightful flavors,
+                  our knowledgeable staff will guide you through our extensive
+                  collection. Gain insights into the various tea profiles,
+                  brewing methods, and health benefits as we curate a selection
+                  of teas tailored specifically to your needs. Elevate your tea
+                  journey with our customized tea consultations and unlock the
+                  full potential of this ancient beverage.
                 </div>
                 <br />
                 <div>
-                  <strong>LIDAR</strong> is a remote sensing technology. LiDAR
-                  technology uses the pulse from a laser to collect
-                  measurements. These are used to create 3D models and maps of
-                  objects and environments.
+                  <h2>Tea Pairing Experiences</h2>
+                  Discover the art of tea pairing through our unique tea pairing
+                  experiences. Immerse yourself in the world of flavors as we
+                  guide you through the harmonious combinations of tea and food.
+                  Our expertly curated pairings will delight your taste buds and
+                  showcase the versatility of tea as a beverage that complements
+                  various cuisines and dishes. From light and floral teas that
+                  enhance delicate flavors to robust and earthy teas that
+                  balance rich and savory dishes, our tea pairing experiences
+                  are designed to elevate your dining experience and introduce
+                  you to new taste sensations.
                 </div>
                 <br />
               </div>
@@ -162,8 +197,16 @@ export const Services = () => {
             <div className="flip-card" style={{ margin: "auto" }}>
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <div style={{ marginTop: "50%" }}>
-                    <h5>APPLICATION DEVELOPMENT</h5>
+                  <div
+                    className="ImageFlip"
+                    style={{
+                      backgroundImage: `url(${ChaiMinar1})`,
+                    }}
+                  ></div>
+                  <div className="gCentered">
+                    <h2 style={{ fontSize: "2rem", color: "white" }}>
+                      Flip to see the details
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -175,12 +218,11 @@ export const Services = () => {
                   }}
                 >
                   <div>
-                    <div>Desktop Software Development</div>
-                    <div>Mobile App Development (Android & iOS)</div>
-                    <div>Web and Enterprise portals</div>
-                    <div>CMS Development</div>
-                    <div>Upgrade and Maintenance</div>
-                    <div>Testing</div>
+                    <div>Private Events and Catering</div>
+                    <div>Unparalleled Quality</div>
+                    <div>Tea Retail Shop</div>
+                    <div>Tea Consultations</div>
+                    <div>Tea Mastery</div>
                   </div>
                 </div>
               </div>
