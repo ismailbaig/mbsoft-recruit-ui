@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { SendEmail } from "../shared/sendemail/sendemail";
 import { AboutUS } from "../AboutUS/AboutUS";
 import { Services } from "../SERVICES/Services";
@@ -259,9 +260,9 @@ export const Home = () => {
                   guide you through a sensory journey, making every sip a
                   delightful experience.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  More
-                </a>
+                <Link to="/teatastings">
+                  <button className="btn btn-primary">See More</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -279,9 +280,9 @@ export const Home = () => {
                   hands-on experience in tea blending and create your
                   personalized tea blend to take home
                 </p>
-                <a href="#" className="btn btn-primary">
-                  More
-                </a>
+                <Link to="/teaWorkshops">
+                  <button className="btn btn-primary">See More</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -299,9 +300,9 @@ export const Home = () => {
                   relaxing stay. Wake up to the aroma of freshly brewed tea and
                   start your day with a rejuvenating cuppa.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  More
-                </a>
+                <Link to="/teaAccomodations">
+                  <button className="btn btn-primary">See More</button>
+                </Link>
               </div>
             </div>
           </div>
