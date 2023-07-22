@@ -19,6 +19,9 @@ import { Marks } from "./Components/Marks/Marks";
 import { Errors } from "./Components/Errors.jsx/Errors";
 import { Belowheader } from "./Components/BelowHeader/Belowheader";
 import { ImageGallery } from "./Components/ImageGallery/ImageGallery";
+import { TeaTastings } from "./Components/shared/HomePageCardDetails/TeaTastings";
+import { TeaWorkshops } from "./Components/shared/HomePageCardDetails/TeaWorkshops";
+import { TeaAccomodations } from "./Components/shared/HomePageCardDetails/TeaAccomodations";
 
 
 
@@ -52,6 +55,9 @@ function App() {
           <Route path="/samples" element={<Samples />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
+          <Route path="/teatastings" element={<TeaTastings />}></Route>
+          <Route path="/teaWorkShops" element={<TeaWorkshops />}></Route>
+          <Route path="/teaAccomodations" element={<TeaAccomodations />}></Route>
           {/*<Route path='/register' element={<Register />}></Route> */}
           <Route path="/rp" element={<ResetPasswordHome />}>
             <Route path="/rp/:id" element={<ResetPassword />}></Route>
