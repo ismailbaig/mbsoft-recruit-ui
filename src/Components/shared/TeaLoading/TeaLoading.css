@@ -1,13 +1,11 @@
 .tealoadingImg {
   width: 100%;
   height: 30rem;
-  filter: brightness(0.4);
 }
 
 @media (max-width: 767px) {
   .tealoadingImg {
     width: 100%;
     height: 100%;
-    filter: brightness(0.4);
   }
 }

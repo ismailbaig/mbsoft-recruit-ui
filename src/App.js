@@ -19,9 +19,7 @@ import { Marks } from "./Components/Marks/Marks";
 import { Errors } from "./Components/Errors.jsx/Errors";
 import { Belowheader } from "./Components/BelowHeader/Belowheader";
 import { ImageGallery } from "./Components/ImageGallery/ImageGallery";
-import { TeaTastings } from "./Components/shared/HomePageCardDetails/TeaTastings";
-import { TeaWorkshops } from "./Components/shared/HomePageCardDetails/TeaWorkshops";
-import { TeaAccomodations } from "./Components/shared/HomePageCardDetails/TeaAccomodations";
+import HomePagerCardDetails from "./Components/shared/HomePageCardDetails/HomePagerCardDetails";
 
 
 
@@ -55,9 +53,7 @@ function App() {
           <Route path="/samples" element={<Samples />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
-          <Route path="/teatastings" element={<TeaTastings />}></Route>
-          <Route path="/teaWorkShops" element={<TeaWorkshops />}></Route>
-          <Route path="/teaAccomodations" element={<TeaAccomodations />}></Route>
+          <Route path="/hpcard/:serviceid" element={<HomePagerCardDetails />}></Route>
           {/*<Route path='/register' element={<Register />}></Route> */}
           <Route path="/rp" element={<ResetPasswordHome />}>
             <Route path="/rp/:id" element={<ResetPassword />}></Route>
@@ -68,7 +64,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <FloatingWhatsApp
-        phoneNumber="+918050369047"
+        phoneNumber="+919866227214"
         chatMessage="Hi, type and continue on WhatsApp!!!"
         accountName="CHAI MINAR TEA HOTEL"
         allowEsc
