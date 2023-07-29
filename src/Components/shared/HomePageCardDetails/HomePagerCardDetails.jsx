@@ -16,21 +16,14 @@ export const HomePagerCardDetails = () => {
 
   const fetchJson = () => {
     setTimeout(() => setIsLoading(true));
-    //    fetch("data/newchaiminar.json")
-    fetch(`${process.env.PUBLIC_URL}/data/newchaiminar.json`)
+    fetch(`${process.env.REACT_APP_LOCAL_URL}/data/newchaiminar.json`)
       .then((response) => {
-        console.log(response);
         return response.json();
       })
       .then((data) => {
         setData(data);
-        console.log(data);
-        console.log(data.services[serviceid - 1].imgaeURL);
-        console.log("env is = " +  `${process.env.PUBLIC_URL}/data/newchaiminar.json`);
-        sethpImageURL(process.env.PUBLIC_URL + data.services[serviceid - 1].imgaeURL);
-        
+        sethpImageURL(process.env.REACT_APP_LOCAL_URL + data.services[serviceid - 1].imgaeURL);
         setTimeout(() => setIsLoading(false), 1000);
-        setTimeout(() => console.log(process.env.PUBLIC_URL), 4000);
       })
       .catch((e) => {
         console.log(e.message);
@@ -57,9 +50,7 @@ export const HomePagerCardDetails = () => {
             </div>
 
             <h1>{newchaiminardata?.services[serviceid - 1].subHeading}</h1>
-            <h2>{hpCardImageURL} 123</h2>
             <br />
-            <div>env is = <b> {process.env.PUBLIC_URL}   </b></div>
 
             <svg width="80%" height="20">
               <line

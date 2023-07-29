@@ -41,7 +41,7 @@
     },
     "services": [
         {
-            "imgaeURL" : "http://localhost:3000/images/tea-tasting.jpg",
+            "imgaeURL" : "images/tea-tasting.jpg",
             "heading": "TEA TASTING",
             "subHeading": "Welcome to Chaiminar - Unravel the Exquisite World of Tea Tastings",	
             "content": [
@@ -79,7 +79,7 @@
               ]
         },  
         {
-            "imgaeURL" : "http://localhost:3000/images/tea-tasting.jpg",
+            "imgaeURL" : "images/tea-worshops.jpg",
             "heading": "TEA WORKSHOPS",
             "subHeading": "Indulge in the Art of Tea at Chaiminar's Enchanting Tea Workshops",
             "content": [
@@ -116,7 +116,7 @@
               ]
         },
         {
-            "imgaeURL" : "http://localhost:3000/images/tea-tasting.jpg",
+            "imgaeURL" : "images/tea-accomodations.jpg",
             "heading": "TEA ACCOMODATIONS",
             "subHeading": "Relish Unparalleled Tea Accommodations at Chaiminar",
             "content": [ 
