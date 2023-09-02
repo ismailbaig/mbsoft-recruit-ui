@@ -1,8 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./Components/Login";
-import Register from "./Components/Register";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./Components/Navbar";
 import { Contact } from "./Components/Contact/Contact";
@@ -51,8 +49,6 @@ function App() {
           <Route path="/services" element={<Services />}></Route>
           <Route path="/gallery" element={<ImageGallery images={images} />}></Route>
           <Route path="/samples" element={<Samples />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/register" element={<Register />}></Route>
           <Route path="/hpcard/:serviceid" element={<HomePagerCardDetails />}></Route>
           {/*<Route path='/register' element={<Register />}></Route> */}
           <Route path="/rp" element={<ResetPasswordHome />}>
@@ -64,9 +60,9 @@ function App() {
         </Routes>
       </BrowserRouter>
       <FloatingWhatsApp
-        phoneNumber="+919866227214"
+        phoneNumber="+919880512345"
         chatMessage="Hi, type and continue on WhatsApp!!!"
-        accountName="CHAI MINAR TEA HOTEL"
+        accountName=" ZELTON  "
         allowEsc
         allowClickAway
         notification

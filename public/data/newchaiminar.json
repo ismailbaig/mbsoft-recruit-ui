@@ -1,37 +1,37 @@
 {
     "navbar": {
-        "header": "CHAI MINAR",
+        "header": " ZELTON",
         "subHeader": "Aromatic Tea Delights",
         "belowHeader": "A cup of tea is a cup of peace !"
     },
     "webdata": {
-        "mobilenumber": "(+91) 33333-44444",
-        "emailid": " info@newchaiminar.com"
+        "mobilenumber": "(+91) 98805 12345",
+        "emailid": " hr@zeltons.com"
     },
     "aboutusPage": {
         "header": "OUR MISSION",
-        "headerContent": "Our mission at CHAI MINAR is simple: to serve you the perfect cup of tea. We are dedicated to sourcing the finest tea leaves and creating a serene environment where you can unwind and enjoy the rich flavors and aromas of our carefully curated tea selection. Experience the essence of tranquility with every sip at Chaiminar.",
+        "headerContent": "Our mission is to be your trusted partner in navigating the ever-evolving landscape of technology. We strive to understand your unique business needs and tailor our solutions to help you achieve your goals. Whether it's optimizing your IT infrastructure, enhancing cybersecurity, or embracing the cloud, we're here to guide you every step of the way",
         "belowHeader": "ABOUT US",
-        "belowHeaderContent": "At Chaiminar, we are on a mission to redefine the tea experience. With a passion for quality and a dedication to excellence, we strive to provide you with the finest teas from around the world. Join us as we create a sanctuary of flavors, where you can indulge in the art of tea and find tranquility in every sip.",
-        "sideHeader": "WHY CHOOSE CHAI MINAR",
+        "belowHeaderContent": "At Zelton Technology Service, we are dedicated to providing cutting-edge IT solutions that empower businesses to thrive in the digital age. With a passion for technology and a commitment to excellence, our team of experts is here to deliver innovative and reliable IT services that drive your success.",
+        "sideHeader": "WHY CHOOSE  ZELTON",
         "sideHeaderContent": [
-            " Exquisite Flavors",
-            " Unparalleled Quality",
-            " Tranquil Ambiance",
+            " Expertise",
+            " Reliability",
+            " Innovation",
             " Personalized Service",
-            " Tea Mastery"
+            " Client-Centric Approach"
         ]
     },
     "contactusPage": {
-        "franchise": "Get your Franchise",
+        "franchise": "Get your Services",
         "header": "FIND US ON",
         "Address": "Address",
         "AddressContent": [
-            "Plot No. 50, Sri Laxmi Nagar Colony, Manikonda Jagir, Telangana 500089"
+            "Bengaluru, Karnataka"
         ],
         "OnlineSupport": "Online Support",
         "OnlineSupportContent": "WhatsApp @ (+91) 33333-44444",
-        "OfficeHours": "Hotel Hours",
+        "OfficeHours": "Office Hours",
         "OfficeHoursContent": "9:00 AM - 10:00 PM (Mon to Sun)"
     },
     "contactUsLinks": {
@@ -162,7 +162,7 @@
         }
     ],
     "footer": {
-        "footerContent": "Copyright © 2023 Millio ",
-        "copyright": "for similar website contact <b> baigece2007@gmail.com </b>"
+        "footerContent": "Copyright © 2023, ZELTON Technology Services ",
+        "copyright": ""
     }
 }

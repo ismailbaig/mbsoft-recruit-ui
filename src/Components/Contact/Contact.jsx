@@ -133,21 +133,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      {/* Google maps for location */}
-      <div className="row mb-5" style={{ width: "100%", margin: "0 auto" }}>
-        <div className="col-md-12">
-          <h1 className="dispaly-4">OUR LOCATION</h1>
-          <iframe
-            className="gmaps"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6542.168243671487!2d77.60128834687734!3d12.843501559326818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6ae3361eb303%3A0x3bcbb0f4b38f0e0!2sSanabil%20English%20High%20School!5e0!3m2!1sen!2sin!4v1678604898185!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
       </div>
       )}
       

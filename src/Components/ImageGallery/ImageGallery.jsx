@@ -50,27 +50,27 @@ export const ImageGallery = ({ images }) => {
             <Carousel>
               <div>
                 <img src={ChaiMinar1} alt="Image 1" />
-                <p className="legend">CHAI MINAR TEA HOTEL</p>
+                <p className="legend"> ZELTON  </p>
               </div>
               <div>
                 <img src={ChaiMinar2} alt="Image 2" />
-                <p className="legend">CHAI MINAR TEA HOTEL</p>
+                <p className="legend"> ZELTON  </p>
               </div>
               <div>
                 <img src={ChaiMinar3} alt="Image 3" />
-                <p className="legend">CHAI MINAR TEA HOTEL</p>
+                <p className="legend"> ZELTON  </p>
               </div>
               <div>
                 <img src={ChaiMinar6} alt="Image 2" />
-                <p className="legend">CHAI MINAR TEA HOTEL</p>
+                <p className="legend"> ZELTON  </p>
               </div>
               <div>
                 <img src={ChaiMinar5} alt="Image 3" />
-                <p className="legend">CHAI MINAR TEA HOTEL</p>
+                <p className="legend"> ZELTON  </p>
               </div>
               <div>
                 <img src={ChaiMinar7} alt="Image 1" />
-                <p className="legend">CHAI MINAR TEA HOTEL</p>
+                <p className="legend"> ZELTON  </p>
               </div>
             </Carousel>
           </div>

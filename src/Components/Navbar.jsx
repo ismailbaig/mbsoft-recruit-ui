@@ -152,19 +152,6 @@ const Navbar = () => {
                         ENQUIRY
                       </NavLink>
                     </li>
-                    <li className="nav-item login-btn">
-                      <NavLink
-                        to="/login"
-                        className="nav-link btn btn-primary"
-                        activeclassname="active"
-                        onClick={() => {
-                          toggleNavbar();
-                          navigate("/login");
-                        }}
-                      >
-                        Login
-                      </NavLink>
-                    </li>
                   </ul>
                 </div>
               </div>
