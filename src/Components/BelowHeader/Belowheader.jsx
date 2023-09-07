@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const Belowheader = () => {
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
 
   const fetchJson = () => {
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         return response.json();
       })
@@ -35,12 +35,12 @@ export const Belowheader = () => {
             <span id="emailId">
               {" "}
               <FontAwesomeIcon icon={faEnvelope} />
-              {newchaiminardata?.webdata?.emailid}
+              {zeltondata?.webdata?.emailid}
             </span>
             <span id="telId">
               {" "}
-              <FontAwesomeIcon icon={faPhone} />{" "}
-              {newchaiminardata?.webdata?.mobilenumber}{" "}
+              <FontAwesomeIcon icon={faPhone} />
+              {zeltondata?.webdata?.mobilenumber}
             </span>
           </div>
         </div>

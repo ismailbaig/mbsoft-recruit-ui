@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const Footer = () => {
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
 
   const fetchJson = () => {
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         return response.json();
       })
@@ -31,14 +31,14 @@ export const Footer = () => {
           <div>
             <SocialIcon
               network="linkedin"
-              url={newchaiminardata?.contactUsLinks?.LinkedIn}
+              url={zeltondata?.contactUsLinks?.LinkedIn}
               target="_blank"
             />
           </div>
           <div>
             <SocialIcon
               network="youtube"
-              url={newchaiminardata?.contactUsLinks?.youtube}
+              url={zeltondata?.contactUsLinks?.youtube}
               target="_blank"
             />
           </div>
@@ -46,33 +46,32 @@ export const Footer = () => {
             {" "}
             <SocialIcon
               network="facebook"
-              url={newchaiminardata?.contactUsLinks?.facebook}
+              url={zeltondata?.contactUsLinks?.facebook}
               target="_blank"
             />
           </div>
         </div>
         <div style={{ paddingTop: "15px" }}>
-          {newchaiminardata?.contactusPage?.AddressContent}
+          {zeltondata?.contactusPage?.AddressContent}
           <br />
           <br />
           <span id="emailId">
             {" "}
             <FontAwesomeIcon icon={faEnvelope} /> Email:{" "}
-            <b>{newchaiminardata?.webdata?.emailid}</b>
+            <b>{zeltondata?.webdata?.emailid}</b>
           </span>
           <br />
           <br />
           <span id="telId">
-            {" "}
             <FontAwesomeIcon icon={faPhone} />
-            <b>{newchaiminardata?.webdata?.mobilenumber}</b>
+            <b>{zeltondata?.webdata?.mobilenumber}</b>
           </span>
           <br />
           <br />
-          {newchaiminardata?.footer?.footerContent}
+          {zeltondata?.footer?.footerContent}
           <span
             dangerouslySetInnerHTML={{
-              __html: newchaiminardata?.footer?.copyright,
+              __html: zeltondata?.footer?.copyright,
             }}
           ></span>
         </div>

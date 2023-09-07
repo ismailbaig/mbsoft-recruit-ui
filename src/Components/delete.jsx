@@ -8,7 +8,7 @@ export const HomePagerCardDetails = () => {
   /* currently not using fetchdata, but adding only becuase for teaLoading Logic,
       May be we use it in future.
     */
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
   const [hpCardImageURL, sethpImageURL] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const params = useParams();
@@ -16,8 +16,8 @@ export const HomePagerCardDetails = () => {
 
   const fetchJson = () => {
     setTimeout(() => setIsLoading(true));
-    //    fetch("data/newchaiminar.json")
-    fetch(`${process.env.PUBLIC_URL}/data/newchaiminar.json`)
+    //    fetch("data/zelton.json")
+    fetch(`${process.env.PUBLIC_URL}/data/zelton.json`)
       .then((response) => {
         return response.json();
       })

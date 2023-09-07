@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { SendEmail } from "../shared/sendemail/sendemail";
-import { AboutUS } from "../AboutUS/AboutUS";
-import { Services } from "../SERVICES/Services";
 import "./Home.css";
 import homeTop from "../../images/homePage.jpg";
 import ItConsulting from "../../images/it-consultancy-and-stratagy.png";
@@ -15,13 +13,12 @@ import videoHome1 from "../../video/HomePageVideo.mp4";
 import homep1 from "../../images/Portfolio2.jpg";
 import IndustrialAutomation from "../../images/Portfolio1.jpg";
 // import rabasa from "../../images/rabasa.jpg";
-import CountUp from "react-countup";
 
 export const Home = () => {
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
 
   const fetchJson = () => {
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         return response.json();
       })
@@ -41,112 +38,12 @@ export const Home = () => {
       <div className="gContainerFluid image">
         <img src={homeTop} alt="Snow" style={{ width: "100%" }} />
         <div className="homeTopCentered">
-          <p className="fw-bolder"> ZELTON IT SERVICES AND SOLUTIONS</p>
-
-          {/* <div id="nonMobileViewCounts" className="container mt-4">
-            <svg width="80%" height="20">
-              <line
-                x1="0"
-                y1="1"
-                x2="100%"
-                y2="1"
-                stroke="red"
-                strokeWidth="2"
-              />
-            </svg>
-            <div
-              className="row mb-5 mt-5"
-              style={{ justifyContent: "space-around", width: "100%" }}
-            >
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-                  <h4>
-                    <CountUp start={0} end={1000} suffix="+" duration={8.5} />
-                  </h4>
-                  <h4>Tea cups/ Day</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-                  <h4>
-                    <CountUp start={0} end={10} suffix="+" duration={2.5} />
-                  </h4>
-                  <h4>Outlets</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-                  <h4>
-                    <CountUp
-                      start={0}
-                      end={200}
-                      suffix="+ litres"
-                      duration={8.5}
-                    />
-                  </h4>
-                  <h4>Milk used / Day</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-                  <h4>
-                    <CountUp start={0} end={2} suffix="+" duration={1.5} />
-                  </h4>
-                  <h4>Cities</h4>
-                </div>
-              </div>
-            </div>
-          </div> */}
+          <p className="display-1 fw-bolder">
+            {" "}
+            ZELTON IT SERVICES AND SOLUTIONS
+          </p>
         </div>
       </div>
-
-      {/* <div id="mobileViewCounts" className="container">
-        <div
-          className="row"
-          style={{ justifyContent: "space-around", width: "100%" }}
-        >
-          <div className="col-md-2">
-            <div>
-              <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-              <h4>
-                <CountUp start={0} end={1000} suffix="+" duration={8.5} />
-              </h4>
-              <h4>Tea cups/ Day</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-              <h4>
-                <CountUp start={0} end={10} suffix="+" duration={2.5} />
-              </h4>
-              <h4>Outlets</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-              <h4>
-                <CountUp start={0} end={200} suffix="+ litres" duration={8.5} />
-              </h4>
-              <h4>Milk used / Day</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-              <h4>
-                <CountUp start={0} end={2} suffix="+" duration={1.5} />
-              </h4>
-              <h4>Cities</h4>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="container">
         <div className="row">
@@ -300,56 +197,96 @@ export const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="container mt-4">
+        <h1 className="display-3 fw-semibold">OUR DEVELOPMENT METHODOLOGY</h1>
+        <svg width="80%" height="20">
+          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
+        </svg>
+        <div
+          className="row mb-5 mt-5"
+          style={{ justifyContent: "space-around", width: "100%" }}
+        >
+          <div className="col-md-2">
+            <div>
+              <i className="fa-sharp fa-solid fa-comments homePlanAnalyicon"></i>
+
+              <h4>Planning and Analysis</h4>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-solid fa-object-ungroup homeDesignDevelopicon"></i>
+
+              <h4>Design and Development</h4>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-sharp fa-solid fa-laptop homeTestModifyicon"></i>
+
+              <h4>Testing & Modification</h4>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-brands fa-slack homeMaintainSupporticon"></i>
+              <h4>Maintenance And Support</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="gContainerFluid gVideo mt-5 mb-5">
         <video src={videoHome1} autoPlay muted playsInline loop />
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
         <div className="gCenteredVideo">
           <p className="display-1 fw-bolder">MISSION</p>
-          <p>{newchaiminardata?.aboutusPage?.headerContent}</p>
+          <p>{zeltondata?.aboutusPage?.headerContent}</p>
         </div>
       </div>
-      {/* <div
+      <div
         className="row mb-5 mt-5"
         style={{ justifyContent: "space-around", width: "100%" }}
       >
         <div className="col-md-1">
           <div>
-            <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-            <h4>Outlets of our Franchise</h4>
+            <i className="fas fa-file-alt homePlanAnalyicon"></i>
+            <h4>Planning and Analysis</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
-            <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-            <h4>1k+ Tea cups sold per Day</h4>
+            <i className="fas fa-database homeDesignDevelopicon"></i>
+            <h4>Design and Development</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
-            <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-            <h4>200 litres of Milk used per day</h4>
+            <i className="fas fa-thumbs-up homeTestModifyicon"></i>
+            <h4>Testing & Modification</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
-            <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-            <h4>We have outlets in two Cities</h4>
+            <i className="fas fa-building homeMaintainSupporticon"></i>
+            <h4>Maintenance And Support</h4>
           </div>
         </div>
 
         <div className="col-md-1">
           <div>
-            <i className="fa-sharp fa-solid fa-rocket homeTestModifyicon"></i>
-            <h4> ZELTON's Soaring Success</h4>
+            <i className="fas fa-archway home1MaintainSupporticon"></i>
+            <h4>Data Analytics</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
-            <i className="fa-solid fa-bar-chart homeMaintainSupporticon"></i>
-            <h4>Sales trends and estimates</h4>
+            <i className="fas fa-file-contract home2MaintainSupporticon"></i>
+            <h4>Recruitment Support</h4>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* PORTFOLIO starts here */}
       <div id="h_portfolio" className="row" style={{ width: "100%" }}>

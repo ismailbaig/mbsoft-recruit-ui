@@ -19,7 +19,7 @@ export const ImageGallery = ({ images }) => {
 
   const fetchJson = () => {
     setTimeout(() => setIsLoading(true));
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         return response.json();
       })
