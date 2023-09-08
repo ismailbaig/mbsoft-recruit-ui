@@ -16,7 +16,6 @@ import { ResetPasswordHome } from "./Components/ResetPassword/ResetPasswordHome"
 import { Marks } from "./Components/Marks/Marks";
 import { Errors } from "./Components/Errors.jsx/Errors";
 import { Belowheader } from "./Components/BelowHeader/Belowheader";
-import { ImageGallery } from "./Components/ImageGallery/ImageGallery";
 import HomePagerCardDetails from "./Components/shared/HomePageCardDetails/HomePagerCardDetails";
 
 
@@ -47,7 +46,6 @@ function App() {
           <Route path="/about" element={<AboutUS />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/services" element={<Services />}></Route>
-          <Route path="/gallery" element={<ImageGallery images={images} />}></Route>
           <Route path="/samples" element={<Samples />}></Route>
           <Route path="/hpcard/:serviceid" element={<HomePagerCardDetails />}></Route>
           {/*<Route path='/register' element={<Register />}></Route> */}
