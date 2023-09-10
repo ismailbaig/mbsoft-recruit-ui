@@ -1,0 +1,102 @@
+{
+    "navbar": {
+        "header": " ZELTON",
+        "subHeader": "Aromatic Tea Delights",
+        "belowHeader": "A cup of tea is a cup of peace !"
+    },
+    "webdata": {
+        "mobilenumber": "(+91) 98805 12345",
+        "emailid": " hr@zeltons.com"
+    },
+    "aboutusPage": {
+        "header": "OUR MISSION",
+        "headerContent": "Our mission is to be your trusted partner in navigating the ever-evolving landscape of technology. We strive to understand your unique business needs and tailor our solutions to help you achieve your goals. Whether it's optimizing your IT infrastructure, enhancing cybersecurity, or embracing the cloud, we're here to guide you every step of the way",
+        "belowHeader": "ABOUT US",
+        "belowHeaderContent": "At Zelton Technology Service, we are dedicated to providing cutting-edge IT solutions that empower businesses to thrive in the digital age. With a passion for technology and a commitment to excellence, our team of experts is here to deliver innovative and reliable IT services that drive your success.",
+        "sideHeader": "WHY CHOOSE  ZELTON",
+        "sideHeaderContent": [
+            " Expertise",
+            " Reliability",
+            " Innovation",
+            " Personalized Service",
+            " Client-Centric Approach"
+        ]
+    },
+    "contactusPage": {
+        "franchise": "Get your Services",
+        "header": "FIND US ON",
+        "Address": "Address",
+        "AddressContent": [
+            "Bengaluru, Karnataka"
+        ],
+        "OnlineSupport": "Online Support",
+        "OnlineSupportContent": "WhatsApp @ (+91) 33333-44444",
+        "OfficeHours": "Office Hours",
+        "OfficeHoursContent": "9:00 AM - 10:00 PM (Mon to Sun)"
+    },
+    "contactUsLinks": {
+        "LinkedIn": "https://www.linkedin.com/in/sanabil-english-high-school-20a1201b0/",
+        "youtube": "https://www.youtube.com/@sanabilschool3578",
+        "facebook": "https://www.facebook.com/sanabilenglishschool"
+    },
+    "services": [
+        {
+            "imgaeURL": "images/IT_consultancy.jpg",
+            "heading": "IT Consulting",
+            "subHeading": "Welcome to IT Consultancy",
+            "content": [
+                "At IT Consulting, we're your trusted partner for cutting-edge IT solutions and services.",
+                "Step into our tech-savvy world, where innovation knows no limits.",
+                "Our services are meticulously designed to meet your tech requirements, enhancing your organization's capabilities.",
+                "Our team of experts curates custom solutions, drawing from global technology leaders.",
+                "Whether you're an IT veteran or a newcomer to tech solutions, our offerings cater to all preferences.",
+                "Explore the unique features, efficiency gains, and strategic prowess of our solutions.",
+                "To us, technology is not just a tool; it's the lifeblood of modern business.",
+                "We delve deep into the history of IT, unveiling endless possibilities for your success.",
+                "Optimize your network infrastructure, harness the power of the cloud, fortify cybersecurity, and leverage data analytics.",
+                "Join us at IT Consulting to unlock the untapped potential of technology and celebrate the spirit of innovation.",
+                "With our solutions, productivity soars, and each implementation becomes a memorable milestone.",
+                "Discover the artistry, history, and expertise that define IT, empowering your business to thrive."
+            ]
+        },
+        {
+            "imgaeURL": "images/Data_Recovery_and_Backup.jpg",
+            "heading": "DATA RECOVERY",
+            "subHeading": "Data Recovery and Backup Solutions",
+            "content": [
+                "Welcome to Data Solutions Pro, your trusted partner for data recovery and backup solutions.",
+                "We understand the critical importance of your data.",
+                "Our services safeguard and recover your valuable information, ensuring business continuity and peace of mind.",
+                "Our advanced data recovery techniques retrieve lost data from various storage devices: hard drives, SSDs, and more.",
+                "Whether it's accidental deletions, hardware failures, or data corruption, we recover your data swiftly and securely.",
+                "Our state-of-the-art backup solutions offer proactive data protection.",
+                "Your data is securely stored and easily restorable in case of unexpected loss.",
+                "We assist businesses of all sizes, tailoring solutions to your specific needs.",
+                "Data is the lifeblood of modern organizations, and our mission is its continuous availability and integrity.",
+                "Join us at Data Solutions Pro, where precision and care define data recovery and backup solutions.",
+                "With us, your data stays secure, and your business thrives with confidence."
+            ]
+        },
+        {
+            "imgaeURL": "images/Cloud_solutions.jpg",
+            "heading": "CLOUD SOLUTIONS",
+            "subHeading": "Cloud Solutions",
+            "content": [
+                "Welcome to CloudTech Pro, your trusted partner for cutting-edge cloud solutions.",
+                "At CloudTech Pro, we understand the vital role that cloud technology plays in modern businesses.",
+                "Our specialized cloud services are designed to transform your organization's capabilities and enhance your competitive edge.",
+                "From cloud migration to infrastructure optimization, we provide a comprehensive suite of cloud solutions tailored to your needs.",
+                "Our expert team ensures a seamless transition to the cloud, delivering scalability, security, and cost-efficiency.",
+                "With our state-of-the-art cloud solutions, your data and applications are always accessible, enabling agile business operations.",
+                "We serve businesses of all sizes, adapting our cloud strategies to align with your unique objectives.",
+                "Cloud technology is the cornerstone of modern business success, and we're here to help you harness its full potential.",
+                "Join us at CloudTech Pro, where precision and innovation define cloud solutions.",
+                "With our services, your business thrives in the cloud era, confident in the security and scalability of your infrastructure."
+            ]
+        }
+    ],
+    "footer": {
+        "footerContent": "Copyright © 2023, ZELTON Technology Services ",
+        "copyright": ""
+    }
+}

@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { SendEmail } from "../shared/sendemail/sendemail";
-import { AboutUS } from "../AboutUS/AboutUS";
-import { Services } from "../SERVICES/Services";
 import "./Home.css";
 import homeTop from "../../images/homePage.jpg";
-import ph1 from "../../images/pexels-olia-danilevich-5760206.jpg";
-import ph2 from "../../images/pexels-charlotte-may-5947096.jpg";
-import ph3 from "../../images/pexels-tima-miroshnichenko-5974071.jpg";
-import ph4 from "../../images/slide1.jpg";
-import ph5 from "../../images/slide2.jpg";
-import ph6 from "../../images/slide3.jpg";
-import videoHome1 from "../../video/videoHome1.mp4";
+import ItConsulting from "../../images/it-consultancy-and-stratagy.png";
+import DataRecovery from "../../images/software-development-and-customization.png";
+import CloudSolutions from "../../images/cloud-solutions-and-migration.png";
+import ItConsultancySlide from "../../images/ItConsultancy.jpg";
+import CloudComputingSlide from "../../images/CloudComputing.jpg";
+import SoftwareDevSlide from "../../images/SoftwareDevelopment.jpg";
+import videoHome1 from "../../video/HomePageVideo.mp4";
 import homep1 from "../../images/Portfolio2.jpg";
 import IndustrialAutomation from "../../images/Portfolio1.jpg";
 // import rabasa from "../../images/rabasa.jpg";
-import CountUp from "react-countup";
 
 export const Home = () => {
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
 
   const fetchJson = () => {
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         return response.json();
       })
@@ -41,110 +38,10 @@ export const Home = () => {
       <div className="gContainerFluid image">
         <img src={homeTop} alt="Snow" style={{ width: "100%" }} />
         <div className="homeTopCentered">
-          <p className="fw-bolder">CHAI MINAR TEA HOTEL</p>
-
-          <div id="nonMobileViewCounts" className="container mt-4">
-            <svg width="80%" height="20">
-              <line
-                x1="0"
-                y1="1"
-                x2="100%"
-                y2="1"
-                stroke="red"
-                strokeWidth="2"
-              />
-            </svg>
-            <div
-              className="row mb-5 mt-5"
-              style={{ justifyContent: "space-around", width: "100%" }}
-            >
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-                  <h4>
-                    <CountUp start={0} end={1000} suffix="+" duration={8.5} />
-                  </h4>
-                  <h4>Tea cups/ Day</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-                  <h4>
-                    <CountUp start={0} end={10} suffix="+" duration={2.5} />
-                  </h4>
-                  <h4>Outlets</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-                  <h4>
-                    <CountUp
-                      start={0}
-                      end={200}
-                      suffix="+ litres"
-                      duration={8.5}
-                    />
-                  </h4>
-                  <h4>Milk used / Day</h4>
-                </div>
-              </div>
-              <div className="col-md-2">
-                <div>
-                  <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-                  <h4>
-                    <CountUp start={0} end={2} suffix="+" duration={1.5} />
-                  </h4>
-                  <h4>Cities</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="mobileViewCounts" className="container">
-        <div
-          className="row"
-          style={{ justifyContent: "space-around", width: "100%" }}
-        >
-          <div className="col-md-2">
-            <div>
-              <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-              <h4>
-                <CountUp start={0} end={1000} suffix="+" duration={8.5} />
-              </h4>
-              <h4>Tea cups/ Day</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-              <h4>
-                <CountUp start={0} end={10} suffix="+" duration={2.5} />
-              </h4>
-              <h4>Outlets</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-              <h4>
-                <CountUp start={0} end={200} suffix="+ litres" duration={8.5} />
-              </h4>
-              <h4>Milk used / Day</h4>
-            </div>
-          </div>
-          <div className="col-md-2">
-            <div>
-              <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-              <h4>
-                <CountUp start={0} end={2} suffix="+" duration={1.5} />
-              </h4>
-              <h4>Cities</h4>
-            </div>
-          </div>
+          <p className="display-1 fw-bolder">
+            {" "}
+            ZELTON IT SERVICES AND SOLUTIONS
+          </p>
         </div>
       </div>
 
@@ -180,7 +77,7 @@ export const Home = () => {
             <div className="carousel-inner homeCarouselItem">
               <div className="carousel-item active" data-bs-interval="500">
                 <img
-                  src={ph6}
+                  src={SoftwareDevSlide}
                   className="d-block w-100 homeCarouselImage"
                   alt="..."
                 />
@@ -190,14 +87,14 @@ export const Home = () => {
                 data-bs-interval="500"
               >
                 <img
-                  src={ph5}
+                  src={CloudComputingSlide}
                   className="d-block w-100 homeCarouselImage"
                   alt="..."
                 />
               </div>
               <div className="carousel-item homeCarouselItem">
                 <img
-                  src={ph4}
+                  src={ItConsultancySlide}
                   className="d-block w-100 homeCarouselImage"
                   alt="..."
                 />
@@ -248,17 +145,14 @@ export const Home = () => {
           </div>
           <div className="col-md-4">
             <div className="card mt-3">
-              <img src={ph2} className="card-img-top" alt="..." />
+              <img src={DataRecovery} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Tea Tastings</h5>
+                <h5 className="card-title">IT Consulting</h5>
                 <p className="card-text">
-                  Immerse yourself in the world of tea with our expert-led tea
-                  tastings. Discover the nuances and flavors of different tea
-                  varieties, from delicate white teas to robust black teas.
-                  Learn about the art of tea preparation, brewing techniques,
-                  and tea pairing suggestions. Our knowledgeable staff will
-                  guide you through a sensory journey, making every sip a
-                  delightful experience.
+                  Our IT consulting services provide expert guidance to help
+                  your business leverage technology. We analyze, strategize, and
+                  guide you to streamline operations, improve efficiency, and
+                  implement solutions for consulting
                 </p>
                 <Link to="/hpcard/1">
                   <button className="btn btn-primary">See More</button>
@@ -268,17 +162,14 @@ export const Home = () => {
           </div>
           <div className="col-md-4">
             <div className="card mt-3">
-              <img src={ph1} className="card-img-top" alt="..." />
+              <img src={ItConsulting} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Tea Workshops</h5>
+                <h5 className="card-title">Data Recovery and Backup</h5>
                 <p className="card-text">
-                  Enhance your tea knowledge and skills with our engaging tea
-                  workshops. Led by tea experts, these interactive sessions
-                  delve into various aspects of tea cultivation, processing, and
-                  appreciation. Learn about tea origins, tea ceremonies, and the
-                  health benefits associated with different types of tea. Get
-                  hands-on experience in tea blending and create your
-                  personalized tea blend to take home
+                  Safeguard your data and ensure business continuity with our
+                  recovery and backup services. We prevent data loss due to
+                  disasters or system failures. Our experts set up automated
+                  backups, implement recovery plans,
                 </p>
                 <Link to="/hpcard/2">
                   <button className="btn btn-primary">See More</button>
@@ -288,17 +179,15 @@ export const Home = () => {
           </div>
           <div className="col-md-4">
             <div className="card mt-3">
-              <img src={ph3} className="card-img-top" alt="..." />
+              <img src={CloudSolutions} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Tea Accommodations</h5>
+                <h5 className="card-title">Cloud Solution</h5>
                 <p className="card-text">
-                  Enjoy a tea-themed getaway in our specially designed
-                  tea-themed rooms or suites. Immerse yourself in a serene
-                  ambiance inspired by the art of tea. Each room features
-                  elegant tea-inspired decor, a selection of fine teas for your
-                  enjoyment, and amenities that ensure a comfortable and
-                  relaxing stay. Wake up to the aroma of freshly brewed tea and
-                  start your day with a rejuvenating cuppa.
+                  Embrace cloud power with tailored solutions. Experience
+                  flexibility, scalability, and cost-efficiency as we help you
+                  migrate to the cloud. Our experts design, implement, and
+                  manage solutions aligning with your goals for seamless data
+                  and application access.
                 </p>
                 <Link to="/hpcard/3">
                   <button className="btn btn-primary">See More</button>
@@ -308,12 +197,52 @@ export const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="container mt-4">
+        <h1 className="display-3 fw-semibold">OUR DEVELOPMENT METHODOLOGY</h1>
+        <svg width="80%" height="20">
+          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
+        </svg>
+        <div
+          className="row mb-5 mt-5"
+          style={{ justifyContent: "space-around", width: "100%" }}
+        >
+          <div className="col-md-2">
+            <div>
+              <i className="fa-sharp fa-solid fa-comments homePlanAnalyicon"></i>
+
+              <h4>Planning and Analysis</h4>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-solid fa-object-ungroup homeDesignDevelopicon"></i>
+
+              <h4>Design and Development</h4>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-sharp fa-solid fa-laptop homeTestModifyicon"></i>
+
+              <h4>Testing & Modification</h4>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div>
+              <i className="fa-brands fa-slack homeMaintainSupporticon"></i>
+              <h4>Maintenance And Support</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="gContainerFluid gVideo mt-5 mb-5">
         <video src={videoHome1} autoPlay muted playsInline loop />
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
         <div className="gCenteredVideo">
           <p className="display-1 fw-bolder">MISSION</p>
-          <p>{newchaiminardata?.aboutusPage?.headerContent}</p>
+          <p>{zeltondata?.aboutusPage?.headerContent}</p>
         </div>
       </div>
       <div
@@ -322,39 +251,39 @@ export const Home = () => {
       >
         <div className="col-md-1">
           <div>
-            <i className="fa-sharp fa-solid fa-store homePlanAnalyicon"></i>
-            <h4>Outlets of our Franchise</h4>
+            <i className="fas fa-file-alt homePlanAnalyicon"></i>
+            <h4>Planning and Analysis</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
-            <i className="fa-solid fa-mug-hot homeDesignDevelopicon"></i>
-            <h4>1k+ Tea cups sold per Day</h4>
+            <i className="fas fa-database homeDesignDevelopicon"></i>
+            <h4>Design and Development</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
-            <i className="fa-sharp fa-solid fa-glass-whiskey homeTestModifyicon"></i>
-            <h4>200 litres of Milk used per day</h4>
+            <i className="fas fa-thumbs-up homeTestModifyicon"></i>
+            <h4>Testing & Modification</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
-            <i className="fa-solid fa-city homeMaintainSupporticon"></i>
-            <h4>We have outlets in two Cities</h4>
+            <i className="fas fa-building homeMaintainSupporticon"></i>
+            <h4>Maintenance And Support</h4>
           </div>
         </div>
 
         <div className="col-md-1">
           <div>
-            <i className="fa-sharp fa-solid fa-rocket homeTestModifyicon"></i>
-            <h4>Chai Minar's Soaring Success</h4>
+            <i className="fas fa-archway home1MaintainSupporticon"></i>
+            <h4>Data Analytics</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
-            <i className="fa-solid fa-bar-chart homeMaintainSupporticon"></i>
-            <h4>Sales trends and estimates</h4>
+            <i className="fas fa-file-contract home2MaintainSupporticon"></i>
+            <h4>Recruitment Support</h4>
           </div>
         </div>
       </div>
@@ -367,8 +296,9 @@ export const Home = () => {
             <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
           </svg>
           <p className="fs-4">
-            "Discover the essence of tea hospitality at our exquisite tea hotel
-            !!"
+            Explore our successful IT solutions and client success stories that
+            demonstrate our expertise in driving technology-driven
+            transformations.
           </p>
         </div>
         <div className="col-md-4">
@@ -400,25 +330,6 @@ export const Home = () => {
         </div> */}
       </div>
       {/* PORTFOLIO ends  here */}
-
-      <div id="about">
-        <h3 className="display-4 fw-semibold" style={{ padding: "18px" }}>
-          ABOUT US
-        </h3>
-        <svg width="80%" height="20">
-          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
-        </svg>
-        <AboutUS></AboutUS>
-      </div>
-      <div id="services">
-        <h3 className="display-4 fw-semibold" style={{ padding: "18px" }}>
-          SERVICES
-        </h3>
-        <svg width="80%" height="20">
-          <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
-        </svg>
-        <Services></Services>
-      </div>
       {/* ENQUIRY starts here */}
       <div id="h_enqiry" className="row" style={{ width: "95%" }}>
         <div

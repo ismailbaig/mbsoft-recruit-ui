@@ -5,12 +5,12 @@ import aboutTop from "../../images/about-us-top.jpg";
 import { TeaLoading } from "../shared/TeaLoading/TeaLoading";
 
 export const AboutUS = () => {
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchJson = () => {
     setTimeout(() => setIsLoading(true));
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         return response.json();
       })
@@ -41,7 +41,7 @@ export const AboutUS = () => {
             <div className="row mt-5">
               <div className="col-lg-8">
                 <div>
-                  <h2>{newchaiminardata?.aboutusPage?.header}</h2>
+                  <h2>{zeltondata?.aboutusPage?.header}</h2>
                   <svg width="80%" height="20">
                     <line
                       x1="0"
@@ -53,7 +53,7 @@ export const AboutUS = () => {
                     />
                   </svg>
                   <div className="content-font-family">
-                    {newchaiminardata?.aboutusPage?.headerContent}
+                    {zeltondata?.aboutusPage?.headerContent}
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export const AboutUS = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div id="about-about-us">
-                  <h2>{newchaiminardata?.aboutusPage?.belowHeader}</h2>
+                  <h2>{zeltondata?.aboutusPage?.belowHeader}</h2>
                   <svg width="80%" height="20">
                     <line
                       x1="0"
@@ -83,13 +83,13 @@ export const AboutUS = () => {
                     />
                   </svg>
                   <div className="content-font-family">
-                    {newchaiminardata?.aboutusPage?.belowHeaderContent}
+                    {zeltondata?.aboutusPage?.belowHeaderContent}
                   </div>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div id="about-why-us">
-                  <h2>{newchaiminardata?.aboutusPage?.sideHeader}</h2>
+                  <h2>{zeltondata?.aboutusPage?.sideHeader}</h2>
                   <svg width="80%" height="20">
                     <line
                       x1="0"
@@ -113,7 +113,7 @@ export const AboutUS = () => {
                         />
                       </svg>
                       <span>
-                        {newchaiminardata?.aboutusPage?.sideHeaderContent[0]}
+                        {zeltondata?.aboutusPage?.sideHeaderContent[0]}
                       </span>
                     </div>
                     <div>
@@ -128,7 +128,7 @@ export const AboutUS = () => {
                         />
                       </svg>
                       <span>
-                        {newchaiminardata?.aboutusPage?.sideHeaderContent[1]}
+                        {zeltondata?.aboutusPage?.sideHeaderContent[1]}
                       </span>
                     </div>
                     <div>
@@ -143,7 +143,7 @@ export const AboutUS = () => {
                         />
                       </svg>
                       <span>
-                        {newchaiminardata?.aboutusPage?.sideHeaderContent[2]}
+                        {zeltondata?.aboutusPage?.sideHeaderContent[2]}
                       </span>
                     </div>
                     <div>
@@ -158,7 +158,7 @@ export const AboutUS = () => {
                         />
                       </svg>
                       <span>
-                        {newchaiminardata?.aboutusPage?.sideHeaderContent[3]}
+                        {zeltondata?.aboutusPage?.sideHeaderContent[3]}
                       </span>
                     </div>
                     <div>
@@ -173,7 +173,7 @@ export const AboutUS = () => {
                         />
                       </svg>
                       <span>
-                        {newchaiminardata?.aboutusPage?.sideHeaderContent[4]}
+                        {zeltondata?.aboutusPage?.sideHeaderContent[4]}
                       </span>
                     </div>
                   </div>

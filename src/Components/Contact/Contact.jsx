@@ -6,12 +6,12 @@ import { SendEmail } from "../shared/sendemail/sendemail";
 import { TeaLoading } from "../shared/TeaLoading/TeaLoading";
 
 export const Contact = () => {
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchJson = () => {
     setTimeout(() => setIsLoading(true));
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         console.log(response);
         return response.json();
@@ -47,11 +47,11 @@ export const Contact = () => {
       <div className="container mb-5">
         <div className="row">
           <div className="col-md-6">
-            <h1>{newchaiminardata?.contactusPage?.franchise}</h1>
+            <h1>{zeltondata?.contactusPage?.franchise}</h1>
           </div>
           <div className="col-md-6">
             <h1 className="dispaly-4">
-              {newchaiminardata?.contactusPage?.header}{" "}
+              {zeltondata?.contactusPage?.header}{" "}
             </h1>
           </div>
         </div>
@@ -74,14 +74,14 @@ export const Contact = () => {
               />
             </svg>
             <p>
-              {newchaiminardata?.contactusPage?.AddressContent[0]}
+              {zeltondata?.contactusPage?.AddressContent[0]}
               <br />
-              {newchaiminardata?.contactusPage?.AddressContent[1]}
+              {zeltondata?.contactusPage?.AddressContent[1]}
               <br />
-              {newchaiminardata?.contactusPage?.AddressContent[2]}
+              {zeltondata?.contactusPage?.AddressContent[2]}
             </p>
             <br />
-            <h5>{newchaiminardata?.contactusPage?.OnlineSupport}</h5>
+            <h5>{zeltondata?.contactusPage?.OnlineSupport}</h5>
             <svg width="80%" height="20">
               <line
                 x1="0"
@@ -92,9 +92,9 @@ export const Contact = () => {
                 strokeWidth="2"
               />
             </svg>
-            <p>{newchaiminardata?.contactusPage?.OnlineSupportContent}</p>
+            <p>{zeltondata?.contactusPage?.OnlineSupportContent}</p>
             <br />
-            <h5>{newchaiminardata?.contactusPage?.OfficeHours}</h5>
+            <h5>{zeltondata?.contactusPage?.OfficeHours}</h5>
             <svg width="80%" height="20">
               <line
                 x1="0"
@@ -105,19 +105,19 @@ export const Contact = () => {
                 strokeWidth="2"
               />
             </svg>
-            <p> {newchaiminardata?.contactusPage?.OfficeHoursContent}</p>
+            <p> {zeltondata?.contactusPage?.OfficeHoursContent}</p>
             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
               <div>
                 <SocialIcon
                   network="linkedin"
-                  url={newchaiminardata?.contactUsLinks?.LinkedIn}
+                  url={zeltondata?.contactUsLinks?.LinkedIn}
                   target="_blank"
                 />
               </div>
               <div>
                 <SocialIcon
                   network="youtube"
-                  url={newchaiminardata?.contactUsLinks?.youtube}
+                  url={zeltondata?.contactUsLinks?.youtube}
                   target="_blank"
                 />
               </div>
@@ -125,27 +125,12 @@ export const Contact = () => {
                 {" "}
                 <SocialIcon
                   network="facebook"
-                  url={newchaiminardata?.contactUsLinks?.facebook}
+                  url={zeltondata?.contactUsLinks?.facebook}
                   target="_blank"
                 />
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      {/* Google maps for location */}
-      <div className="row mb-5" style={{ width: "100%", margin: "0 auto" }}>
-        <div className="col-md-12">
-          <h1 className="dispaly-4">OUR LOCATION</h1>
-          <iframe
-            className="gmaps"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6542.168243671487!2d77.60128834687734!3d12.843501559326818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6ae3361eb303%3A0x3bcbb0f4b38f0e0!2sSanabil%20English%20High%20School!5e0!3m2!1sen!2sin!4v1678604898185!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
         </div>
       </div>
       </div>

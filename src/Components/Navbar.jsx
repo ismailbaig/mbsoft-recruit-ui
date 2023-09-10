@@ -17,10 +17,10 @@ const Navbar = () => {
   //   navClass = 'non-home-page';
   // }
 
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
 
   const fetchJson = () => {
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         return response.json();
       })
@@ -57,12 +57,12 @@ const Navbar = () => {
                     />
                   </NavLink>
                   <div className="h-name">
-                    <h3>{newchaiminardata?.navbar?.header}</h3>
+                    <h3>{zeltondata?.navbar?.header}</h3>
                     <div className="sub-info">
-                      {newchaiminardata?.navbar?.subHeader}
+                      {zeltondata?.navbar?.subHeader}
                     </div>
                     <div className="sub-sub-info sub-sub-info-mrgin">
-                      {newchaiminardata?.navbar?.belowHeader}
+                      {zeltondata?.navbar?.belowHeader}
                     </div>
                   </div>
                 </div>
@@ -134,35 +134,12 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                       <NavLink
-                        to="/gallery"
-                        className="nav-link"
-                        activeclassname="active"
-                        onClick={toggleNavbar}
-                      >
-                        Gallery
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink
                         to="/contact"
                         className="nav-link btn btn-primary"
                         activeclassname="active"
                         onClick={toggleNavbar}
                       >
                         ENQUIRY
-                      </NavLink>
-                    </li>
-                    <li className="nav-item login-btn">
-                      <NavLink
-                        to="/login"
-                        className="nav-link btn btn-primary"
-                        activeclassname="active"
-                        onClick={() => {
-                          toggleNavbar();
-                          navigate("/login");
-                        }}
-                      >
-                        Login
                       </NavLink>
                     </li>
                   </ul>

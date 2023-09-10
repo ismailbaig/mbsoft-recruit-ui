@@ -8,7 +8,7 @@ export const HomePagerCardDetails = () => {
   /* currently not using fetchdata, but adding only becuase for teaLoading Logic,
       May be we use it in future.
     */
-  const [newchaiminardata, setData] = useState();
+  const [zeltondata, setData] = useState();
   const [hpCardImageURL, sethpImageURL] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const params = useParams();
@@ -16,7 +16,7 @@ export const HomePagerCardDetails = () => {
 
   const fetchJson = () => {
     setTimeout(() => setIsLoading(true));
-    fetch(`${process.env.REACT_APP_LOCAL_URL}/data/newchaiminar.json`)
+    fetch(`${process.env.REACT_APP_LOCAL_URL}/data/zelton.json`)
       .then((response) => {
         return response.json();
       })
@@ -44,12 +44,12 @@ export const HomePagerCardDetails = () => {
               <img src= {hpCardImageURL} style={{ maxWidth: "100%" }} />
               <div className="gCentered">
                 <h2 style={{ fontSize: "2.5rem" }}>
-                  {newchaiminardata?.services[serviceid - 1].heading}
+                  {zeltondata?.services[serviceid - 1].heading}
                 </h2>
               </div>
             </div>
 
-            <h1>{newchaiminardata?.services[serviceid - 1].subHeading}</h1>
+            <h1>{zeltondata?.services[serviceid - 1].subHeading}</h1>
             <br />
 
             <svg width="80%" height="20">
@@ -65,7 +65,7 @@ export const HomePagerCardDetails = () => {
             <div className="content-font-family">
               <span
                 dangerouslySetInnerHTML={{
-                  __html: newchaiminardata?.services[serviceid - 1].content.join(" "),
+                  __html: zeltondata?.services[serviceid - 1].content.join(" "),
                 }}
               ></span>
             </div>

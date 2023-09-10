@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./Services.css";
 import services from "../../images/services.jpg";
 import PDFFile from "../shared/PDFFile/PDFFile";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import { Button } from "react-bootstrap";
-import ChaiMinar from "../../images/pexels-olia-danilevich-5760206.jpg";
-import ChaiMinar1 from "../../images/pexels-cottonbro-studio-6150658.jpg";
-import ChaiMinar2 from "../../images/pexels-johnmark-smith-41135.jpg";
+import Service from "../../images/pexels-yan-krukau-8867435.jpg";
+import ItConsultationAndStrategy from "../../images/it-consultancy-and-stratagy.png";
+import ServiceImage from "../../images/network-design-and-implementation.png";
+import CloudSolutionsAndMigration from "../../images/cloud-solutions-and-migration.png";
+import softwareDevelopmentAndCustomization from "../../images/software-development-and-customization.png";
 import { TeaLoading } from "../shared/TeaLoading/TeaLoading";
 
 export const Services = () => {
@@ -18,7 +20,7 @@ export const Services = () => {
 
   const fetchJson = () => {
     setTimeout(() => setIsLoading(true));
-    fetch("data/newchaiminar.json")
+    fetch("data/zelton.json")
       .then((response) => {
         return response.json();
       })
@@ -43,16 +45,14 @@ export const Services = () => {
         <div className="container mb-5">
           <div className="gContainerFluid image">
             <img src={services} style={{ width: "100%" }} />
-            <div className="gCentered">
+            <div className="gCentered" style={{ top: "15%" }}>
               <h2 style={{ fontSize: "5rem" }}>SERVICES</h2>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-12">
               <div>
-                <h2 style={{ fontSize: "2.9rem" }}>
-                  TEA TASTINGS AT CHAI MINAR
-                </h2>
+                <h2 style={{ fontSize: "2.9rem" }}>SERVICES @ZELTON</h2>
                 <svg width="80%" height="20">
                   <line
                     x1="0"
@@ -64,16 +64,15 @@ export const Services = () => {
                   />
                 </svg>
                 <div className="content-font-family">
-                  We believe in sharing our passion for tea and empowering tea
-                  enthusiasts with knowledge. Join our tea workshops and
-                  educational sessions led by our tea experts. Learn about the
-                  origins and processing methods of different teas, the art of
-                  tea blending, and the proper brewing techniques.
+                  From IT consulting and system integration to managed services
+                  and cybersecurity solutions, we offer a comprehensive suite of
+                  services to cater to your IT needs. Our services include
                   <br />
-                  Discover how to create your own unique tea blends and explore
-                  the health benefits associated with various teas. Our
-                  interactive workshops are designed to deepen your
-                  understanding of tea and foster a community of tea lovers.
+                  Our Solution is a 24x7 service located inside India and backed
+                  by an SI with top level accreditation by Cisco, VMware, EMC,
+                  HP, NetApp Microsoft, ITIL compliant, includes a Service Desk,
+                  a NOC, Field engineers and Remote Monitoring Software &
+                  Monthly Reports
                 </div>
               </div>
             </div>
@@ -86,11 +85,17 @@ export const Services = () => {
                     <div
                       className="ImageFlip"
                       style={{
-                        backgroundImage: `url(${ChaiMinar})`,
+                        backgroundImage: `url(${Service})`,
                       }}
                     ></div>
-                    <div className="gCentered">
-                      <h2 style={{ fontSize: "2rem", color: "white" }}>
+                    <div className="gCentered" style={{ top: "15%" }}>
+                      <h2
+                        style={{
+                          fontSize: "2rem",
+                          color: "black",
+                          background: "white",
+                        }}
+                      >
                         Flip to see the details
                       </h2>
                     </div>
@@ -103,13 +108,13 @@ export const Services = () => {
                       alignItems: "center",
                     }}
                   >
-                    <div>
-                      <div>Private Events and Catering</div>
-                      <div>Unparalleled Quality</div>
-                      <div>Tea Retail Shop</div>
-                      <div>Tea Consultations</div>
-                      <div>Tea Mastery</div>
-                    </div>
+                    <ul style={{ textAlign: "left" }}>
+                      <li>Technology Assessment and Audit</li>
+                      <li>Strategic IT Roadmapping</li>
+                      <li>Business Process Optimization</li>
+                      <li>Vendor and Solution Evaluation</li>
+                      <li>Risk Management and Compliance</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -121,11 +126,17 @@ export const Services = () => {
                     <div
                       className="ImageFlip"
                       style={{
-                        backgroundImage: `url(${ChaiMinar2})`,
+                        backgroundImage: `url(${ServiceImage})`,
                       }}
                     ></div>
-                    <div className="gCentered">
-                      <h2 style={{ fontSize: "2rem", color: "white" }}>
+                    <div className="gCentered" style={{ top: "15%" }}>
+                      <h2
+                        style={{
+                          fontSize: "2rem",
+                          color: "black",
+                          background: "white",
+                        }}
+                      >
                         Flip to see the details
                       </h2>
                     </div>
@@ -138,14 +149,70 @@ export const Services = () => {
                       alignItems: "center",
                     }}
                   >
-                    <div>
-                      <div>Private Events and Catering</div>
-                      <div>Unparalleled Quality</div>
-                      <div>Tea Retail Shop</div>
-                      <div>Tea Consultations</div>
-                      <div>Tea Mastery</div>
-                    </div>
+                    <ul style={{ textAlign: "left" }}>
+                      <li>Technology Assessment and Audit</li>
+                      <li>Strategic IT Roadmapping</li>
+                      <li>Business Process Optimization</li>
+                      <li>Vendor and Solution Evaluation</li>
+                      <li>Risk Management and Compliance</li>
+                    </ul>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <div>
+                <h2 style={{ fontSize: "2.9rem" }}> ZELTON ASSIST</h2>
+                <svg width="80%" height="20">
+                  <line
+                    x1="0"
+                    y1="1"
+                    x2="100%"
+                    y2="1"
+                    stroke="red"
+                    strokeWidth="2"
+                  />
+                </svg>
+                <div className="content-font-family">
+                  ZELTON Assist provides companies with a centralized helpdesk
+                  and call center for End User and Network support. Our Helpdesk
+                  is available by:
+                  <br />
+                  <ul style={{ textAlign: "left" }}>
+                    <li>Calling</li>
+                    <li>Email</li>
+                    <li>Online</li>
+                  </ul>
+                  <br />
+                  We can use agents on client PC’s to remotely monitor and
+                  trouble fix issues quickly and cost effectively. When our
+                  agents need to dial into a customer’s PC all the sessions are
+                  recorded insuring compliance. Our helpdesk operates 24x7x365
+                  and currently supports in excess of 10,000.00 users. The
+                  solution also provides our customers with an online portal
+                  which allows them to see in real time, trouble tickets,
+                  escalations, statistics and fixes. Our team can report back to
+                  a customer’s IT team or go ahead and implement a fix or an
+                  escalation themselves. The ZELTON Assist Portal. Allowing our
+                  team to integrate with your seamlessly. ZELTON Assist also
+                  comes with a service management portal allowing customers a
+                  single view of their service and the ability to run their own
+                  expedient reporting and export service level data. Our portal
+                  allows for complete access and control over real-time updates
+                  on all incidents and changes. The simple interface gives
+                  customers access to a range of key functionalities at their
+                  fingertips. With the ZELTON Assist portal customers can easily
+                  view, add and update all incidents and changes within their IT
+                  system from any device 24x7 This Portal has been developed and
+                  driven by the individual requirements of each of our
+                  customers. It is pivotal for us be able to understand our
+                  customer’s business needs and as a result it was designed in
+                  complete conjunction with this customer feedback in mind. If
+                  you would like to see how your business can benefit form
+                  ZELTON Assist, please fill in your contact details below to
+                  arrange a demo.
                 </div>
               </div>
             </div>
@@ -154,7 +221,7 @@ export const Services = () => {
           <div className="row">
             <div className="col-lg-12">
               <div>
-                <h2 style={{ fontSize: "2.9rem" }}>CHAI MINAR SERVICES</h2>
+                <h2 style={{ fontSize: "2.9rem" }}> ZELTON SERVICES</h2>
                 <svg width="80%" height="20">
                   <line
                     x1="0"
@@ -167,95 +234,214 @@ export const Services = () => {
                 </svg>
                 <div className="content-font-family">
                   <div>
-                    <h2>Tea Retail Shop</h2>
-                    Explore our tea retail shop and bring the flavors of our tea
-                    hotel home with you. Browse through our carefully curated
-                    selection of premium loose-leaf teas, tea accessories, and
-                    tea-related gifts. From rare and exotic teas to popular
-                    blends, we have something to suit every taste and
-                    preference. Elevate your tea-drinking experience by
-                    purchasing our high-quality teas and accessories, and enjoy
-                    the convenience of preparing exceptional tea in the comfort
-                    of your own home.
+                    <h2>IT Consultation and Strategy</h2>
+                    Our experienced consultants work closely with you to
+                    understand your business goals and challenges. We provide
+                    expert guidance to help you formulate a strategic IT roadmap
+                    that aligns technology with your overall business
+                    objectives. From technology assessment to strategic
+                    planning, we're here to ensure your IT investments yield
+                    maximum returns.
                   </div>
                   <br />
-                  <div>
-                    <h2>Private Events and Catering</h2>
-                    Host your private events and celebrations in the serene
-                    ambiance of our tea hotel. Whether it's a bridal shower,
-                    birthday party, or corporate gathering, our dedicated team
-                    will work closely with you to create a memorable and
-                    personalized experience. From elegant tea parties to
-                    customized catering menus, we ensure that every detail is
-                    taken care of. Immerse yourself in the world of tea while
-                    enjoying exceptional service and delectable food in a
-                    setting that exudes sophistication and charm.
-                  </div>
-                  <br />
-                  <div>
-                    <h2>Tea Consultations</h2>
-                    Experience personalized tea consultations with our tea
-                    experts to discover the perfect teas for your taste and
-                    preferences. Whether you're looking for teas to support your
-                    well-being, enhance relaxation, or simply indulge in
-                    delightful flavors, our knowledgeable staff will guide you
-                    through our extensive collection. Gain insights into the
-                    various tea profiles, brewing methods, and health benefits
-                    as we curate a selection of teas tailored specifically to
-                    your needs. Elevate your tea journey with our customized tea
-                    consultations and unlock the full potential of this ancient
-                    beverage.
-                  </div>
-                  <br />
-                  <div>
-                    <h2>Tea Pairing Experiences</h2>
-                    Discover the art of tea pairing through our unique tea
-                    pairing experiences. Immerse yourself in the world of
-                    flavors as we guide you through the harmonious combinations
-                    of tea and food. Our expertly curated pairings will delight
-                    your taste buds and showcase the versatility of tea as a
-                    beverage that complements various cuisines and dishes. From
-                    light and floral teas that enhance delicate flavors to
-                    robust and earthy teas that balance rich and savory dishes,
-                    our tea pairing experiences are designed to elevate your
-                    dining experience and introduce you to new taste sensations.
-                  </div>
-                  <br />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12" style={{ border: "0px solid red" }}>
-              <div className="flip-card" style={{ margin: "auto" }}>
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
+                  <div className="row">
                     <div
-                      className="ImageFlip"
-                      style={{
-                        backgroundImage: `url(${ChaiMinar1})`,
-                      }}
-                    ></div>
-                    <div className="gCentered">
-                      <h2 style={{ fontSize: "2rem", color: "white" }}>
-                        Flip to see the details
-                      </h2>
+                      className="col-lg-12"
+                      style={{ border: "0px solid red" }}
+                    >
+                      <div className="flip-card" style={{ margin: "auto" }}>
+                        <div className="flip-card-inner">
+                          <div className="flip-card-front">
+                            <div
+                              className="ImageFlip"
+                              style={{
+                                backgroundImage: `url(${ItConsultationAndStrategy})`,
+                              }}
+                            ></div>
+                            <div className="gCentered" style={{ top: "15%" }}>
+                              <h2
+                                style={{
+                                  fontSize: "2rem",
+                                  color: "black",
+                                  background: "white",
+                                }}
+                              >
+                                Flip to see the details
+                              </h2>
+                            </div>
+                          </div>
+                          <div
+                            className="flip-card-back"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              textAlign: "left",
+                            }}
+                          >
+                            <ul>
+                              <li>Technology Assessment and Audit</li>
+                              <li>Strategic IT Roadmapping</li>
+                              <li>Business Process Optimization</li>
+                              <li>Vendor and Solution Evaluation</li>
+                              <li>Risk Management and Compliance</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    className="flip-card-back"
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div>
-                      <div>Private Events and Catering</div>
-                      <div>Unparalleled Quality</div>
-                      <div>Tea Retail Shop</div>
-                      <div>Tea Consultations</div>
-                      <div>Tea Mastery</div>
+                  <br />
+                  <div>
+                    <h2>Network Design and Implementation</h2>A robust and
+                    secure network is the backbone of modern businesses. Our
+                    network experts design and implement scalable, efficient,
+                    and secure network solutions tailored to your organization's
+                    requirements. Whether you're establishing a new network or
+                    upgrading an existing one, we ensure seamless connectivity
+                    and optimal performance.
+                  </div>
+                  <br />
+                  <div className="flip-card" style={{ margin: "auto" }}>
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <div
+                          className="ImageFlip"
+                          style={{
+                            backgroundImage: `url(${Service})`,
+                          }}
+                        ></div>
+                        <div className="gCentered" style={{ top: "15%" }}>
+                          <h2
+                            style={{
+                              fontSize: "2rem",
+                              color: "black",
+                              background: "white",
+                            }}
+                          >
+                            Flip to see the details
+                          </h2>
+                        </div>
+                      </div>
+                      <div
+                        className="flip-card-back"
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          textAlign: "left",
+                        }}
+                      >
+                        <ul>
+                          <li>Technology Assessment and Audit</li>
+                          <li>Strategic IT Roadmapping</li>
+                          <li>Business Process Optimization</li>
+                          <li>Vendor and Solution Evaluation</li>
+                          <li>Risk Management and Compliance</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <div>
+                    <h2>Cloud Solutions and Migration</h2>
+                    Embrace the power of the cloud with our comprehensive cloud
+                    solutions. We assist you in selecting the right cloud
+                    platform, migrate your applications and data, and manage
+                    cloud infrastructure to enhance flexibility and efficiency.
+                    Our cloud experts help you harness the benefits of cloud
+                    computing while ensuring data security and compliance.
+                  </div>
+                  <br />
+                  <div className="flip-card" style={{ margin: "auto" }}>
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <div
+                          className="ImageFlip"
+                          style={{
+                            backgroundImage: `url(${CloudSolutionsAndMigration})`,
+                          }}
+                        ></div>
+                        <div className="gCentered" style={{ top: "15%" }}>
+                          <h2
+                            style={{
+                              fontSize: "2rem",
+                              color: "black",
+                              background: "white",
+                            }}
+                          >
+                            Flip to see the details
+                          </h2>
+                        </div>
+                      </div>
+                      <div
+                        className="flip-card-back"
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          textAlign: "left",
+                        }}
+                      >
+                        <ul>
+                          <li>Technology Assessment and Audit</li>
+                          <li>Strategic IT Roadmapping</li>
+                          <li>Business Process Optimization</li>
+                          <li>Vendor and Solution Evaluation</li>
+                          <li>Risk Management and Compliance</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <div>
+                    <h2>Software Development and Customization</h2>
+                    Need software that perfectly fits your business processes?
+                    Our skilled developers create customized software solutions
+                    that streamline your operations, boost productivity, and
+                    address your unique challenges. From web applications to
+                    mobile apps, we bring your ideas to life with user-friendly
+                    and scalable solutions.
+                  </div>
+                  <br />
+                  <div className="flip-card" style={{ margin: "auto" }}>
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <div
+                          className="ImageFlip"
+                          style={{
+                            backgroundImage: `url(${softwareDevelopmentAndCustomization})`,
+                          }}
+                        ></div>
+                        <div className="gCentered" style={{ top: "15%" }}>
+                          <h2
+                            style={{
+                              fontSize: "2rem",
+                              color: "black",
+                              background: "white",
+                            }}
+                          >
+                            Flip to see the details
+                          </h2>
+                        </div>
+                      </div>
+                      <div
+                        className="flip-card-back"
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          textAlign: "left",
+                        }}
+                      >
+                        <ul>
+                          <li>Technology Assessment and Audit</li>
+                          <li>Strategic IT Roadmapping</li>
+                          <li>Business Process Optimization</li>
+                          <li>Vendor and Solution Evaluation</li>
+                          <li>Risk Management and Compliance</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
