@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import sanabilLogo from "../images/sanabilLogo.jpeg";
+import zeltonLogo from "../images/ZeltonLogo.jpeg";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
@@ -50,7 +50,7 @@ const Navbar = () => {
                 <div className="logonname">
                   <NavLink to="/" className="navbar-brand">
                     <img
-                      src={sanabilLogo}
+                      src={zeltonLogo}
                       className="about-img img-fluid"
                       style={{ width: "50px", height: "50px" }}
                       alt="Logo"
