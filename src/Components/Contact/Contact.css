@@ -1,5 +1,6 @@
 .btn-primary {
-    background-color: #fb2056 !important;
+    background-color: #0c63ce  !important;
+    color: white;
 }
 
 .success {
@@ -31,3 +32,7 @@
     box-shadow: 8px 8px 0px 0px rgba(152, 147, 147, 0.75);
     width: 100%;
 }
+
+
+
+  

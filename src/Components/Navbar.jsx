@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import zeltonLogo from "../images/ZeltonLogo.jpeg";
+import zeltonLogo from "../images/Zelton.jpeg";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
@@ -138,8 +138,8 @@ const Navbar = () => {
                         className="nav-link btn btn-primary"
                         activeclassname="active"
                         onClick={toggleNavbar}
-                      >
-                        ENQUIRY
+                      style={{color:"white"}}>
+                        Journey2Cloud
                       </NavLink>
                     </li>
                   </ul>
