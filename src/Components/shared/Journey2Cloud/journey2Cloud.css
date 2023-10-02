@@ -1,0 +1,56 @@
+/* Style the question container */
+.question-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the content horizontally */
+    margin: 10px;
+  }
+  
+  /* Style the question label */
+  .question {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style the select container */
+  .custom-select {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  
+  /* Style the select box */
+  .custom-select select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none;
+    font-size: 14px;
+    width: auto;
+  }
+  
+  /* Style the arrow icon */
+  .custom-select .arrow {
+    font-size: 14px;
+    margin-left: 5px; /* Adjust margin to your preference */
+  }
+  
+  /* Style the options */
+  .custom-select select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Style when the select is focused */
+  .custom-select select:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  

@@ -116,6 +116,10 @@ label {
     display: none;
 }
 
+.subHeading{
+    font-size: large;
+}
+
 @media (max-width: 767px) {
     #nonMobileViewCounts {
         display: none;

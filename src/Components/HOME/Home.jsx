@@ -40,7 +40,8 @@ export const Home = () => {
         <div className="homeTopCentered">
           <p className="display-1 fw-bolder">
             {" "}
-            ZELTON IT SERVICES AND SOLUTIONS
+            ZELTON 
+            <div className="subHeading">Technology Services & Consulting</div>
           </p>
         </div>
       </div>

@@ -22,16 +22,16 @@ import HomePagerCardDetails from "./Components/shared/HomePageCardDetails/HomePa
 
 function App() {
 
-  const images = [];
-  const imageContext = require.context('./images/ChaiMinarHotelphotos', false, /\.(png|jpg|jpeg|gif)$/);
+  // const images = [];
+  // const imageContext = require.context('./images/ChaiMinarHotelphotos', false, /\.(png|jpg|jpeg|gif)$/);
 
-  imageContext.keys().forEach((imagePath) => {
-    images.push({
-      src: imageContext(imagePath),
-      alt: imagePath.slice(2, -4),
-      caption: 'Sanabil School Events'
-    });
-  });
+  // imageContext.keys().forEach((imagePath) => {
+  //   images.push({
+  //     src: imageContext(imagePath),
+  //     alt: imagePath.slice(2, -4),
+  //     caption: 'Sanabil School Events'
+  //   });
+  // });
 
 
 
@@ -66,7 +66,7 @@ function App() {
         notification
         notificationSound
         placeholder="Type Hello and Send to continue on WhatsApp!!!"
-        avatar="sanabilLogo.jpeg"
+        avatar="ZeltonWhatsApp.jpeg"
         darkMode="true"
       />
       <Footer />
