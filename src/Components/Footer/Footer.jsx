@@ -31,14 +31,14 @@ export const Footer = () => {
           <div>
             <SocialIcon
               network="linkedin"
-              url={zeltondata?.contactUsLinks?.LinkedIn}
+              url={zeltondata?.contactusPage?.contactUsLinks?.LinkedIn}
               target="_blank"
             />
           </div>
           <div>
             <SocialIcon
               network="youtube"
-              url={zeltondata?.contactUsLinks?.youtube}
+              url={zeltondata?.contactusPage?.contactUsLinks?.youtube}
               target="_blank"
             />
           </div>
@@ -46,7 +46,7 @@ export const Footer = () => {
             {" "}
             <SocialIcon
               network="facebook"
-              url={zeltondata?.contactUsLinks?.facebook}
+              url={zeltondata?.contactusPage?.contactUsLinks?.facebook}
               target="_blank"
             />
           </div>

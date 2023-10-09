@@ -1,0 +1,30 @@
+/* Styles for the card */
+.cloudCard {
+  width: 556px;
+  height: 280px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a small shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  margin-right: 25px;
+}
+
+/* Style for the card title */
+.cloudCard h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Style for the card content */
+.cloudCard p {
+  font-size: 16px;
+  text-align: left;
+}

@@ -104,6 +104,16 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                       <NavLink
+                        to="/services"
+                        className="nav-link"
+                        activeclassname="active"
+                        onClick={toggleNavbar}
+                      >
+                        Services
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
                         to="/about"
                         className="nav-link"
                         activeclassname="active"
@@ -124,21 +134,12 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                       <NavLink
-                        to="/services"
-                        className="nav-link"
-                        activeclassname="active"
-                        onClick={toggleNavbar}
-                      >
-                        Services
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink
                         to="/contact"
                         className="nav-link btn btn-primary"
                         activeclassname="active"
                         onClick={toggleNavbar}
-                      style={{color:"white"}}>
+                        style={{ color: "white" }}
+                      >
                         Journey2Cloud
                       </NavLink>
                     </li>

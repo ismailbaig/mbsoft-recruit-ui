@@ -1,7 +1,7 @@
 {
     "navbar": {
         "header": " ZELTON",
-        "subHeader": "Services and Solutions",
+        "subHeader": "Technology services",
         "belowHeader": "Innovate-Influence-Inspire"
     },
     "webdata": {
@@ -34,96 +34,16 @@
         "OfficeHours": "Office Hours",
         "OfficeHoursContent": "9:00 AM - 10:00 PM (Mon to Sat)",
         "Journey2Cloud": [
-            {
-                "id": 1,
-                "Question": "Have you assessed your current infrastructure for cloud migration feasibility?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 2,
-                "Question": "Are you aware of potential cost savings associated with cloud adoption?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 3,
-                "Question": "Do you have a timeline in mind for your cloud migration?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 4,
-                "Question": "Are you concerned about data security in a cloud environment?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 5,
-                "Question": "Is staff training and skill development a priority for your organization?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 6,
-                "Question": "Have you considered the impact of cloud migration on your existing applications?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 7,
-                "Question": "Do you have a disaster recovery plan for cloud-based resources?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 8,
-                "Question": "Are you prepared to monitor and optimize cloud costs regularly?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 9,
-                "Question": "Have you engaged with a cloud service provider or consultant?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            },
-            {
-                "id": 10,
-                "Question": "Are you interested in scalability and flexibility offered by the cloud?",
-                "Answers": [
-                    "N/A",
-                    "Yes",
-                    "No"
-                ]
-            }
+            "Are you aware of potential cost savings associated with cloud adoption?",
+            "Have you assessed your current infrastructure for cloud migration feasibility?",
+            "Are you aware of potential cost savings associated with cloud adoption?",
+            "Do you have a timeline in mind for your cloud migration?",
+            "Is staff training and skill development a priority for your organization?",
+            "Are you concerned about data security in a cloud environment?",
+            "Have you considered the impact of cloud migration on your existing applications?",
+            "Do you have a disaster recovery plan for cloud-based resources?",
+            "Have you engaged with a cloud service provider or consultant?",
+            "Are you interested in scalability and flexibility offered by the cloud?"
         ],
         "contactUsLinks": {
             "LinkedIn": "https://www.linkedin.com/company/zelton/",
@@ -190,5 +110,53 @@
             "footerContent": "Copyright © 2023, ZELTON Technology Services ",
             "copyright": ""
         }
+    },
+    "Card": {
+        "CloudCardHeader": [
+            "Cloud Assessment",
+            "Cloud Service Integration",
+            "Cloud Development",
+            "Cloud Application Migration",
+            "Cloud optimisation",
+            "Cloud Maintenance"
+        ],
+        "CloudHeaderContent": [
+            "Our experts work with you to understand business-specific needs and requirements, your processes and existing applications to define a detailed cloud migration plan and suggest the most cost-effective providers for your situation.",
+            "We integrate all in-house and third-party applications processes and databases you use with EDI end-points like Microsoft Office365 or G-Suite, cloud storage accounts and other third-party products into one cloud environment without affecting your ongoing processes.",
+            "Our developers build and integrate custom cloud applications for your business to drive productivity, increase accessibility and facilitate easy data sharing between various processes, teams, and departments",
+            "We migrate your in-house systems and legacy apps to best-suited clouds seamlessly, with close to zero downtime and minimal overheads during the transformation",
+            "If you already have a cloud, make it more efficient with cloud optimization services. Our cloud solution architects have a deep understanding of services within the cloud.",
+            "After bringing your ecosystem to the cloud we continue to be available for ongoing support and maintenance via an SLA. We keep your systems modern, evolving them with latest advancements in the field, and ensure that there’s enough capacity for higher data volumes as you scale."
+        ],
+        "FullCardHeader": [
+            "Web application Development",
+            "Mobile application Development",
+            "Custom software Solutions"
+        ],
+        "FullCardContent": [
+            "Develop robust web applications with advanced features and seamless user experiences.",
+            "Produce intuitive applications with best technologies and approaches on the market",
+            "Craft tailored custom software solutions with cutting-edge technology and expertise"
+        ],
+        "FullCardImages": [
+            "images/laptop.png",
+            "images/mobile.png",
+            "images/tablet.png"
+        ],
+        "MobileAppCardHeader": [
+            "Mobile application development for IOS",
+            "Mobile app development for Android",
+            "Cross-platform application development"
+        ],
+        "MobileAppCardContent": [
+            "Deliver responsive IOS experiences utilizing latest architecture and design practices.",
+            "Produce intuitive applications with best technologies and approaches on the market ",
+            "Become available to all users by developing one application for both iOS and Android"
+        ],
+        "MobileAppCardImages": [
+            "images/Iphone.png",
+            "images/Android.png",
+            "images/Phone.png"
+        ]
     }
 }
