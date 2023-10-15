@@ -4,11 +4,11 @@
 
 .homeTopCentered {
     position: absolute;
-    top: 35%;
-    left: 50%;
+    top: 20%;
+    left: 35%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
-  }
+}
 
 .homeCarouselImage {
     height: 100%;
@@ -112,21 +112,24 @@ label {
 #nonMobileViewCounts {
     display: block;
 }
+
 #mobileViewCounts {
     display: none;
 }
 
-.subHeading{
-    font-size: large;
+.subHeading {
+    font-size: 3rem;
 }
 
 @media (max-width: 767px) {
     #nonMobileViewCounts {
         display: none;
     }
+
     #mobileViewCounts {
         display: block;
     }
+
     .rabasaClient {
         height: 100%;
         width: 50%;

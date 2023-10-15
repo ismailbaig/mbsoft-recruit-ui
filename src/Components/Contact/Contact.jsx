@@ -58,7 +58,7 @@ export const Contact = () => {
                 <Journey2Cloud></Journey2Cloud>
               </div>
             </div>
-            <div style={{marginTop:"5rem"}}>
+            <div style={{ marginTop: "5rem" }}>
               <h1 className="dispaly-4">
                 {zeltondata?.contactusPage?.header}{" "}
               </h1>
@@ -109,19 +109,23 @@ export const Contact = () => {
                 </svg>
                 <p> {zeltondata?.contactusPage?.OfficeHoursContent}</p>
                 <div
-                  style={{ display: "flex", justifyContent: "space-evenly" , marginBottom:"5rem" }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-evenly",
+                    marginBottom: "5rem",
+                  }}
                 >
                   <div>
                     <SocialIcon
                       network="linkedin"
-                      url={zeltondata?.contactUsLinks?.LinkedIn}
+                      url={zeltondata?.contactusPage?.contactUsLinks?.LinkedIn}
                       target="_blank"
                     />
                   </div>
                   <div>
                     <SocialIcon
                       network="youtube"
-                      url={zeltondata?.contactUsLinks?.youtube}
+                      url={zeltondata?.contactusPage?.contactUsLinks?.youtube}
                       target="_blank"
                     />
                   </div>
@@ -129,7 +133,7 @@ export const Contact = () => {
                     {" "}
                     <SocialIcon
                       network="facebook"
-                      url={zeltondata?.contactUsLinks?.facebook}
+                      url={zeltondata?.contactusPage?.contactUsLinks?.facebook}
                       target="_blank"
                     />
                   </div>

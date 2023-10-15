@@ -1,0 +1,60 @@
+/* Styles for the card */
+.fullCard {
+  width: 1112px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  /* Center vertically and distribute space between content and image */
+  align-items: center;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+/* Styles for the card content */
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  /* Content and image side by side */
+  width: 100%;
+  /* Ensure content and image take full width of the card */
+}
+
+/* Style for the text content */
+.textContent {
+  flex: 1;
+  /* Allow content to grow and occupy remaining space */
+}
+
+/* Style for the card title */
+.fullCard h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Style for the card content text */
+.fullCard p {
+  font-size: 24px;
+  text-align: left;
+}
+
+/* Style for the image container */
+.imageContainer {
+  flex: 1;
+  /* Allow image to grow and occupy remaining space */
+  overflow: hidden;
+  border-radius: 0 10px 10px 0;
+  /* Rounded corners for the right side */
+}
+
+/* Style for the image */
+.imageContainer img {
+  width: 100%;
+  /* Make the image fill the entire image container */
+  height: auto;
+  /* Maintain the image's aspect ratio */
+}
