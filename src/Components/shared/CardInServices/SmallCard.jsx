@@ -1,7 +1,7 @@
 import React from "react";
-import "./Card.css";
+import "./SmallCard.css";
 
-export const Card = ({ title, content }) => {
+export const SmallCard = ({ title, content }) => {
   return (
     <div className="cloudCard">
       <h2>{title}</h2>

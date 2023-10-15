@@ -1,141 +1,151 @@
 .homeCarouselItem {
-    height: 480px;
+  height: 480px;
 }
 
 .homeTopCentered {
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
 }
 
 .homeCarouselImage {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 
 .success {
-    width: 70%;
-    color: green;
-    font-size: larger;
-    font: bold;
+  width: 70%;
+  color: green;
+  font-size: larger;
+  font: bold;
 }
 
 .errorMessage {
-    color: red;
-    text-align: left;
+  color: red;
+  text-align: left;
 }
 
 .homePlanAnalyicon {
-    font-size: 50px;
-    color: brown;
-    border-radius: 50%;
-    padding: 40px;
+  font-size: 50px;
+  color: brown;
+  border-radius: 50%;
+  padding: 40px;
+}
+
+.ZeltonHeader {
+  font-size: 15rem;
+  text-align: left;
 }
 
 .homeDesignDevelopicon {
-    font-size: 50px;
-    color: brown;
-    border-radius: 50%;
-    padding: 40px;
+  font-size: 50px;
+  color: brown;
+  border-radius: 50%;
+  padding: 40px;
 }
 
 .homeTestModifyicon {
-    font-size: 50px;
-    color: blue;
-    border-radius: 50%;
-    padding: 40px;
+  font-size: 50px;
+  color: blue;
+  border-radius: 50%;
+  padding: 40px;
 }
 
 .homeMaintainSupporticon {
-    font-size: 50px;
-    color: darkgoldenrod;
-    border-radius: 50%;
-    padding: 40px;
+  font-size: 50px;
+  color: darkgoldenrod;
+  border-radius: 50%;
+  padding: 40px;
 }
 
 .homeabout {
-    width: 100%;
-    height: 30%;
-    background: lightgrey;
+  width: 100%;
+  height: 30%;
+  background: lightgrey;
 }
 
 .homevideobg {
-    width: 100%;
-    height: 50%;
+  width: 100%;
+  height: 50%;
 }
 
 video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .home1MaintainSupporticon {
-    font-size: 50px;
-    color: #d50c1a;
-    border-radius: 50%;
-    padding: 40px;
-
+  font-size: 50px;
+  color: #d50c1a;
+  border-radius: 50%;
+  padding: 40px;
 }
 
 .home2MaintainSupporticon {
-    font-size: 50px;
-    color: #22ED93;
-    border-radius: 50%;
-    padding: 40px;
-
+  font-size: 50px;
+  color: #22ed93;
+  border-radius: 50%;
+  padding: 40px;
 }
 
 .home3MaintainSupporticon {
-    font-size: 50px;
-    color: #F67E09;
-    border-radius: 50%;
-    padding: 40px;
-
+  font-size: 50px;
+  color: #f67e09;
+  border-radius: 50%;
+  padding: 40px;
 }
 
 label {
-    font-size: 21px;
-    font-weight: 500;
-
+  font-size: 21px;
+  font-weight: 500;
 }
 
-
 .rabasaClient {
-    height: 40%;
-    width: 50%;
+  height: 40%;
+  width: 50%;
 }
 
 #nonMobileViewCounts {
-    display: block;
+  display: block;
 }
 
 #mobileViewCounts {
-    display: none;
+  display: none;
 }
 
 .subHeading {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 @media (max-width: 767px) {
-    #nonMobileViewCounts {
-        display: none;
-    }
+  #nonMobileViewCounts {
+    display: none;
+  }
 
-    #mobileViewCounts {
-        display: block;
-    }
+  #mobileViewCounts {
+    display: block;
+  }
 
-    .rabasaClient {
-        height: 100%;
-        width: 50%;
-    }
+  .rabasaClient {
+    height: 100%;
+    width: 50%;
+  }
 
-    .gContainerFluid img {
-        height: 350px;
-    }
+  .gContainerFluid img {
+    height: 350px;
+  }
+
+  .ZeltonHeader {
+    font-size: 4rem;
+    text-align: left;
+    margin-top: 25px;
+  }
+
+  .subHeading {
+    font-size: 20px;
+  }
 }

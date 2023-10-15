@@ -1,15 +1,13 @@
 .image img {
   max-width: 100%;
   max-height: 100%;
-  -webkit-transition: .2s all;
+  -webkit-transition: 0.2s all;
   filter: brightness(0.4);
-
 }
 
 .image img:hover {
   filter: brightness(0.5);
 }
-
 
 .flip-card {
   margin-top: 5%;
@@ -137,4 +135,11 @@
   height: 100%;
   background-size: cover;
   filter: brightness(0.9);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center; /* Center-align cards on mobile */
+  }
 }

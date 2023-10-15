@@ -38,10 +38,7 @@ export const Home = () => {
       <div className="gContainerFluid image">
         <img src={homeTop} alt="Snow" style={{ width: "100%" }} />
         <div className="homeTopCentered">
-          <p
-            className="display-1 fw-bolder"
-            style={{ fontSize: "15rem", textAlign: "left" }}
-          >
+          <p className="fw-bolder ZeltonHeader">
             ZELTON
             <div className="subHeading">Technology Services & Consulting</div>
           </p>
