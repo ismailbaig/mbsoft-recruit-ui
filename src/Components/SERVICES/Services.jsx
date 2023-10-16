@@ -10,7 +10,7 @@ import ServiceImage from "../../images/network-design-and-implementation.png";
 import CloudSolutionsAndMigration from "../../images/cloud-solutions-and-migration.png";
 import softwareDevelopmentAndCustomization from "../../images/software-development-and-customization.png";
 import { TeaLoading } from "../shared/TeaLoading/TeaLoading";
-import { Card } from "../shared/CardInServices/Card";
+import { SmallCard } from "../shared/CardInServices/SmallCard";
 import { FullCard } from "../shared/FullCard/FullCard";
 
 export const Services = () => {
@@ -81,32 +81,32 @@ export const Services = () => {
                   </div>
 
                   <div className="card-container">
-                    <Card
+                    <SmallCard
                       title={zeltondata?.Card?.CloudCardHeader[0]}
                       content={zeltondata?.Card?.CloudHeaderContent[0]}
                     />
-                    <Card
+                    <SmallCard
                       title={zeltondata?.Card?.CloudCardHeader[1]}
                       content={zeltondata?.Card?.CloudHeaderContent[1]}
                     />
                   </div>
                   <div className="card-container">
-                    <Card
+                    <SmallCard
                       title={zeltondata?.Card?.CloudCardHeader[2]}
                       content={zeltondata?.Card?.CloudHeaderContent[2]}
                     />
 
-                    <Card
+                    <SmallCard
                       title={zeltondata?.Card?.CloudCardHeader[3]}
                       content={zeltondata?.Card?.CloudHeaderContent[3]}
                     />
                   </div>
                   <div className="card-container">
-                    <Card
+                    <SmallCard
                       title={zeltondata?.Card?.CloudCardHeader[4]}
                       content={zeltondata?.Card?.CloudHeaderContent[4]}
                     />
-                    <Card
+                    <SmallCard
                       title={zeltondata?.Card?.CloudCardHeader[5]}
                       content={zeltondata?.Card?.CloudHeaderContent[5]}
                     />
