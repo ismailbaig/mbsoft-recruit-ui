@@ -28,8 +28,7 @@ export const Belowheader = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 bhInfo bh-address-margin-top">
-            Gottigere post, C K palya Road, Bannerghatta Main Rd,
-            Hommadevanahalli, Bengaluru, Karnataka 560083
+            {zeltondata?.contactusPage?.AddressContent}
           </div>
           <div className="col-lg-12 bh-contact bh-info-margin-top bh-contact-font-size">
             <span id="emailId">
