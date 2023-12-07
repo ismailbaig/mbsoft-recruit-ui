@@ -14,7 +14,7 @@ export const AboutUS = () => {
         <div className="row mt-5">
           <div className="col-lg-8">
             <div>
-              <h2>OUR MISSION</h2>
+              <h2>OUR MISSION !!</h2>
               <svg width="80%" height="20">
                 <line
                   x1="0"
