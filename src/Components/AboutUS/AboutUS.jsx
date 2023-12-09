@@ -41,7 +41,7 @@ export const AboutUS = () => {
             <div className="row mt-5">
               <div className="col-lg-8">
                 <div>
-                  <h2>{zeltondata?.aboutusPage?.header}</h2>
+                  <h2>{zeltondata?.aboutusPage?.Mission?.header}</h2>
                   <svg width="80%" height="20">
                     <line
                       x1="0"
@@ -53,7 +53,7 @@ export const AboutUS = () => {
                     />
                   </svg>
                   <div className="content-font-family">
-                    {zeltondata?.aboutusPage?.headerContent}
+                    {zeltondata?.aboutusPage?.Mission?.headerContent}
                   </div>
                 </div>
               </div>

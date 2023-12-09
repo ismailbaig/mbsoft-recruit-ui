@@ -5,9 +5,6 @@ import "./HomePageCard.css";
 import { useParams } from "react-router-dom";
 
 export const HomePagerCardDetails = () => {
-  /* currently not using fetchdata, but adding only becuase for teaLoading Logic,
-      May be we use it in future.
-    */
   const [zeltondata, setData] = useState();
   const [hpCardImageURL, sethpImageURL] = useState("");
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +19,10 @@ export const HomePagerCardDetails = () => {
       })
       .then((data) => {
         setData(data);
-        sethpImageURL(process.env.REACT_APP_LOCAL_URL + data.services[serviceid - 1].imgaeURL);
+        sethpImageURL(
+          process.env.REACT_APP_LOCAL_URL +
+            data.HomePage?.CardSeeMoreContent[serviceid - 1].imgaeURL
+        );
         setTimeout(() => setIsLoading(false), 1000);
       })
       .catch((e) => {
@@ -41,15 +41,23 @@ export const HomePagerCardDetails = () => {
         <div>
           <div className="container mb-5">
             <div className="gContainerFluid image homePageCard_img">
-              <img src= {hpCardImageURL} style={{ maxWidth: "100%" }} />
+              <img src={hpCardImageURL} style={{ maxWidth: "100%" }} />
               <div className="gCentered">
                 <h2 style={{ fontSize: "2.5rem" }}>
-                  {zeltondata?.services[serviceid - 1].heading}
+                  {
+                    zeltondata?.HomePage?.CardSeeMoreContent[serviceid - 1]
+                      .heading
+                  }
                 </h2>
               </div>
             </div>
 
-            <h1>{zeltondata?.services[serviceid - 1].subHeading}</h1>
+            <h1>
+              {
+                zeltondata?.HomePage?.CardSeeMoreContent[serviceid - 1]
+                  .subHeading
+              }
+            </h1>
             <br />
 
             <svg width="80%" height="20">
@@ -65,7 +73,10 @@ export const HomePagerCardDetails = () => {
             <div className="content-font-family">
               <span
                 dangerouslySetInnerHTML={{
-                  __html: zeltondata?.services[serviceid - 1].content.join(" "),
+                  __html:
+                    zeltondata?.HomePage?.CardSeeMoreContent[
+                      serviceid - 1
+                    ].content.join(" "),
                 }}
               ></span>
             </div>

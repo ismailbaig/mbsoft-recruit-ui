@@ -39,8 +39,10 @@ export const Home = () => {
         <img src={homeTop} alt="Snow" style={{ width: "100%" }} />
         <div className="homeTopCentered">
           <p className="fw-bolder ZeltonHeader">
-            ZELTON
-            <div className="subHeading">Technology Services & Consulting</div>
+            {zeltondata?.HomePage?.HomePageHeader?.ZeltonHeader}
+            <div className="subHeading">
+              {zeltondata?.HomePage?.HomePageHeader?.subHeader}
+            </div>
           </p>
         </div>
       </div>
@@ -147,12 +149,12 @@ export const Home = () => {
             <div className="card mt-3">
               <img src={DataRecovery} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">IT Consulting</h5>
+                <h5 className="card-title">
+                  {" "}
+                  {zeltondata?.HomePage?.CardDetails[0]?.CardHeader}
+                </h5>
                 <p className="card-text">
-                  Our IT consulting services provide expert guidance to help
-                  your business leverage technology. We analyze, strategize, and
-                  guide you to streamline operations, improve efficiency, and
-                  implement solutions for consulting
+                  {zeltondata?.HomePage?.CardDetails[0]?.CardDetails}
                 </p>
                 <Link to="/hpcard/1">
                   <button className="btn btn-primary">See More</button>
@@ -164,12 +166,11 @@ export const Home = () => {
             <div className="card mt-3">
               <img src={ItConsulting} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Data Recovery and Backup</h5>
+                <h5 className="card-title">
+                  {zeltondata?.HomePage?.CardDetails[1]?.CardHeader}
+                </h5>
                 <p className="card-text">
-                  Safeguard your data and ensure business continuity with our
-                  recovery and backup services. We prevent data loss due to
-                  disasters or system failures. Our experts set up automated
-                  backups, implement recovery plans,
+                  {zeltondata?.HomePage?.CardDetails[1]?.CardDetails}
                 </p>
                 <Link to="/hpcard/2">
                   <button className="btn btn-primary">See More</button>
@@ -181,13 +182,11 @@ export const Home = () => {
             <div className="card mt-3">
               <img src={CloudSolutions} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Cloud Solution</h5>
+                <h5 className="card-title">
+                  {zeltondata?.HomePage?.CardDetails[2]?.CardHeader}
+                </h5>
                 <p className="card-text">
-                  Embrace cloud power with tailored solutions. Experience
-                  flexibility, scalability, and cost-efficiency as we help you
-                  migrate to the cloud. Our experts design, implement, and
-                  manage solutions aligning with your goals for seamless data
-                  and application access.
+                  {zeltondata?.HomePage?.CardDetails[2]?.CardDetails}
                 </p>
                 <Link to="/hpcard/3">
                   <button className="btn btn-primary">See More</button>
@@ -211,27 +210,27 @@ export const Home = () => {
             <div>
               <i className="fa-sharp fa-solid fa-comments homePlanAnalyicon"></i>
 
-              <h4>Planning and Analysis</h4>
+              <h4>{zeltondata?.HomePage?.IconSubHeading[0]}</h4>
             </div>
           </div>
           <div className="col-md-2">
             <div>
               <i className="fa-solid fa-object-ungroup homeDesignDevelopicon"></i>
 
-              <h4>Design and Development</h4>
+              <h4>{zeltondata?.HomePage?.IconSubHeading[1]}</h4>
             </div>
           </div>
           <div className="col-md-2">
             <div>
               <i className="fa-sharp fa-solid fa-laptop homeTestModifyicon"></i>
 
-              <h4>Testing & Modification</h4>
+              <h4>{zeltondata?.HomePage?.IconSubHeading[2]}</h4>
             </div>
           </div>
           <div className="col-md-2">
             <div>
               <i className="fa-brands fa-slack homeMaintainSupporticon"></i>
-              <h4>Maintenance And Support</h4>
+              <h4>{zeltondata?.HomePage?.IconSubHeading[3]}</h4>
             </div>
           </div>
         </div>
@@ -241,8 +240,10 @@ export const Home = () => {
         <video src={videoHome1} autoPlay muted playsInline loop />
         {/* <div className="centered display-4">Recruitment made simple !!</div> */}
         <div className="gCenteredVideo">
-          <p className="display-1 fw-bolder">MISSION</p>
-          <p>{zeltondata?.aboutusPage?.headerContent}</p>
+          <p className="display-1 fw-bolder">
+            {zeltondata?.HomePage?.Mission?.header}
+          </p>
+          <p>{zeltondata?.HomePage?.Mission?.headerContent}</p>
         </div>
       </div>
       <div
@@ -252,38 +253,38 @@ export const Home = () => {
         <div className="col-md-1">
           <div>
             <i className="fas fa-file-alt homePlanAnalyicon"></i>
-            <h4>Planning and Analysis</h4>
+            <h4>{zeltondata?.HomePage?.IconSubHeading[0]}</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
             <i className="fas fa-database homeDesignDevelopicon"></i>
-            <h4>Design and Development</h4>
+            <h4>{zeltondata?.HomePage?.IconSubHeading[1]}</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
             <i className="fas fa-thumbs-up homeTestModifyicon"></i>
-            <h4>Testing & Modification</h4>
+            <h4>{zeltondata?.HomePage?.IconSubHeading[2]}</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
             <i className="fas fa-building homeMaintainSupporticon"></i>
-            <h4>Maintenance And Support</h4>
+            <h4>{zeltondata?.HomePage?.IconSubHeading[3]}</h4>
           </div>
         </div>
 
         <div className="col-md-1">
           <div>
             <i className="fas fa-archway home1MaintainSupporticon"></i>
-            <h4>Data Analytics</h4>
+            <h4>{zeltondata?.HomePage?.IconSubHeading[4]}</h4>
           </div>
         </div>
         <div className="col-md-1">
           <div>
             <i className="fas fa-file-contract home2MaintainSupporticon"></i>
-            <h4>Recruitment Support</h4>
+            <h4>{zeltondata?.HomePage?.IconSubHeading[5]}</h4>
           </div>
         </div>
       </div>
@@ -296,9 +297,7 @@ export const Home = () => {
             <line x1="0" y1="1" x2="100%" y2="1" stroke="red" strokeWidth="2" />
           </svg>
           <p className="fs-4">
-            Explore our successful IT solutions and client success stories that
-            demonstrate our expertise in driving technology-driven
-            transformations.
+            {zeltondata?.HomePage?.Portfolio.PortfolioContent}
           </p>
         </div>
         <div className="col-md-4">

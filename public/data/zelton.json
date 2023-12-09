@@ -1,16 +1,190 @@
 {
+    "HomePage": {
+        "HomePageHeader": {
+            "ZeltonHeader": "ZELTON",
+            "subHeader": "Technology Services & Consulting"
+        },
+        "CardDetails": [
+            {
+                "CardHeader": "IT Consultancy",
+                "CardDetails": "Our IT consulting services provide expert guidance to help your business leverage technology. We analyze, strategize, and guide you to streamline operations, improve efficiency, and implement solutions for consulting"
+            },
+            {
+                "CardHeader": "Data Recovery and Backup",
+                "CardDetails": "Safeguard your data and ensure business continuity with our recovery and backup services. We prevent data loss due to disasters or system failures. Our experts set up automated backups, implement recovery plans"
+            },
+            {
+                "CardHeader": "Cloud Solution",
+                "CardDetails": "Embrace cloud power with tailored solutions. Experience flexibility, scalability, and cost-efficiency as we help you migrate to the cloud. Our experts design, implement, and manage solutions aligning with your goals for seamless data and application access."
+            }
+        ],
+        "CardSeeMoreContent": [
+            {
+                "imgaeURL": "images/IT_consultancy.jpg",
+                "heading": "IT Consulting",
+                "subHeading": "Welcome to IT Consultancy",
+                "content": [
+                    "At IT Consulting, we're your trusted partner for cutting-edge IT solutions and services.",
+                    "Step into our tech-savvy world, where innovation knows no limits.",
+                    "Our services are meticulously designed to meet your tech requirements, enhancing your organization's capabilities.",
+                    "Our team of experts curates custom solutions, drawing from global technology leaders.",
+                    "Whether you're an IT veteran or a newcomer to tech solutions, our offerings cater to all preferences.",
+                    "Explore the unique features, efficiency gains, and strategic prowess of our solutions.",
+                    "To us, technology is not just a tool; it's the lifeblood of modern business.",
+                    "We delve deep into the history of IT, unveiling endless possibilities for your success.",
+                    "Optimize your network infrastructure, harness the power of the cloud, fortify cybersecurity, and leverage data analytics.",
+                    "Join us at IT Consulting to unlock the untapped potential of technology and celebrate the spirit of innovation.",
+                    "With our solutions, productivity soars, and each implementation becomes a memorable milestone.",
+                    "Discover the artistry, history, and expertise that define IT, empowering your business to thrive."
+                ]
+            },
+            {
+                "imgaeURL": "images/Data_Recovery_and_Backup.jpg",
+                "heading": "DATA RECOVERY",
+                "subHeading": "Data Recovery and Backup Solutions",
+                "content": [
+                    "Welcome to Data Solutions Pro, your trusted partner for data recovery and backup solutions.",
+                    "We understand the critical importance of your data.",
+                    "Our services safeguard and recover your valuable information, ensuring business continuity and peace of mind.",
+                    "Our advanced data recovery techniques retrieve lost data from various storage devices: hard drives, SSDs, and more.",
+                    "Whether it's accidental deletions, hardware failures, or data corruption, we recover your data swiftly and securely.",
+                    "Our state-of-the-art backup solutions offer proactive data protection.",
+                    "Your data is securely stored and easily restorable in case of unexpected loss.",
+                    "We assist businesses of all sizes, tailoring solutions to your specific needs.",
+                    "Data is the lifeblood of modern organizations, and our mission is its continuous availability and integrity.",
+                    "Join us at Data Solutions Pro, where precision and care define data recovery and backup solutions.",
+                    "With us, your data stays secure, and your business thrives with confidence."
+                ]
+            },
+            {
+                "imgaeURL": "images/Cloud_solutions.jpg",
+                "heading": "CLOUD SOLUTIONS",
+                "subHeading": "Cloud Solutions",
+                "content": [
+                    "Welcome to CloudTech Pro, your trusted partner for cutting-edge cloud solutions.",
+                    "At CloudTech Pro, we understand the vital role that cloud technology plays in modern businesses.",
+                    "Our specialized cloud services are designed to transform your organization's capabilities and enhance your competitive edge.",
+                    "From cloud migration to infrastructure optimization, we provide a comprehensive suite of cloud solutions tailored to your needs.",
+                    "Our expert team ensures a seamless transition to the cloud, delivering scalability, security, and cost-efficiency.",
+                    "With our state-of-the-art cloud solutions, your data and applications are always accessible, enabling agile business operations.",
+                    "We serve businesses of all sizes, adapting our cloud strategies to align with your unique objectives.",
+                    "Cloud technology is the cornerstone of modern business success, and we're here to help you harness its full potential.",
+                    "Join us at CloudTech Pro, where precision and innovation define cloud solutions.",
+                    "With our services, your business thrives in the cloud era, confident in the security and scalability of your infrastructure."
+                ]
+            }
+        ],
+        "IconSubHeading": [
+            "Planning and Analysis",
+            "Design and Development",
+            "Testing & Modification",
+            "Maintenance And Support",
+            "Data Analytics",
+            "Recruiment Support"
+        ],
+        "Portfolio": {
+            "PortfolioContent": "Explore our successful IT solutions and client success stories that demonstrate our expertise in driving technology-driven transformations."
+        },
+        "Mission": {
+            "header": "OUR MISSION",
+            "headerContent": "Our mission is to be your trusted partner in navigating the ever-evolving landscape of technology. We strive to understand your unique business needs and tailor our solutions to help you achieve your goals. Whether it's optimizing your IT infrastructure, enhancing cybersecurity, or embracing the cloud, we're here to guide you every step of the way"
+        }
+    },
+
+    "ServicePage": {
+
+        "CloudServiceContent": "Welcome to our Cloud Solutions. We are dedicated to providing cutting-edge cloud services and solutions tailored to meet the unique needs of businesses in the digital age. Our team of experts brings years of experience to help you navigate the complexities of cloud technology. Whether you're looking to migrate to the cloud, optimize your existing cloud infrastructure, or develop cloud-native applications, we have you covered.Let us be your trusted partner on the path to cloud success.",
+        "SoftwareDevelpmentServiceContent": "Our Software Development Services are designed to bring your ideas to life. We excel in crafting custom software solutions tailored to your unique business requirements. Our experienced team of developers uses cutting-edge technologies to build reliable, scalable, and user-friendly applications.",
+        "MobileAppDevelopmentContent": "Mobile Application Development is our forte. We specialize in crafting cutting-edge mobile apps for both iOS and Android platforms. Our team combines expertise with the latest technologies to create intuitive and user-friendly apps. From concept to deployment, we're dedicated to delivering mobile solutions that captivate users and drive success.",
+        "UiUxDesignServiceContent": "The combination of our innovative and digital know-how, world-class technology and years of experience allows us to provide you with a modern and refined solution that focuses on both the front-end and back-end user. As a design agency, we can create unique user experiences and user interfaces and develop strategies and concepts for your very own digital application. Our focus is always on user interfaces that are precisely tailored to your requirements and corporate identity. Through adept information design and logical information architecture, we ensure that your users quickly find their way around and experience all content with unrestricted enthusiasm.",
+        "ServicesZeltonContent": "From IT consulting and system integration to managed services and cybersecurity solutions, we offer a comprehensive suite of services to cater to your IT needs. Our services include Our Solution is a 24x7 service located inside India and backed by an SI with top level accreditation by Cisco, VMware, EMC, HP, NetApp Microsoft, ITIL compliant, includes a Service Desk, a NOC, Field engineers and Remote Monitoring Software & Monthly Reports",
+
+        "ZeltonAssistContent": {
+            "ZeltonContentBeforePoints": "ZELTON Assist provides companies with a centralized helpdesk and call center for End User and Network support. Our Helpdesk is available by:",
+            "points": [
+                "Calling",
+                "Email",
+                "Online"
+            ],
+            "ZeltonContentAfterPoints": "We can use agents on client PC’s to remotely monitor and trouble fix issues quickly and cost effectively. When our agents need to dial into a customer’s PC all the sessions are recorded insuring compliance. Our helpdesk operates 24x7x365 and currently supports in excess of 10,000.00 users. The solution also provides our customers with an online portal which allows them to see in real time, trouble tickets, escalations, statistics and fixes. Our team can report back to a customer’s IT team or go ahead and implement a fix or an escalation themselves. The ZELTON Assist Portal. Allowing our team to integrate with your seamlessly. ZELTON Assist also comes with a service management portal allowing customers a single view of their service and the ability to run their own expedient reporting and export service level data. Our portal allows for complete access and control over real-time updates on all incidents and changes. The simple interface gives customers access to a range of key functionalities at their fingertips. With the ZELTON Assist portal customers can easily view, add and update all incidents and changes within their IT system from any device 24x7 This Portal has been developed and driven by the individual requirements of each of our customers. It is pivotal for us be able to understand our customer’s business needs and as a result it was designed in complete conjunction with this customer feedback in mind. If you would like to see how your business can benefit form ZELTON Assist, please fill in your contact details below to arrange a demo."
+        },
+        "Card": {
+
+            "CloudCardHeader": [
+                "Cloud Assessment",
+                "Cloud Service Integration",
+                "Cloud Development",
+                "Cloud Application Migration",
+                "Cloud optimisation",
+                "Cloud Maintenance"
+            ],
+
+            "CloudHeaderContent": [
+                "Our experts work with you to understand business-specific needs and requirements, your processes and existing applications to define a detailed cloud migration plan and suggest the most cost-effective providers for your situation.",
+                "We integrate all in-house and third-party applications processes and databases you use with EDI end-points like Microsoft Office365 or G-Suite, cloud storage accounts and other third-party products into one cloud environment without affecting your ongoing processes.",
+                "Our developers build and integrate custom cloud applications for your business to drive productivity, increase accessibility and facilitate easy data sharing between various processes, teams, and departments",
+                "We migrate your in-house systems and legacy apps to best-suited clouds seamlessly, with close to zero downtime and minimal overheads during the transformation",
+                "If you already have a cloud, make it more efficient with cloud optimization services. Our cloud solution architects have a deep understanding of services within the cloud.",
+                "After bringing your ecosystem to the cloud we continue to be available for ongoing support and maintenance via an SLA. We keep your systems modern, evolving them with latest advancements in the field, and ensure that there’s enough capacity for higher data volumes as you scale."
+            ],
+
+            "FullCardHeader": [
+                "Web application Development",
+                "Mobile application Development",
+                "Custom software Solutions"
+            ],
+
+            "FullCardContent": [
+                "Develop robust web applications with advanced features and seamless user experiences.",
+                "Produce intuitive applications with best technologies and approaches on the market",
+                "Craft tailored custom software solutions with cutting-edge technology and expertise"
+            ],
+
+            "FullCardImages": [
+                "images/laptop.png",
+                "images/mobile.png",
+                "images/tablet.png"
+            ],
+
+            "MobileAppCardHeader": [
+                "Mobile application development for IOS",
+                "Mobile app development for Android",
+                "Cross-platform application development"
+            ],
+
+            "MobileAppCardContent": [
+                "Deliver responsive IOS experiences utilizing latest architecture and design practices.",
+                "Produce intuitive applications with best technologies and approaches on the market ",
+                "Become available to all users by developing one application for both iOS and Android"
+            ],
+
+            "MobileAppCardImages": [
+                "images/Iphone.png",
+                "images/Android.png",
+                "images/Phone.png"
+            ]
+        }
+    },
+
     "navbar": {
         "header": " ZELTON",
         "subHeader": "Technology services",
         "belowHeader": "Innovate-Influence-Inspire"
     },
+
     "webdata": {
         "mobilenumber": "(+91) 98805-12345",
         "emailid": " hr@zeltons.com"
     },
+
     "aboutusPage": {
-        "header": "OUR MISSION",
-        "headerContent": "Our mission is to be your trusted partner in navigating the ever-evolving landscape of technology. We strive to understand your unique business needs and tailor our solutions to help you achieve your goals. Whether it's optimizing your IT infrastructure, enhancing cybersecurity, or embracing the cloud, we're here to guide you every step of the way",
+
+        "Mission": {
+            "header": "OUR MISSION",
+            "headerContent": "Our mission is to be your trusted partner in navigating the ever-evolving landscape of technology. We strive to understand your unique business needs and tailor our solutions to help you achieve your goals. Whether it's optimizing your IT infrastructure, enhancing cybersecurity, or embracing the cloud, we're here to guide you every step of the way"
+        },
+
+
         "belowHeader": "ABOUT US",
         "belowHeaderContent": "At Zelton Technology Service, we are dedicated to providing cutting-edge IT solutions that empower businesses to thrive in the digital age. With a passion for technology and a commitment to excellence, our team of experts is here to deliver innovative and reliable IT services that drive your success.",
         "sideHeader": "WHY CHOOSE  ZELTON",
@@ -22,62 +196,7 @@
             " Client-Centric Approach"
         ]
     },
-    "services": [
-        {
-            "imgaeURL": "images/IT_consultancy.jpg",
-            "heading": "IT Consulting",
-            "subHeading": "Welcome to IT Consultancy",
-            "content": [
-                "At IT Consulting, we're your trusted partner for cutting-edge IT solutions and services.",
-                "Step into our tech-savvy world, where innovation knows no limits.",
-                "Our services are meticulously designed to meet your tech requirements, enhancing your organization's capabilities.",
-                "Our team of experts curates custom solutions, drawing from global technology leaders.",
-                "Whether you're an IT veteran or a newcomer to tech solutions, our offerings cater to all preferences.",
-                "Explore the unique features, efficiency gains, and strategic prowess of our solutions.",
-                "To us, technology is not just a tool; it's the lifeblood of modern business.",
-                "We delve deep into the history of IT, unveiling endless possibilities for your success.",
-                "Optimize your network infrastructure, harness the power of the cloud, fortify cybersecurity, and leverage data analytics.",
-                "Join us at IT Consulting to unlock the untapped potential of technology and celebrate the spirit of innovation.",
-                "With our solutions, productivity soars, and each implementation becomes a memorable milestone.",
-                "Discover the artistry, history, and expertise that define IT, empowering your business to thrive."
-            ]
-        },
-        {
-            "imgaeURL": "images/Data_Recovery_and_Backup.jpg",
-            "heading": "DATA RECOVERY",
-            "subHeading": "Data Recovery and Backup Solutions",
-            "content": [
-                "Welcome to Data Solutions Pro, your trusted partner for data recovery and backup solutions.",
-                "We understand the critical importance of your data.",
-                "Our services safeguard and recover your valuable information, ensuring business continuity and peace of mind.",
-                "Our advanced data recovery techniques retrieve lost data from various storage devices: hard drives, SSDs, and more.",
-                "Whether it's accidental deletions, hardware failures, or data corruption, we recover your data swiftly and securely.",
-                "Our state-of-the-art backup solutions offer proactive data protection.",
-                "Your data is securely stored and easily restorable in case of unexpected loss.",
-                "We assist businesses of all sizes, tailoring solutions to your specific needs.",
-                "Data is the lifeblood of modern organizations, and our mission is its continuous availability and integrity.",
-                "Join us at Data Solutions Pro, where precision and care define data recovery and backup solutions.",
-                "With us, your data stays secure, and your business thrives with confidence."
-            ]
-        },
-        {
-            "imgaeURL": "images/Cloud_solutions.jpg",
-            "heading": "CLOUD SOLUTIONS",
-            "subHeading": "Cloud Solutions",
-            "content": [
-                "Welcome to CloudTech Pro, your trusted partner for cutting-edge cloud solutions.",
-                "At CloudTech Pro, we understand the vital role that cloud technology plays in modern businesses.",
-                "Our specialized cloud services are designed to transform your organization's capabilities and enhance your competitive edge.",
-                "From cloud migration to infrastructure optimization, we provide a comprehensive suite of cloud solutions tailored to your needs.",
-                "Our expert team ensures a seamless transition to the cloud, delivering scalability, security, and cost-efficiency.",
-                "With our state-of-the-art cloud solutions, your data and applications are always accessible, enabling agile business operations.",
-                "We serve businesses of all sizes, adapting our cloud strategies to align with your unique objectives.",
-                "Cloud technology is the cornerstone of modern business success, and we're here to help you harness its full potential.",
-                "Join us at CloudTech Pro, where precision and innovation define cloud solutions.",
-                "With our services, your business thrives in the cloud era, confident in the security and scalability of your infrastructure."
-            ]
-        }
-    ],
+
     "contactusPage": {
         "franchise": "Get your Services",
         "header": "FIND US ON",
@@ -110,53 +229,5 @@
             "footerContent": "Copyright © 2023, ZELTON Technology Services ",
             "copyright": ""
         }
-    },
-    "Card": {
-        "CloudCardHeader": [
-            "Cloud Assessment",
-            "Cloud Service Integration",
-            "Cloud Development",
-            "Cloud Application Migration",
-            "Cloud optimisation",
-            "Cloud Maintenance"
-        ],
-        "CloudHeaderContent": [
-            "Our experts work with you to understand business-specific needs and requirements, your processes and existing applications to define a detailed cloud migration plan and suggest the most cost-effective providers for your situation.",
-            "We integrate all in-house and third-party applications processes and databases you use with EDI end-points like Microsoft Office365 or G-Suite, cloud storage accounts and other third-party products into one cloud environment without affecting your ongoing processes.",
-            "Our developers build and integrate custom cloud applications for your business to drive productivity, increase accessibility and facilitate easy data sharing between various processes, teams, and departments",
-            "We migrate your in-house systems and legacy apps to best-suited clouds seamlessly, with close to zero downtime and minimal overheads during the transformation",
-            "If you already have a cloud, make it more efficient with cloud optimization services. Our cloud solution architects have a deep understanding of services within the cloud.",
-            "After bringing your ecosystem to the cloud we continue to be available for ongoing support and maintenance via an SLA. We keep your systems modern, evolving them with latest advancements in the field, and ensure that there’s enough capacity for higher data volumes as you scale."
-        ],
-        "FullCardHeader": [
-            "Web application Development",
-            "Mobile application Development",
-            "Custom software Solutions"
-        ],
-        "FullCardContent": [
-            "Develop robust web applications with advanced features and seamless user experiences.",
-            "Produce intuitive applications with best technologies and approaches on the market",
-            "Craft tailored custom software solutions with cutting-edge technology and expertise"
-        ],
-        "FullCardImages": [
-            "images/laptop.png",
-            "images/mobile.png",
-            "images/tablet.png"
-        ],
-        "MobileAppCardHeader": [
-            "Mobile application development for IOS",
-            "Mobile app development for Android",
-            "Cross-platform application development"
-        ],
-        "MobileAppCardContent": [
-            "Deliver responsive IOS experiences utilizing latest architecture and design practices.",
-            "Produce intuitive applications with best technologies and approaches on the market ",
-            "Become available to all users by developing one application for both iOS and Android"
-        ],
-        "MobileAppCardImages": [
-            "images/Iphone.png",
-            "images/Android.png",
-            "images/Phone.png"
-        ]
     }
 }
